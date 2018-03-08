@@ -389,7 +389,7 @@ for (i in 1:5){
 
 ###plot
 p<-NA 
-p<- ggplot(algae_r2,aes(x=benthic_category,y=recent_cover,fill=Period))
+p<- ggplot(algae_r2,aes(x=benthic_category,y=cover,fill=Period))
 
 p<- p + stat_summary(fun.y="mean", geom="bar",position=position_dodge(),alpha=0.8)
 p<- p + stat_summary(fun.data = 'mean_se', geom = "errorbar",width=.2,size=0.8,position=position_dodge(.9))
