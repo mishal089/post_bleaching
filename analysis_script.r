@@ -109,12 +109,23 @@ alg_st_tr1<-algae_stations_trend[order(algae_stations_trend[1],algae_stations_tr
 
 data_long<-data_long[which(data_long$Year>=2012),]
 
+#remove stations which likely have erronous data - recent cover and post cover too different
 
-algae_r<-ddply(data_long,c("Country","Site","Station","Period","benthic_category"),summarise,
+data_long1<-data_long[-which(data_long$Station=='Iweni'|data_long$Station=='Mpunguti-Upper'|data_long$Station=='Tausi'),]
+
+
+algae_r<-ddply(data_long1,c("Country","Site","Station","Period","benthic_category"),summarise,
                recent_year=max(Year),
                no_years_benthic=length(unique(Year)),
                recent_cover=tail(mean_cover,n=1),
                ave_cover=mean(mean_cover))
+
+#this loop will help use mean cover across years for pre bleaching period, and recent cover values for post-bleaching period
+for (i in 1:nrow(algae_r)){
+  if (algae_r$Period[i]=='Pre'){
+algae_r$cover[i]<-algae_r$ave_cover[i]}
+  else {algae_r$cover[i]<-algae_r$recent_cover[i]}
+}
 
 #because of the steps taken to produce alg2, there should be an algae value for each hard coral value for each site, station ,year
 ftable(algae_r$benthic_category) #just to be sure - should be equal
@@ -378,7 +389,7 @@ for (i in 1:5){
 
 ###plot
 p<-NA 
-p<- ggplot(algae_r2,aes(x=benthic_category,y=ave_cover,fill=Period))
+p<- ggplot(algae_r2,aes(x=benthic_category,y=recent_cover,fill=Period))
 
 p<- p + stat_summary(fun.y="mean", geom="bar",position=position_dodge(),alpha=0.8)
 p<- p + stat_summary(fun.data = 'mean_se', geom = "errorbar",width=.2,size=0.8,position=position_dodge(.9))
