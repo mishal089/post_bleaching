@@ -1,0 +1,136 @@
+Code,Name,Level2_code,Level1_code,level
+ALG,Algae,NA,ALG,1
+ALG,Algal assemblage,NA,ALG,
+ALG,Nutrient indicator algae,NA,ALG,1
+ABI,Abiotic,NA,NA,0
+O,OTHER,NA,NA,0
+HC,Coral,NA,HC,1
+SC,Soft coral,NA,SC,1
+INV,Inverts-other,NA,INV,1
+AMAC,Algae-macro/fleshy,NA,AMAC,1
+AHAL,Algae-Halimeda,NA,AHAL,1
+ACOR,Algae-coralline,NA,ACOR,1
+ATRF,Algae-turf,NA,ATRF,1
+ALOT,Algae-Other,NA,ALOT,1
+BS,Bare substrate,NA,BS,1
+RUB,Rubble,NA,RUB,1
+SND,Sand,NA,SND,1
+SGR,Seagrass,NA,SGR,1
+SPG,Spongy,NA,SPG,1
+MIC,Microbial,NA,MIC,1
+DC,Dead Standing coral,NA,DC,1
+RDC,Recent Dead Coral,NA,RDC,1
+UNID,Unidentified,NA,UNID,1
+OT,Other,NA,OT,1
+OBS,Obscured,NA,OBS,1
+TWS,"Tape, wand, shadow",NA,TWS,1
+Anem,Anemone,Anem,INV,2
+Gorg,Gorgonian,Gorg,INV,2
+Cmorph,Corallimorph,Cmorph,INV,2
+Zooa,Zooanthid,Zooa,INV,2
+Hydr,Hydroids,Hydr,INV,2
+Spog,Sponge,Spog,INV,2
+Ascd,Ascidian,Ascd,INV,2
+cb,branching,cb,HC,2
+ce,encrusting,ce,HC,2
+cs,submassive,cs,HC,2
+cf,foliaceous,cf,HC,2
+acb,Acropora branching,acb,HC,2
+acd,Acropora digitate,acd,HC,2
+ace,Acropora encrusting,ace,HC,2
+acs,Acropora submassive,acs,HC,2
+act,Acropora tabulate,act,HC,2
+cm,massive,cm,HC,2
+cme,Millepora,cme,HC,2
+mush,mushroom,mush,HC,2
+ctu,Tubipora,ctu,HC,2
+scarp,Leathery/Carpeting soft coral,scarp,SC,2
+scfan,Fans,scfan,SC,2
+scbra,Branching/erect soft corals,scbra,SC,2
+scenc,Encrusting/fine sc,scenc,SC,2
+SND,Sand,SND,SND,2
+SIL,Silt,SIL,SND,2
+aca,Acanthastrea,cs,HC,3
+acr,Acropora,,HC,3
+acb,Acropora branching,acb,HC,3
+acd,Acropora digitate,acd,HC,3
+ace,Acropora encrusting,ace,HC,3
+acs,Acropora submassive,acs,HC,3
+act,Acropora tabulate,act,HC,3
+alv,Alveopora,cs,HC,3
+ano,Anomastrea,cs,HC,3
+ast,Astreopora,cm,HC,3
+bla,Blastomussa,cs,HC,3
+cau,Caulastrea,cs,HC,3
+cos,Coscinaraea,cm,HC,3
+cte,Ctenactis,mush,HC,3
+cyc,Cycloseris,mush,HC,3
+cyp,Cyphastrea,cm,HC,3
+dia,Diaseris,mush,HC,3
+dip,Diploastrea,cm,HC,3
+eph,Echinophyllia,cf,HC,3
+epo,Echinopora,cf/cs,HC,3
+fav,Favia,cm,HC,3
+fts,Favites,cm,HC,3
+fun,Fungia,mush,HC,3
+gal,Galaxea,cm,HC,3
+gar,Gardineroseris,cm,HC,3
+gon,Goniastrea,cm,HC,3
+gop,Goniopora,cs,HC,3
+gyr,Gyrosmilia,cm,HC,3
+hal,Halomitra,mush,HC,3
+hel,Heliopora,cb,HC,3
+her,Herpolitha,mush,HC,3
+hor,Horastrea,cm,HC,3
+hyd,Hydnopohora,cm,HC,3
+iso,Isopora,acs,HC,3
+lep,Leptastrea,cm,HC,3
+leo,Leptoria,cm,HC,3
+les,Leptoseris,cf,HC,3
+lob,Lobophyllia,cm,HC,3
+mer,Merulina,cf,HC,3
+mic,Micromussa,ce,HC,3
+mil,Millepora,ce/cm/cb,HC,3
+mon,Montastrea,cm,HC,3
+mtp,Montipora,ce/cf/cb,HC,3
+myc,Mycedium,cf,HC,3
+oul,Oulophyllia,cm,HC,3
+oxy,Oxypora,cf,HC,3
+pac,Pachyseris,cf,HC,3
+pav,Pavona,cf/cb/ce/cs,HC,3
+pec,Pectinia,cs,HC,3
+phy,Physogyra,cm,HC,3
+pla,Platygyra,cm,HC,3
+plg,Plerogyra,cm,HC,3
+pls,Plesiastrea,cm,HC,3
+poc,Pocillopora,cb,HC,3
+pod,Podabacea,cf,HC,3
+pol,Polyphyllia,mush,HC,3
+por,Porites,cb/cm,HC,3
+porB,Porites branching,cb,HC,3
+porM,Porites massive,cm,HC,3
+psa,Psammocora,ce/cb,HC,3
+pse,Pseudosiderastrea,cs,HC,3
+RCK,Rock,NA,RCK,1
+san,Sandalolitha,mush,HC,3
+sco,Scolymia,mush,HC,3
+ser,Seriatopora,cb,HC,3
+sid,Siderastrea,cs/cm,HC,3
+stc,Stylocoeniella,cs,HC,3
+sty,Stylophora,cb,HC,3
+sym,Symphillia,cm,HC,3
+tra,Trachyphyllia,cs,HC,3
+tub,Tubastrea,cb,HC,3
+tup,Tubipora,cm,HC,3
+tur,Turbinaria,cf/cs,HC,3
+Fans,Fans,scfan,SC,3
+Eryth,Eyrthropodium,scenc,SC,3
+Sin,Sinularia,scarp,SC,3
+Sar,Sarcophyton,scarp,SC,3
+Lob,Lobophytum,scarp,SC,3
+SCoth,SC other,SCoth,SC,3
+TWS,Tape wand shadow,,,1
+UNK,Unknown,,,
+eup,Euphyllia,,HC,3
+ous,Oulastrea,,HC,3
+RH,Unknown RH,,RH,1

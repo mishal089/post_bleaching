@@ -4,8 +4,6 @@
 
 library(plyr)
 library(ggplot2)
-setwd("~/CORDIO/IOC post-bleaching project/Post-bleaching assessment/Formatting/")
-
 
 benthic<-read.csv("post_bleaching_benthic_dataset_for_analysis.csv",header = T,stringsAsFactors = F)
 
@@ -29,10 +27,6 @@ ben_lev1$Period<-factor(ben_lev1$Period,levels=c("Pre","Post"))     #USED FOR PL
 ben_lev2<-ddply(ben_lev1,c(1,2,7,8),summarise,
                 mean_cover=mean(cover,na.rm = T),
                 sd=sd(cover,na.rm = T))
-
-write.csv(ben_lev2[which(ben_lev2$Country=="Kenya"),],"Kenya_summarised_benthic_data.csv",row.names = F)
-
-write.csv(ben_lev1[which(ben_lev1$Country=="Kenya"),],"Kenya_summarised_benthic_data_sites_level1.csv",row.names = F)
 
 # #To prepare the necessary hard coral and algae dataframes ---------------
 
@@ -106,7 +100,6 @@ data_long <- gather(alg2, benthic_category, mean_cover, FA:HC, factor_key=TRUE)
 algae_stations_trend<-unique(alg2[c("Country", "Site", "Station")])
 alg_st_tr1<-algae_stations_trend[order(algae_stations_trend[1],algae_stations_trend[2],algae_stations_trend[3]),]
 
-write.csv(alg_st_tr1,"All_stations_used_in_FA_HC_trend_graphs.csv",row.names = F)
 
 #At some point need to decide for the pre-bleaching and post-bleaching
 #To filter the data 
@@ -140,7 +133,6 @@ algae_r2$benthic_category<-factor(algae_r2$benthic_category,c("HC","FA"))   #USE
 sites<-unique(algae_r2[c("Country", "Site", "Station")])    #number of sites involved in the analysis
 ftable(sites$Country)
 
-write.csv(sites,"All_stations_used_in_FA_HC_bar_graphs.csv",row.names = F)
 
 #to get table with overall national mean for coral and algae cover pre and post with standard errors
 national_ave<-ddply(algae_r2,c("Country","Period","benthic_category"),summarise,
@@ -157,7 +149,6 @@ national2<-national[order(national$Country,national$benthic_category),]
 # national2<-national[-which(is.na(national$pct.chg)),]
 # national3<-national2[,c(1,3,5)]
 
-write.csv(national2,"national_averages_of_algae_and_coral_pre_vs_post.csv",row.names = F)
 
 #regional
 #To create a seperate dataset from ben_lev1 with just the pre-bleaching data from latest year for each station and the post-bleac
@@ -170,7 +161,7 @@ r<-ddply(ben_lev1,c("Country","Site","Station","Reef.zone","Period","level1_code
          no_years_benthic=length(unique(Year)),
          recent_Coral=tail(cover,n=1))
 
-#step 2 - for plotting purposes lets remove data earlier than 2007 for example
+#step 2 - for plotting purposes lets remove data earlier than 2012 for example
 
 r1<-r[which(r$recent_year>=2012),]
 
@@ -206,7 +197,6 @@ r5<-r4[,c(1,2,3,4,15,14,13,12)]
 
 r6<-r5[order(r5$Country,r5$pct.chg),]
 
-write.csv(r6,"hard_coral_cover_changes_at_each_station.csv",row.names = F)
 
 
 # #find actual average values pre and post
@@ -216,6 +206,20 @@ write.csv(r6,"hard_coral_cover_changes_at_each_station.csv",row.names = F)
 # ((r3[2,2]-r3[1,2])/r3[1,2])*100    #calculate percentage change in coral cover
 
 
+# File saving -------------------------------------------------------------
+
+
+write.csv(ben_lev2[which(ben_lev2$Country=="Kenya"),],"Kenya_summarised_benthic_data.csv",row.names = F)
+
+write.csv(ben_lev1[which(ben_lev1$Country=="Kenya"),],"Kenya_summarised_benthic_data_sites_level1.csv",row.names = F)
+
+write.csv(alg_st_tr1,"All_stations_used_in_FA_HC_trend_graphs.csv",row.names = F)
+
+write.csv(sites,"All_stations_used_in_FA_HC_bar_graphs.csv",row.names = F)
+
+write.csv(national2,"national_averages_of_algae_and_coral_pre_vs_post.csv",row.names = F)
+
+write.csv(r6,"hard_coral_cover_changes_at_each_station.csv",row.names = F)
 
 # Plot 1: HC trend with Station lines - per country ---------------------------------------------
 
