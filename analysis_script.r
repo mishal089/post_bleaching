@@ -107,15 +107,19 @@ alg_st_tr1<-algae_stations_trend[order(algae_stations_trend[1],algae_stations_tr
 #Step 2: for pre-bleaching have a cut-off Year before which data is not considered
 #Step 3: Select only those sites that have data for both periods after this cut-off year
 
+data_long<-data_long[which(data_long$Year>=2012),]
+
+
 algae_r<-ddply(data_long,c("Country","Site","Station","Period","benthic_category"),summarise,
                recent_year=max(Year),
                no_years_benthic=length(unique(Year)),
-               recent_cover=tail(mean_cover,n=1))
+               recent_cover=tail(mean_cover,n=1),
+               ave_cover=mean(mean_cover))
 
 #because of the steps taken to produce alg2, there should be an algae value for each hard coral value for each site, station ,year
 ftable(algae_r$benthic_category) #just to be sure - should be equal
 
-#step 2 - for accuracy purposes lets remove data earlier than 2007 for example
+#step 2 - for accuracy purposes lets remove data earlier than 2012
 
 algae_r1<-algae_r[which(algae_r$recent_year>=2012),]
 
@@ -374,7 +378,7 @@ for (i in 1:5){
 
 ###plot
 p<-NA 
-p<- ggplot(algae_r2,aes(x=benthic_category,y=recent_cover,fill=Period))
+p<- ggplot(algae_r2,aes(x=benthic_category,y=ave_cover,fill=Period))
 
 p<- p + stat_summary(fun.y="mean", geom="bar",position=position_dodge(),alpha=0.8)
 p<- p + stat_summary(fun.data = 'mean_se', geom = "errorbar",width=.2,size=0.8,position=position_dodge(.9))
