@@ -24,14 +24,19 @@ ben_lev1$Reef.zone[which(ben_lev1$Reef.zone=="")]<-NA
 
 ben_lev1$Period<-factor(ben_lev1$Period,levels=c("Pre","Post"))     #USED FOR PLOT 1 AND 5
 
-#remove Tanzania 2012,2013 data (Chumbe data) here
-ben_lev1<-ben_lev1[-which(ben_lev1$Country=='Tanzania' & ben_lev1$Year==2012),]
-ben_lev1<-ben_lev1[-which(ben_lev1$Country=='Tanzania' & ben_lev1$Year==2013),]
+# #remove Tanzania 2012,2013 data (Chumbe data) here
+# ben_lev1<-ben_lev1[-which(ben_lev1$Country=='Tanzania' & ben_lev1$Year==2012),]
+# ben_lev1<-ben_lev1[-which(ben_lev1$Country=='Tanzania' & ben_lev1$Year==2013),]
 
 
 ben_lev2<-ddply(ben_lev1,c(1,2,7,8),summarise,
                 mean_cover=mean(cover,na.rm = T),
                 sd=sd(cover,na.rm = T))
+
+ben_lev1_a<-ben_lev1[-which(ben_lev1$Country=='Tanzania' & ben_lev1$Year==2012),]
+ben_lev1_a2<-ben_lev1_a[-which(ben_lev1_a$Country=='Tanzania' & ben_lev1_a$Year==2013),]
+ben_lev1_a3<-ben_lev1_a2[-which(ben_lev1_a2$Country=='Kenya' & ben_lev1_a2$Year==2016 & ben_lev1_a2$Period=='Pre'),]
+ben_lev1_a4<-ben_lev1_a3[which(ben_lev1_a3$level1_code=='HC'),]
 
 # #To prepare the necessary hard coral and algae dataframes ---------------
 
@@ -48,6 +53,10 @@ alg2$site.id<-paste(alg2$Year,alg2$Country,alg2$Site,alg2$Station,alg2$Reef.zone
 ben_HC<-ben_lev1[which(ben_lev1$level1_code=='HC'),]
 
 ben_HC$site.id<-paste(ben_HC$Year,ben_HC$Country,ben_HC$Site,ben_HC$Station,ben_HC$Reef.zone)
+
+ben_HC1<-ben_HC[-which(ben_HC$Country=='Tanzania'&ben_HC$Year==2012),]
+ben_HC2<-ben_HC1[-which(ben_HC1$Country=='Tanzania'&ben_HC1$Year==2013),]
+
 
 alg2$HC <- ben_HC$cover[match(alg2$site.id, ben_HC$site.id)]
 
@@ -97,6 +106,11 @@ ftable(post_sites2$Country)
 #it works
 
 alg2<-r_alg  #so that we dont have to change code below
+
+alg3<-alg2[-which(alg2$Country=='Tanzania'&alg2$Year==2012),]
+alg4<-alg3[-which(alg3$Country=='Tanzania'&alg3$Year==2013),]
+alg5<-alg4[-which(alg4$Period=='Pre'&alg4$Year==2016&alg4$Country=='Kenya'),]
+
 
 #to make it wide to long with a benthic_category column with both hc and fa
 library(tidyr)
@@ -247,9 +261,12 @@ write.csv(algae_r2,"dataset_for_HC_FA_column_2012_on.csv",row.names = F)
 
 # Plot 1: HC trend with Station lines - per country ---------------------------------------------
 
+#remove ken 2016 pre and tz 2012,2013
+
+# #remove Tanzania 2012,2013 data (Chumbe data) here
 
 p<-NA
-p<-ggplot(data=ben_lev1[which(ben_lev1$level1_code=='HC'),],aes(x=Year,y=cover,group=Period,colour=Period,shape=Period))
+p<-ggplot(data=ben_lev1_a4,aes(x=Year,y=cover,group=Period,colour=Period,shape=Period))
 p <- p + geom_line(aes(group=Station),size=1,alpha=0.2)
 p<- p + stat_summary(geom="ribbon", fun.data=mean_cl_boot, 
                      fun.args=list(conf.int=0.95), fill="grey",alpha=0.5,colour=NA)
@@ -302,7 +319,7 @@ s<-dlply(ben_lev1[which(ben_lev1$level1_code=='HC'),], .(Country), function(x) p
 g<-unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country)
 
 for (i in 1:length(unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country))){
-  jpeg(paste(g[i],"HC_station_lines.jpeg"), width = 4, height = 3.5, units = 'in', res = 300)
+  jpeg(paste("graphs/",g[i],"HC_station_lines.jpeg"), width = 4, height = 3.5, units = 'in', res = 300)
   print(s[i])
   dev.off()
 }
@@ -311,9 +328,10 @@ for (i in 1:length(unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country))
 # Plot 2: HC & FA -TREND LINE national plots ------------------------------------------------
 
 
+
 p<-NA 
 
-p<- ggplot(alg2, aes(x=Year,group=Period))
+p<- ggplot(alg5, aes(x=Year,group=Period))
 p<-p +  stat_summary(aes(y=HC, colour='HC',shape='HC',linetype=Period),geom="smooth", fun.y=mean, size=1)
 p<-p +  stat_summary(geom="ribbon", fun.data=mean_cl_boot,fun.args=list(conf.int=0.95), aes(y=HC,fill="HC"),alpha=0.3)
 p<- p+  stat_summary(geom="point", fun.y=mean, fill='white', aes(y=HC,shape='HC',color='HC'),size=2)
@@ -342,8 +360,8 @@ p<- p + theme(legend.key = element_blank(),
 
 #p<- p + ggtitle(e[i])
 p<- p + ylab("Cover (%)")
-p<- p + scale_x_continuous(breaks=seq(1996,2017,by=1),
-                           labels = c(1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
+p<- p + scale_x_continuous(breaks=seq(1992,2017,by=1),
+                           labels = c(1992,rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
 p<- p + scale_y_continuous(breaks = seq(0,100,by=5),
                            labels=c(0,"",10,"",20,"",30,"",40,"",50,"",60,"",70,"",80,"",90,"",100))
 p<- p + theme(strip.text.x = element_text(size=11,face="bold"),
@@ -388,7 +406,7 @@ s<-dlply(alg2, .(Country), function(x) p %+% x)
 
 for (i in 1:5){
   g<-unique(alg2$Country)
-  jpeg(paste(g[i],"FA and HC together.jpeg"), width = 4.5, height = 3.5, units = 'in', res = 300)
+  jpeg(paste("graphs/",g[i],"FA and HC together.jpeg"), width = 4.5, height = 3.5, units = 'in', res = 300)
   print(s[i])
   dev.off()
 }
@@ -398,7 +416,7 @@ for (i in 1:5){
 
 ###plot
 p<-NA 
-p<- ggplot(algae_r2,aes(x=benthic_category,y=cover,fill=Period))
+p<- ggplot(algae_r2,aes(x=benthic_category,y=recent_cover,fill=Period))
 
 p<- p + stat_summary(fun.y="mean", geom="bar",position=position_dodge(),alpha=0.8)
 p<- p + stat_summary(fun.data = 'mean_se', geom = "errorbar",width=.2,size=0.8,position=position_dodge(.9))
@@ -457,7 +475,7 @@ s<-dlply(algae_r2, .(Country), function(x) p %+% x)
 g<-unique(algae_r2$Country)
 
 for (i in 1:length(g)){
-  jpeg(paste(g[i],"pre vs post FA and HC bar plot.jpeg"), width = 3, height = 3, units = 'in', res = 300)
+  jpeg(paste("graphs/",g[i],"pre vs post FA and HC bar plot.jpeg"), width = 3, height = 3, units = 'in', res = 300)
   print(s[i])
   dev.off()
 }
@@ -470,7 +488,7 @@ library(plyr)
 library(plotrix)
 
 
-#PLOTTING PRE-BLEACHING FROM 2010 ONWARDS
+#PLOTTING PRE-BLEACHING FROM 2012 ONWARDS
 
 p<-NA 
 
@@ -533,7 +551,7 @@ p<-p+ scale_fill_manual("Period",
 p
 
 #for regional plot
-jpeg("regional_HC_column_chart_pre_vs_post_2010.jpeg", width = 3, height = 3, units = 'in', res = 300)
+jpeg("regional_HC_column_chart_pre_vs_post_2012.jpeg", width = 3, height = 3, units = 'in', res = 300)
 print(p)
 dev.off()
 
@@ -555,14 +573,14 @@ for (i in 1:length(unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country))
 
 
 #to get the linear regression equation - for region
-ben_lev1$Year2<-ben_lev1$Year-1996  #create a new year category where 1992 is year 0
-lin.mod <- lm(cover~Year2,ben_lev1)
+ben_lev1_a2$Year2<-ben_lev1_a2$Year-1992  #create a new year category where 1992 is year 0
+lin.mod <- lm(cover~Year2,ben_lev1_a2)
 summary(lin.mod)
 coef(lin.mod)
 
 
 q<-NA
-q<- ggplot(ben_lev1[which(ben_lev1$level1_code=='HC'),], aes(x=Year, y=cover))
+q<- ggplot(ben_lev1_a2[which(ben_lev1_a2$level1_code=='HC'),], aes(x=Year, y=cover))
 q<-q+  stat_summary(geom="ribbon", fun.data=mean_cl_boot, 
                     fun.args=list(conf.int=0.95), aes(fill="regional"),alpha=0.4,colour=NA)
 q<-q+stat_summary(geom="smooth", fun.y=mean, size=1.2,aes(colour='regional',shape='regional',linetype="regional"))
@@ -597,8 +615,8 @@ q<-q+scale_colour_manual("Country",
                          values = c("Kenya" = "dark green", "La Reunion" = "red2",'Mozambique'='blue','Mauritius'='orange','Rodrigues'='orange','South Africa'='green',"Seychelles"='Purple',"Tanzania"="dark blue","Comoros"="grey40","Madagascar"="brown","regional"="black","trendline"="grey"))
 
 q <- q + theme(plot.title = element_text(size = 12, face = "bold"))
-q<- q + scale_x_continuous(breaks=seq(1996,2017,by=1),
-                           labels = c(1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
+q<- q + scale_x_continuous(breaks=seq(1992,2017,by=1),
+                           labels = c(1992,rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
 q <- q + scale_y_continuous(breaks = seq(0,100,by=5),
                             labels=c(0,"",10,"",20,"",30,"",40,"",50,"",60,"",70,"",80,"",90,"",100))
 
@@ -619,7 +637,7 @@ q <- q + guides(fill = guide_legend(nrow=2))
 
 q
 
-jpeg("HC_single_plot_all_countries_lines.jpeg", width = 6.25, height = 4, units = 'in', res = 300)
+jpeg(paste("graphs/regional","HC_single_plot_all_countries_lines.jpeg"), width = 6.25, height = 4, units = 'in', res = 300)
 q
 dev.off()
 
@@ -627,7 +645,7 @@ dev.off()
 # Plot 6: Regional - HC with sampling point all countries in single plot --------
 
 q<-NA
-q<- ggplot(ben_HC, aes(x=Year, y=cover , group=Country))+
+q<- ggplot(ben_HC2, aes(x=Year, y=cover , group=Country))+
   geom_point(position = position_jitter(w = 0.3, h = 0.3),colour="blue", size=2, shape=21, fill="white")+
   stat_summary(geom="ribbon", fun.data=mean_cl_boot, 
                fun.args=list(conf.int=0.95), fill="grey",alpha=0.6)+
@@ -674,7 +692,7 @@ facetAdjust(q)
 # Plot 7: Regional - FA and HC all countries on a single plot ------------------------
 
 p<-NA 
-p<- ggplot(alg2, aes(x=Year, y=HC))
+p<- ggplot(alg4, aes(x=Year, y=HC))
 p<-p +  stat_summary(geom="ribbon", fun.data=mean_cl_boot, 
                      fun.args=list(conf.int=0.95), aes(fill="HC"),alpha=0.3)
 p<-p +  stat_summary(geom="smooth", fun.y=mean, linetype="solid", size=1,aes(colour='HC',shape='HC'))
@@ -747,10 +765,128 @@ print(p)
 
 
 
-jpeg("FA and HC single grid.jpeg",width=6,height=5,units="in",res=300)
+jpeg(paste("graphs/regional","FA and HC single grid.jpeg"),width=6,height=5,units="in",res=300)
 print(p)
 # facetAdjust(p)
 dev.off()
+
+
+# Plot 8 - regional overall HC vs FA trend  -------------------------------
+p<-NA 
+
+p<- ggplot(alg4, aes(x=Year,group=Period))
+p<-p +  stat_summary(aes(y=HC, colour='HC',shape='HC',linetype=Period),geom="smooth", fun.y=mean, size=1)
+p<-p +  stat_summary(geom="ribbon", fun.data=mean_cl_boot,fun.args=list(conf.int=0.95), aes(y=HC,fill="HC"),alpha=0.3)
+p<- p+  stat_summary(geom="point", fun.y=mean, fill='white', aes(y=HC,shape='HC',color='HC'),size=2)
+
+
+p<- p +  stat_summary(aes(y=FA, colour='FA',linetype=Period),geom="smooth", fun.y=mean, size=1)
+p<- p +  stat_summary(aes(y=FA,fill='FA'),geom="ribbon", fun.data=mean_cl_boot, 
+                      fun.args=list(conf.int=0.95),alpha=0.3)
+p<-p +  stat_summary(aes(y=FA,color='FA',shape='FA'),geom="point", fun.y=mean,size=2, fill='white')
+
+p <- p + theme_bw()+theme(plot.title=element_blank(),
+                          axis.line = element_line(size=1,colour = "black"),
+                          panel.grid.major = element_blank(),
+                          panel.grid.minor = element_blank(),
+                          panel.border = element_blank(),
+                          panel.background = element_blank(),
+                          text = element_text(size=9,face="bold"),
+                          axis.ticks.length=unit(0.2,"cm"),
+                          axis.text = element_text(colour="black"))
+p<- p + theme(legend.key = element_blank(),
+              legend.position="bottom",
+              legend.key.height=unit(0, "cm"),
+              # legend.justification="left",
+              legend.spacing =unit(0,"cm"),
+              legend.text = element_text(size=8))
+
+#p<- p + ggtitle(e[i])
+p<- p + ylab("Cover (%)")
+p<- p + scale_x_continuous(breaks=seq(1992,2017,by=1),
+                           labels = c(1992,rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
+p<- p + scale_y_continuous(breaks = seq(0,100,by=5),
+                           labels=c(0,"",10,"",20,"",30,"",40,"",50,"",60,"",70,"",80,"",90,"",100))
+p<- p + theme(strip.text.x = element_text(size=11,face="bold"),
+              strip.background = element_blank(),
+              panel.grid.major = element_blank(),
+              panel.grid.minor = element_blank(),
+              panel.border = element_blank(),
+              panel.background = element_blank())
+p<- p + expand_limits(y=0)
+p<-p+scale_fill_manual("Cover type", 
+                       breaks = c("HC", "FA"),
+                       values = c('HC'="blue", "FA"="green"),
+                       labels = c('HC'='Hard Coral', "FA"="Fleshy Algae"))
+
+p<-p+ scale_colour_manual("Cover type", 
+                          breaks = c("HC", "FA"),
+                          values = c("HC"="blue", "FA"="dark green"),
+                          labels = c('HC'='Hard Coral', "FA"="Fleshy Algae"))
+p<-p+scale_shape_manual("Cover type", 
+                        breaks = c("HC", "FA"),
+                        values = c('HC'= 21, "FA"= 19),
+                        labels = c('HC'='Hard Coral', "FA"="Fleshy Algae"))
+
+p<-p+scale_linetype_manual("Period", 
+                           breaks = c("Pre", "Post"),
+                           values = c("Pre"='solid', "Post"='dotted'))
+# p + guides(fill = guide_legend(override.aes = list(shape = 21)))
+
+
+print(p)
+
+
+# Plot 9 - regional HC vs FA column chart ---------------------------------
+
+p<-NA 
+p<- ggplot(algae_r2,aes(x=benthic_category,y=cover,fill=Period))
+
+p<- p + stat_summary(fun.y="mean", geom="bar",position=position_dodge(),alpha=0.8)
+p<- p + stat_summary(fun.data = 'mean_se', geom = "errorbar",width=.2,size=0.8,position=position_dodge(.9))
+
+p <- p + theme_bw()+theme(plot.title=element_blank(),
+                          axis.line = element_line(size=1,colour = "black"),
+                          panel.grid.major = element_blank(),
+                          panel.grid.minor = element_blank(),
+                          panel.border = element_blank(),
+                          panel.background = element_blank(),
+                          text = element_text(size=9.5,face="bold"),
+                          axis.ticks.length=unit(0.2,"cm"),
+                          axis.text = element_text(colour="black"),
+                          axis.title.x = element_blank())
+
+p<- p + theme(legend.key = element_blank(),
+              legend.position="bottom",
+              legend.key.height=unit(0.2, "cm"),
+              plot.margin = unit(c(0,0.1,0.1,0.1), "lines"),
+              #               legend.margin=unit(0.5,"cm"),
+              legend.text=element_text(size=8))
+
+#p<- p + ggtitle(e[i])
+p<- p + ylab("Cover (%)")
+
+p<- p + theme(strip.text.x = element_text(size=11,face="bold"),
+              strip.background = element_blank(),
+              panel.grid.major = element_blank(),
+              panel.grid.minor = element_blank(),
+              panel.border = element_blank(),
+              panel.background = element_blank())
+p<- p + scale_y_continuous(breaks = seq(0,100,by=5),
+                           labels=c(0,"",10,"",20,"",30,"",40,"",50,"",60,"",70,"",80,"",90,"",100))
+p<-p + scale_x_discrete(breaks=c("HC","FA"),
+                        labels=c("HC"="Coral","FA"="Algae"))
+p<- p + expand_limits(y=0)
+
+p<-p+ scale_fill_manual("Period", 
+                        breaks = c("Pre", "Post"),
+                        values = c("Pre"='dark blue', "Post"='dark red'),
+                        labels = c("Pre"='pre-bleaching', "Post"='response'))
+
+# p + guides(fill = guide_legend(override.aes = list(shape = 21)))
+
+
+print(p)
 
 
 # Seychelles sub-national analysis ----------------------------------------
