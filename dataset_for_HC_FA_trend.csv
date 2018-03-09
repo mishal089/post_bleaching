@@ -1,0 +1,668 @@
+"Country","Year","Sector","Site","Station","Reef.zone","Period","site.id","FA","HC"
+"Kenya",2001,NA,"Diani-Chale","Chidzamba_cha_mekka",NA,"Pre","Kenya_Diani-Chale_Chidzamba_cha_mekka",55,3.3
+"Kenya",2001,NA,"Diani-Chale","Mtengo",NA,"Pre","Kenya_Diani-Chale_Mtengo",68.5,0.7
+"Kenya",2001,NA,"Diani-Chale","Mwagogo",NA,"Pre","Kenya_Diani-Chale_Mwagogo",55.3,1.7
+"Kenya",2003,NA,"Diani-Chale","Chidzamba_cha_mekka",NA,"Pre","Kenya_Diani-Chale_Chidzamba_cha_mekka",67.9,7.1
+"Kenya",2003,NA,"Diani-Chale","Mtengo",NA,"Pre","Kenya_Diani-Chale_Mtengo",77.7,6.8
+"Kenya",2003,NA,"Diani-Chale","Tsipitali",NA,"Pre","Kenya_Diani-Chale_Tsipitali",80.3,1.9
+"Kenya",2004,"","Watamu","Coral_Garden",NA,"Pre","Kenya_Watamu_Coral_Garden",57.3,14.4
+"Kenya",2004,"","Watamu","Richard_Bernets",NA,"Pre","Kenya_Watamu_Richard_Bernets",63.9,12.4
+"Kenya",2004,NA,"Diani-Chale","Chidzamba_cha_mekka",NA,"Pre","Kenya_Diani-Chale_Chidzamba_cha_mekka",79.1,7.5
+"Kenya",2004,NA,"Diani-Chale","Mtengo",NA,"Pre","Kenya_Diani-Chale_Mtengo",57.6,16.6
+"Kenya",2004,NA,"Diani-Chale","Tsipitali",NA,"Pre","Kenya_Diani-Chale_Tsipitali",65.5,11.5
+"Kenya",2004,NA,"Malindi","North_Reef",NA,"Pre","Kenya_Malindi_North_Reef",68,16
+"Kenya",2004,NA,"Malindi","Old_Coral_Garden",NA,"Pre","Kenya_Malindi_Old_Coral_Garden",48.7,27.9
+"Kenya",2004,NA,"Mombasa","Coral_Garden",NA,"Pre","Kenya_Mombasa_Coral_Garden",40.2,20.6
+"Kenya",2004,NA,"Mombasa","Starfish",NA,"Pre","Kenya_Mombasa_Starfish",34.1,9
+"Kenya",2005,NA,"Diani-Chale","Chidzamba_cha_mekka",NA,"Pre","Kenya_Diani-Chale_Chidzamba_cha_mekka",56.5,8.3
+"Kenya",2005,NA,"Diani-Chale","Mtengo",NA,"Pre","Kenya_Diani-Chale_Mtengo",71.2,17.3
+"Kenya",2005,NA,"Diani-Chale","Tsipitali",NA,"Pre","Kenya_Diani-Chale_Tsipitali",63.1,20
+"Kenya",2005,NA,"Kisite","Light_house",NA,"Pre","Kenya_Kisite_Light_house",61.2,20.1
+"Kenya",2005,NA,"Kisite","Mkwiro",NA,"Pre","Kenya_Kisite_Mkwiro",52.5,24.3
+"Kenya",2005,NA,"Lamu","Iweni",NA,"Pre","Kenya_Lamu_Iweni",60.6,19.7
+"Kenya",2005,NA,"Lamu","Pezali_Rock",NA,"Pre","Kenya_Lamu_Pezali_Rock",66,7.8
+"Kenya",2005,NA,"Malindi","Mayunguni",NA,"Pre","Kenya_Malindi_Mayunguni",51.7,6.2
+"Kenya",2005,NA,"Malindi","North_Reef",NA,"Pre","Kenya_Malindi_North_Reef",37.5,20.1
+"Kenya",2005,NA,"Malindi","Old_Coral_Garden",NA,"Pre","Kenya_Malindi_Old_Coral_Garden",45.8,12.8
+"Kenya",2005,NA,"Mombasa","Coral_Garden",NA,"Pre","Kenya_Mombasa_Coral_Garden",55.4,22.7
+"Kenya",2005,NA,"Mombasa","Nyali",NA,"Pre","Kenya_Mombasa_Nyali",54.6,30.3
+"Kenya",2005,NA,"Mombasa","Ras_Iwatine",NA,"Pre","Kenya_Mombasa_Ras_Iwatine",57.5,27.2
+"Kenya",2005,NA,"Mombasa","Starfish",NA,"Pre","Kenya_Mombasa_Starfish",51.9,14.6
+"Kenya",2006,"","Watamu","Coral_Garden",NA,"Pre","Kenya_Watamu_Coral_Garden",56.1,5.3
+"Kenya",2006,"","Watamu","Richard_Bernets",NA,"Pre","Kenya_Watamu_Richard_Bernets",44.6,23.4
+"Kenya",2006,NA,"Diani-Chale","Chidzamba_cha_mekka",NA,"Pre","Kenya_Diani-Chale_Chidzamba_cha_mekka",29.9,10.9
+"Kenya",2006,NA,"Diani-Chale","Mtengo",NA,"Pre","Kenya_Diani-Chale_Mtengo",28.9,22.8
+"Kenya",2006,NA,"Diani-Chale","Mwagogo",NA,"Pre","Kenya_Diani-Chale_Mwagogo",44.3,15.3
+"Kenya",2006,NA,"Diani-Chale","Tsipitali",NA,"Pre","Kenya_Diani-Chale_Tsipitali",41.8,19.7
+"Kenya",2006,NA,"Kisite","Light_house",NA,"Pre","Kenya_Kisite_Light_house",45.7,33.9
+"Kenya",2006,NA,"Kisite","Mkwiro",NA,"Pre","Kenya_Kisite_Mkwiro",35.2,32.5
+"Kenya",2006,NA,"Lamu","Iweni",NA,"Pre","Kenya_Lamu_Iweni",86.2,7.2
+"Kenya",2006,NA,"Lamu","Pezali_Rock",NA,"Pre","Kenya_Lamu_Pezali_Rock",75.4,3.8
+"Kenya",2006,NA,"Malindi","Mayunguni",NA,"Pre","Kenya_Malindi_Mayunguni",69,18.7
+"Kenya",2006,NA,"Malindi","Old_Coral_Garden",NA,"Pre","Kenya_Malindi_Old_Coral_Garden",48.2,26.4
+"Kenya",2006,NA,"Mombasa","Coral_Garden",NA,"Pre","Kenya_Mombasa_Coral_Garden",52.1,17.3
+"Kenya",2006,NA,"Mombasa","Nyali",NA,"Pre","Kenya_Mombasa_Nyali",64,13
+"Kenya",2006,NA,"Mombasa","Ras_Iwatine",NA,"Pre","Kenya_Mombasa_Ras_Iwatine",46.6,19.5
+"Kenya",2006,NA,"Mombasa","Starfish",NA,"Pre","Kenya_Mombasa_Starfish",57.4,18.8
+"Kenya",2007,"","Watamu","Coral_Garden",NA,"Pre","Kenya_Watamu_Coral_Garden",39.9,33.7
+"Kenya",2007,"","Watamu","Richard_Bernets",NA,"Pre","Kenya_Watamu_Richard_Bernets",47,23
+"Kenya",2007,NA,"Kisite","Light_house",NA,"Pre","Kenya_Kisite_Light_house",44,13.6
+"Kenya",2007,NA,"Kisite","Mkwiro",NA,"Pre","Kenya_Kisite_Mkwiro",54.2,16.1
+"Kenya",2007,NA,"Malindi","Mayunguni",NA,"Pre","Kenya_Malindi_Mayunguni",58.7,12.7
+"Kenya",2007,NA,"Malindi","New_Coral_Garden",NA,"Pre","Kenya_Malindi_New_Coral_Garden",42.8,19.1
+"Kenya",2007,NA,"Malindi","North_Reef",NA,"Pre","Kenya_Malindi_North_Reef",24.3,29.4
+"Kenya",2007,NA,"Malindi","Old_Coral_Garden",NA,"Pre","Kenya_Malindi_Old_Coral_Garden",27.8,23.5
+"Kenya",2007,NA,"Mombasa","Coral_Garden",NA,"Pre","Kenya_Mombasa_Coral_Garden",52.3,19.1
+"Kenya",2007,NA,"Mombasa","Nyali",NA,"Pre","Kenya_Mombasa_Nyali",41.2,36.2
+"Kenya",2007,NA,"Mombasa","Ras_Iwatine",NA,"Pre","Kenya_Mombasa_Ras_Iwatine",40.6,30.3
+"Kenya",2007,NA,"Mombasa","Starfish",NA,"Pre","Kenya_Mombasa_Starfish",51.8,21.6
+"Kenya",2008,"","Watamu","Coral_Garden",NA,"Pre","Kenya_Watamu_Coral_Garden",41.7,22.1
+"Kenya",2008,"","Watamu","Richard_Bernets",NA,"Pre","Kenya_Watamu_Richard_Bernets",58.1,25.3
+"Kenya",2008,NA,"Kilifi","Kanamai",NA,"Pre","Kenya_Kilifi_Kanamai",12.7,24.3
+"Kenya",2008,NA,"Kisite","Light_house",NA,"Pre","Kenya_Kisite_Light_house",47.15,26.25
+"Kenya",2008,NA,"Kisite","Mkwiro",NA,"Pre","Kenya_Kisite_Mkwiro",30,36.5
+"Kenya",2008,NA,"Malindi","Mayunguni",NA,"Pre","Kenya_Malindi_Mayunguni",47.05,14.95
+"Kenya",2008,NA,"Malindi","Old_Coral_Garden",NA,"Pre","Kenya_Malindi_Old_Coral_Garden",39.3,20.7
+"Kenya",2008,NA,"Mombasa","Coral_Garden",NA,"Pre","Kenya_Mombasa_Coral_Garden",49.8,19.6
+"Kenya",2008,NA,"Mombasa","Nyali",NA,"Pre","Kenya_Mombasa_Nyali",55.4,15.1
+"Kenya",2008,NA,"Mombasa","Ras_Iwatine",NA,"Pre","Kenya_Mombasa_Ras_Iwatine",58.7,17.1
+"Kenya",2009,"","Watamu","Coral_Garden",NA,"Pre","Kenya_Watamu_Coral_Garden",55,24.1
+"Kenya",2009,"","Watamu","Richard_Bernets",NA,"Pre","Kenya_Watamu_Richard_Bernets",50.3,25
+"Kenya",2009,NA,"Kisite","Light_house",NA,"Pre","Kenya_Kisite_Light_house",35.5,42.9
+"Kenya",2009,NA,"Kisite","Mkwiro",NA,"Pre","Kenya_Kisite_Mkwiro",37.85,24.6
+"Kenya",2009,NA,"Malindi","Mayunguni",NA,"Pre","Kenya_Malindi_Mayunguni",36.2,28.6
+"Kenya",2009,NA,"Malindi","New_Coral_Garden",NA,"Pre","Kenya_Malindi_New_Coral_Garden",39.3,34.6
+"Kenya",2009,NA,"Malindi","North_Reef",NA,"Pre","Kenya_Malindi_North_Reef",53.7,20.4
+"Kenya",2009,NA,"Malindi","Old_Coral_Garden",NA,"Pre","Kenya_Malindi_Old_Coral_Garden",43.2,16.4
+"Kenya",2009,NA,"Mombasa","Coral_Garden",NA,"Pre","Kenya_Mombasa_Coral_Garden",39,25.7
+"Kenya",2009,NA,"Mombasa","Nyali",NA,"Pre","Kenya_Mombasa_Nyali",38.9,25.7
+"Kenya",2009,NA,"Mombasa","Ras_Iwatine",NA,"Pre","Kenya_Mombasa_Ras_Iwatine",42.6,25.5
+"Kenya",2009,NA,"Mombasa","Starfish",NA,"Pre","Kenya_Mombasa_Starfish",50.9,17.9
+"Kenya",2010,"","Watamu","Coral_Garden",NA,"Pre","Kenya_Watamu_Coral_Garden",59.6,25.7
+"Kenya",2010,"","Watamu","Richard_Bernets",NA,"Pre","Kenya_Watamu_Richard_Bernets",54.6,26.4
+"Kenya",2010,NA,"Kisite","Light_house",NA,"Pre","Kenya_Kisite_Light_house",32.9,35.4
+"Kenya",2010,NA,"Kisite","Mkwiro",NA,"Pre","Kenya_Kisite_Mkwiro",47.9,16.95
+"Kenya",2010,NA,"Malindi","Mayunguni",NA,"Pre","Kenya_Malindi_Mayunguni",50.3,22.8
+"Kenya",2010,NA,"Malindi","New_Coral_Garden",NA,"Pre","Kenya_Malindi_New_Coral_Garden",47.7,36.4
+"Kenya",2010,NA,"Malindi","North_Reef",NA,"Pre","Kenya_Malindi_North_Reef",54.6,25.9
+"Kenya",2010,NA,"Malindi","Old_Coral_Garden",NA,"Pre","Kenya_Malindi_Old_Coral_Garden",45.1,30.8
+"Kenya",2010,NA,"Mombasa","Coral_Garden",NA,"Pre","Kenya_Mombasa_Coral_Garden",43.1,27.7
+"Kenya",2010,NA,"Mombasa","Nyali",NA,"Pre","Kenya_Mombasa_Nyali",31.6,35.1
+"Kenya",2010,NA,"Mombasa","Ras_Iwatine",NA,"Pre","Kenya_Mombasa_Ras_Iwatine",53,17.4
+"Kenya",2010,NA,"Mombasa","Starfish",NA,"Pre","Kenya_Mombasa_Starfish",47.4,23.8
+"Kenya",2010,NA,"Shimoni","Mpunguti-Upper",NA,"Pre","Kenya_Shimoni_Mpunguti-Upper",22.2,44.1
+"Kenya",2010,NA,"Shimoni","Wasini_Tengefu",NA,"Pre","Kenya_Shimoni_Wasini_Tengefu",17.3,40
+"Kenya",2011,"","Watamu","Coral_Garden",NA,"Pre","Kenya_Watamu_Coral_Garden",64,20.2
+"Kenya",2011,"","Watamu","Richard_Bernets",NA,"Pre","Kenya_Watamu_Richard_Bernets",62.3,25.6
+"Kenya",2011,NA,"Kisite","Light_house",NA,"Pre","Kenya_Kisite_Light_house",31.9,39
+"Kenya",2011,NA,"Kisite","Mkwiro",NA,"Pre","Kenya_Kisite_Mkwiro",54.6,23.2
+"Kenya",2011,NA,"Malindi","Mayunguni",NA,"Pre","Kenya_Malindi_Mayunguni",57.4,22.5
+"Kenya",2011,NA,"Malindi","New_Coral_Garden",NA,"Pre","Kenya_Malindi_New_Coral_Garden",30.4,42.4
+"Kenya",2011,NA,"Malindi","North_Reef",NA,"Pre","Kenya_Malindi_North_Reef",53.3,31.1
+"Kenya",2011,NA,"Malindi","Old_Coral_Garden",NA,"Pre","Kenya_Malindi_Old_Coral_Garden",44.4,19
+"Kenya",2011,NA,"Mombasa","Coral_Garden",NA,"Pre","Kenya_Mombasa_Coral_Garden",38.4,37.5
+"Kenya",2011,NA,"Mombasa","Nyali",NA,"Pre","Kenya_Mombasa_Nyali",38.9,24.2
+"Kenya",2011,NA,"Mombasa","Ras_Iwatine",NA,"Pre","Kenya_Mombasa_Ras_Iwatine",54.7,14.9
+"Kenya",2011,NA,"Mombasa","Starfish",NA,"Pre","Kenya_Mombasa_Starfish",50.2,23
+"Kenya",2011,NA,"Shimoni","Wasini_Tengefu",NA,"Pre","Kenya_Shimoni_Wasini_Tengefu",16.6,33
+"Kenya",2012,"","Watamu","Coral_Garden",NA,"Pre","Kenya_Watamu_Coral_Garden",73.3,18.5
+"Kenya",2012,"","Watamu","Richard_Bernets",NA,"Pre","Kenya_Watamu_Richard_Bernets",62,26
+"Kenya",2012,NA,"Kisite","Mkwiro",NA,"Pre","Kenya_Kisite_Mkwiro",55.1,21.6
+"Kenya",2012,NA,"Malindi","Mayunguni",NA,"Pre","Kenya_Malindi_Mayunguni",49.3,21.9
+"Kenya",2012,NA,"Malindi","New_Coral_Garden",NA,"Pre","Kenya_Malindi_New_Coral_Garden",33.7,49.3
+"Kenya",2012,NA,"Malindi","North_Reef",NA,"Pre","Kenya_Malindi_North_Reef",63.5,22
+"Kenya",2012,NA,"Malindi","Old_Coral_Garden",NA,"Pre","Kenya_Malindi_Old_Coral_Garden",55.9,28.2
+"Kenya",2012,NA,"Mombasa","Coral_Garden",NA,"Pre","Kenya_Mombasa_Coral_Garden",48.2,39.1
+"Kenya",2012,NA,"Mombasa","Nyali",NA,"Pre","Kenya_Mombasa_Nyali",47.2,14.6
+"Kenya",2012,NA,"Mombasa","Ras_Iwatine",NA,"Pre","Kenya_Mombasa_Ras_Iwatine",51.4,14.8
+"Kenya",2012,NA,"Mombasa","Starfish",NA,"Pre","Kenya_Mombasa_Starfish",58.8,24.9
+"Kenya",2012,NA,"Shimoni","Kibuyuni",NA,"Pre","Kenya_Shimoni_Kibuyuni",25.3,30.75
+"Kenya",2012,NA,"Shimoni","Mpunguti-Lower",NA,"Pre","Kenya_Shimoni_Mpunguti-Lower",35.6,7.3
+"Kenya",2012,NA,"Shimoni","Mpunguti-Upper",NA,"Pre","Kenya_Shimoni_Mpunguti-Upper",17.5,30.5
+"Kenya",2012,NA,"Shimoni","Wasini_Tengefu",NA,"Pre","Kenya_Shimoni_Wasini_Tengefu",30.15,39.1
+"Kenya",2013,"","Watamu","Coral_Garden",NA,"Pre","Kenya_Watamu_Coral_Garden",28.2,34.5
+"Kenya",2013,"","Watamu","Richard_Bernets",NA,"Pre","Kenya_Watamu_Richard_Bernets",46.8,22.8
+"Kenya",2013,NA,"Malindi","Mayunguni",NA,"Pre","Kenya_Malindi_Mayunguni",39.4,22.8
+"Kenya",2013,NA,"Malindi","New_Coral_Garden",NA,"Pre","Kenya_Malindi_New_Coral_Garden",34.5,41.9
+"Kenya",2013,NA,"Malindi","North_Reef",NA,"Pre","Kenya_Malindi_North_Reef",38.1,24.6
+"Kenya",2013,NA,"Malindi","Old_Coral_Garden",NA,"Pre","Kenya_Malindi_Old_Coral_Garden",25.7,41.5
+"Kenya",2013,NA,"Mombasa","Coral_Garden",NA,"Pre","Kenya_Mombasa_Coral_Garden",37.8,32
+"Kenya",2013,NA,"Mombasa","Nyali",NA,"Pre","Kenya_Mombasa_Nyali",27.4,28.6
+"Kenya",2013,NA,"Mombasa","Ras_Iwatine",NA,"Pre","Kenya_Mombasa_Ras_Iwatine",23.3,29.2
+"Kenya",2013,NA,"Mombasa","Starfish",NA,"Pre","Kenya_Mombasa_Starfish",29.3,25.6
+"Kenya",2013,NA,"Shimoni","Wasini_Tengefu",NA,"Pre","Kenya_Shimoni_Wasini_Tengefu",34.7,37.1
+"Kenya",2014,"","Kilifi","Kuruwitu",NA,"Pre","Kenya_Kilifi_Kuruwitu",50.38,28.2
+"Kenya",2014,"","Lamu","Tausi",NA,"Pre","Kenya_Lamu_Tausi",4.977168061,49.14541403
+"Kenya",2014,"","Malindi","Kivulini",NA,"Pre","Kenya_Malindi_Kivulini",25.563873733,5.42426057
+"Kenya",2014,"","Watamu","Coral_Garden_2",NA,"Pre","Kenya_Watamu_Coral_Garden_2",75.8,10.4
+"Kenya",2014,"","Watamu","Richard_Bernets_2",NA,"Pre","Kenya_Watamu_Richard_Bernets_2",73.1,13.5
+"Kenya",2014,NA,"Kisite","Mkwiro",NA,"Pre","Kenya_Kisite_Mkwiro",21,17.1
+"Kenya",2014,NA,"Lamu","Iweni",NA,"Pre","Kenya_Lamu_Iweni",70.6,18.2
+"Kenya",2014,NA,"Lamu","Majongooni",NA,"Pre","Kenya_Lamu_Majongooni",71.3,21.5
+"Kenya",2014,NA,"Lamu","Pezali_Rock",NA,"Pre","Kenya_Lamu_Pezali_Rock",72.3,7.7
+"Kenya",2014,NA,"Shimoni","Kibuyuni",NA,"Pre","Kenya_Shimoni_Kibuyuni",24.6,28.4
+"Kenya",2014,NA,"Shimoni","Mpunguti-Lower",NA,"Pre","Kenya_Shimoni_Mpunguti-Lower",36.7,16.7
+"Kenya",2014,NA,"Shimoni","Wasini_Tengefu",NA,"Pre","Kenya_Shimoni_Wasini_Tengefu",21.7,50.1
+"Kenya",2014,NA,"Watamu","Uyombo",NA,"Pre","Kenya_Watamu_Uyombo",57.1,11.6
+"Kenya",2015,"","Watamu","Richard_Bernets",NA,"Pre","Kenya_Watamu_Richard_Bernets",24,23.5
+"Kenya",2015,NA,"Lamu","Iweni",NA,"Pre","Kenya_Lamu_Iweni",40,11
+"Kenya",2015,NA,"Lamu","Pezali_Rock",NA,"Pre","Kenya_Lamu_Pezali_Rock",32,26.8
+"Kenya",2015,NA,"Malindi","Mayunguni",NA,"Pre","Kenya_Malindi_Mayunguni",22.5,5.3
+"Kenya",2015,NA,"Malindi","New_Coral_Garden",NA,"Pre","Kenya_Malindi_New_Coral_Garden",7.5,36.5
+"Kenya",2015,NA,"Malindi","North_Reef",NA,"Pre","Kenya_Malindi_North_Reef",13.5,16
+"Kenya",2015,NA,"Malindi","Old_Coral_Garden",NA,"Pre","Kenya_Malindi_Old_Coral_Garden",9.5,22.5
+"Kenya",2016,"","Kisite","Light_house",NA,"Post","Kenya_Kisite_Light_house",20.59,36.89
+"Kenya",2016,"","Kisite","Mkwiro",NA,"Post","Kenya_Kisite_Mkwiro",43.18,28.83
+"Kenya",2016,"","Malindi","Kivulini",NA,"Post","Kenya_Malindi_Kivulini",59.6,9.68
+"Kenya",2016,"","Malindi","New_Coral_Garden",NA,"Post","Kenya_Malindi_New_Coral_Garden",11.26,40.36
+"Kenya",2016,"","Malindi","Old_Coral_Garden",NA,"Post","Kenya_Malindi_Old_Coral_Garden",13.18,24.64
+"Kenya",2016,"","Mombasa","Coral_Garden",NA,"Post","Kenya_Mombasa_Coral_Garden",18.82,34.36
+"Kenya",2016,"","Mombasa","Nyali",NA,"Post","Kenya_Mombasa_Nyali",4.24,25.37
+"Kenya",2016,"","Mombasa","Ras_Iwatine",NA,"Post","Kenya_Mombasa_Ras_Iwatine",13.59,30.48
+"Kenya",2016,"","Mombasa","Starfish",NA,"Post","Kenya_Mombasa_Starfish",26.4,13.37
+"Kenya",2016,"","Watamu","Coral_Garden",NA,"Post","Kenya_Watamu_Coral_Garden",42,28.5
+"Kenya",2016,"","Watamu","Richard_Bernets",NA,"Post","Kenya_Watamu_Richard_Bernets",34.92,28.79
+"Kenya",2016,NA,"Lamu","Iweni",NA,"Pre","Kenya_Lamu_Iweni",54.5,29.7
+"Kenya",2016,NA,"Lamu","Pezali_Rock",NA,"Pre","Kenya_Lamu_Pezali_Rock",7.9,56.4
+"Kenya",2017,"","Diani-Chale","Chidzamba_cha_mekka",NA,"Post","Kenya_Diani-Chale_Chidzamba_cha_mekka",53.5,10.5
+"Kenya",2017,"","Diani-Chale","Mtengo",NA,"Post","Kenya_Diani-Chale_Mtengo",47.66,23.66
+"Kenya",2017,"","Diani-Chale","Mwagogo",NA,"Post","Kenya_Diani-Chale_Mwagogo",51,7
+"Kenya",2017,"","Diani-Chale","Tsipitali",NA,"Post","Kenya_Diani-Chale_Tsipitali",66,2.99
+"Kenya",2017,"","Kilifi","Kanamai",NA,"Post","Kenya_Kilifi_Kanamai",34,34.34
+"Kenya",2017,"","Kilifi","Kuruwitu",NA,"Post","Kenya_Kilifi_Kuruwitu",32.33,28.32
+"Kenya",2017,"","Lamu","Iweni",NA,"Post","Kenya_Lamu_Iweni",10.34,52.66
+"Kenya",2017,"","Lamu","Majongooni",NA,"Post","Kenya_Lamu_Majongooni",18.99,16.99
+"Kenya",2017,"","Lamu","Pezali_Rock",NA,"Post","Kenya_Lamu_Pezali_Rock",48.67,21
+"Kenya",2017,"","Lamu","Tausi",NA,"Post","Kenya_Lamu_Tausi",6,63.67
+"Kenya",2017,"","Malindi","Mayunguni",NA,"Post","Kenya_Malindi_Mayunguni",51.01,15.34
+"Kenya",2017,"","Malindi","North_Reef",NA,"Post","Kenya_Malindi_North_Reef",60.33,23
+"Kenya",2017,"","Shimoni","Kibuyuni",NA,"Post","Kenya_Shimoni_Kibuyuni",11.5,35
+"Kenya",2017,"","Shimoni","Mpunguti-Lower",NA,"Post","Kenya_Shimoni_Mpunguti-Lower",16.34,28.33
+"Kenya",2017,"","Shimoni","Mpunguti-Upper",NA,"Post","Kenya_Shimoni_Mpunguti-Upper",18.67,61
+"Kenya",2017,"","Shimoni","Wasini_Tengefu",NA,"Post","Kenya_Shimoni_Wasini_Tengefu",30,34.65
+"Kenya",2017,"","Watamu","Coral_Garden_2","Lagoon","Post","Kenya_Watamu_Coral_Garden_2",73.52,11.2
+"Kenya",2017,"","Watamu","Richard_Bernets_2","Lagoon","Post","Kenya_Watamu_Richard_Bernets_2",72.12,9.21
+"Kenya",2017,"","Watamu","Uyombo","Lagoon","Post","Kenya_Watamu_Uyombo",64.53,19.17
+"Madagascar",2005,"South West","Andavadoaka","Lost",NA,"Pre","Madagascar_Andavadoaka_Lost",63.333333337,16.444444443
+"Madagascar",2005,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",53.333333337,34.166666667
+"Madagascar",2005,"South West","Andavadoaka","Recruitment_North",NA,"Pre","Madagascar_Andavadoaka_Recruitment_North",38.125,44.375
+"Madagascar",2006,"South West","Andavadoaka","Lost",NA,"Pre","Madagascar_Andavadoaka_Lost",63.66666667,10.666666665
+"Madagascar",2006,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",59.66666667,34.666666663
+"Madagascar",2006,"South West","Andavadoaka","Recruitment_North",NA,"Pre","Madagascar_Andavadoaka_Recruitment_North",24.923076928,49.230769229
+"Madagascar",2007,"South West","Andavadoaka","Lost",NA,"Pre","Madagascar_Andavadoaka_Lost",53,25.999999999
+"Madagascar",2007,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",43,51.333333334
+"Madagascar",2007,"South West","Andavadoaka","Recruitment_North",NA,"Pre","Madagascar_Andavadoaka_Recruitment_North",28.800000004,54.133333333
+"Madagascar",2008,"South West","Andavadoaka","Lost",NA,"Pre","Madagascar_Andavadoaka_Lost",58.33333333,18.333333332
+"Madagascar",2008,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",51.499999997,41.333333333
+"Madagascar",2008,"South West","Andavadoaka","Recruitment_North",NA,"Pre","Madagascar_Andavadoaka_Recruitment_North",19.71428571,61.714285721
+"Madagascar",2009,"South West","Andavadoaka","Lost",NA,"Pre","Madagascar_Andavadoaka_Lost",46.999999993,29.666666667
+"Madagascar",2009,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",43.33333333,44.333333334
+"Madagascar",2009,"South West","Andavadoaka","Recruitment_North",NA,"Pre","Madagascar_Andavadoaka_Recruitment_North",29.75,53.5
+"Madagascar",2010,"South West","Andavadoaka","Lost",NA,"Pre","Madagascar_Andavadoaka_Lost",48.66666667,36.666666662
+"Madagascar",2010,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",39.83333333,47.16666667
+"Madagascar",2010,"South West","Andavadoaka","Recruitment_North",NA,"Pre","Madagascar_Andavadoaka_Recruitment_North",24.75,60
+"Madagascar",2011,"South West","Andavadoaka","Lost",NA,"Pre","Madagascar_Andavadoaka_Lost",43.5,42.5
+"Madagascar",2011,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",32.952380953,53.904761907
+"Madagascar",2011,"South West","Andavadoaka","Recruitment_North",NA,"Pre","Madagascar_Andavadoaka_Recruitment_North",14.142857142,68.142857136
+"Madagascar",2012,"South West","Andavadoaka","Lost",NA,"Pre","Madagascar_Andavadoaka_Lost",53.8,35.6
+"Madagascar",2012,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",26.26666667,60.266666673
+"Madagascar",2012,"South West","Andavadoaka","Recruitment_North",NA,"Pre","Madagascar_Andavadoaka_Recruitment_North",17,60.333333333
+"Madagascar",2013,"South West","Andavadoaka","Lost",NA,"Pre","Madagascar_Andavadoaka_Lost",62,23.333333334
+"Madagascar",2013,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",48.088888893,42.44444444
+"Madagascar",2013,"South West","Andavadoaka","Recruitment_North",NA,"Pre","Madagascar_Andavadoaka_Recruitment_North",44.13636364,31.636363637
+"Madagascar",2014,"","Nosy Be","Nosy_Vorona","Fore reef","Pre","Madagascar_Nosy Be_Nosy_Vorona",0.46,32.93
+"Madagascar",2014,"","Nosy Be","Three_Brothers","Fore reef","Pre","Madagascar_Nosy Be_Three_Brothers",4.98,51.22
+"Madagascar",2014,"","Nosy Be","Turtle_towers","Fore reef","Pre","Madagascar_Nosy Be_Turtle_towers",2.51,65.11
+"Madagascar",2014,"South West","Andavadoaka","Lost",NA,"Pre","Madagascar_Andavadoaka_Lost",58.4,26
+"Madagascar",2014,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",31.485714287,56.628571432
+"Madagascar",2014,"South West","Andavadoaka","Recruitment_North",NA,"Pre","Madagascar_Andavadoaka_Recruitment_North",44.363636364,24.303030307
+"Madagascar",2015,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",31.777777781,56.111111106
+"Madagascar",2016,"Northern Madagascar","Nosy Komba","Dragon's_Den","Crest","Pre","Madagascar_Nosy Komba_Dragon's_Den",3.25,62.74
+"Madagascar",2016,"Northern Madagascar","Nosy Komba","Dragon's_Den","Crest","Post","Madagascar_Nosy Komba_Dragon's_Den",0.81,62.74
+"Madagascar",2016,"Northern Madagascar","Nosy Komba","Galaxea","Crest","Pre","Madagascar_Nosy Komba_Galaxea",0,54.9
+"Madagascar",2016,"Northern Madagascar","Nosy Komba","Galaxea","Crest","Post","Madagascar_Nosy Komba_Galaxea",1.02,54.9
+"Madagascar",2016,"Northern Madagascar","Nosy Komba","Turtle_Towers","Crest","Pre","Madagascar_Nosy Komba_Turtle_Towers",3.88,51.34
+"Madagascar",2016,"Northern Madagascar","Nosy Komba","Turtle_Towers","Crest","Post","Madagascar_Nosy Komba_Turtle_Towers",4.15,51.34
+"Madagascar",2016,"South West","Andavadoaka","Lost",NA,"Pre","Madagascar_Andavadoaka_Lost",56,30.000000001
+"Madagascar",2016,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Pre","Madagascar_Andavadoaka_Ns_Coco_Beach",24.15,70.33
+"Madagascar",2016,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Post","Madagascar_Andavadoaka_Ns_Coco_Beach",6,70.33
+"Madagascar",2016,"South West","Andavadoaka","Recruitment_North",NA,"Pre","Madagascar_Andavadoaka_Recruitment_North",55.25,20.25
+"Madagascar",2017,"","Nosy Be","Nosy_Vorona","Fore reef","Post","Madagascar_Nosy Be_Nosy_Vorona",10.19,14.28
+"Madagascar",2017,"","Nosy Be","Three_Brothers","Fore reef","Post","Madagascar_Nosy Be_Three_Brothers",4.24,40.25
+"Madagascar",2017,"","Nosy Be","Turtle_towers","Fore reef","Post","Madagascar_Nosy Be_Turtle_towers",8.5,42.29
+"Madagascar",2017,"Northern Madagascar","Nosy Komba","Dragon's_Den","Crest","Post","Madagascar_Nosy Komba_Dragon's_Den",10.89,50.64
+"Madagascar",2017,"Northern Madagascar","Nosy Komba","Galaxea","Crest","Post","Madagascar_Nosy Komba_Galaxea",10.37,43.61
+"Madagascar",2017,"Northern Madagascar","Nosy Komba","Turtle_Towers","Crest","Post","Madagascar_Nosy Komba_Turtle_Towers",12.35,39.18
+"Madagascar",2017,"South West","Andavadoaka","Lost",NA,"Post","Madagascar_Andavadoaka_Lost",57.75,26.25
+"Madagascar",2017,"South West","Andavadoaka","Ns_Coco_Beach",NA,"Post","Madagascar_Andavadoaka_Ns_Coco_Beach",24.75,60.125
+"Madagascar",2017,"South West","Andavadoaka","Recruitment_North",NA,"Post","Madagascar_Andavadoaka_Recruitment_North",48,24.875
+"Mauritius",2013,NA,"Anse La Raie Lagoon","Degraded_Coral_2",NA,"Pre","Mauritius_Anse La Raie Lagoon_Degraded_Coral_2",43.75,1.25
+"Mauritius",2013,NA,"Anse La Raie Lagoon","Live_Branching_Coral",NA,"Pre","Mauritius_Anse La Raie Lagoon_Live_Branching_Coral",0.62,35.94
+"Mauritius",2013,NA,"Anse La Raie Lagoon","Live_Lettuce_Coral",NA,"Pre","Mauritius_Anse La Raie Lagoon_Live_Lettuce_Coral",3.44,61.88
+"Mauritius",2014,NA,"Anse La Raie Lagoon","Degraded_Coral_1",NA,"Pre","Mauritius_Anse La Raie Lagoon_Degraded_Coral_1",1.67,40.62
+"Mauritius",2014,NA,"Anse La Raie Lagoon","Live_Branching_Coral",NA,"Pre","Mauritius_Anse La Raie Lagoon_Live_Branching_Coral",0,35.62
+"Mauritius",2014,NA,"Anse La Raie Lagoon","Live_Lettuce_Coral",NA,"Pre","Mauritius_Anse La Raie Lagoon_Live_Lettuce_Coral",0.21,59.58
+"Mauritius",2015,NA,"Anse La Raie Lagoon","Degraded_Coral_1",NA,"Pre","Mauritius_Anse La Raie Lagoon_Degraded_Coral_1",4.69,44.38
+"Mauritius",2015,NA,"Anse La Raie Lagoon","Degraded_Coral_2",NA,"Pre","Mauritius_Anse La Raie Lagoon_Degraded_Coral_2",15,0
+"Mauritius",2015,NA,"Anse La Raie Lagoon","Live_Branching_Coral",NA,"Pre","Mauritius_Anse La Raie Lagoon_Live_Branching_Coral",0,43.12
+"Mauritius",2015,NA,"Anse La Raie Lagoon","Live_Lettuce_Coral",NA,"Pre","Mauritius_Anse La Raie Lagoon_Live_Lettuce_Coral",0.62,61.56
+"Mauritius",2016,NA,"Anse La Raie Lagoon","Degraded_Coral_1",NA,"Pre","Mauritius_Anse La Raie Lagoon_Degraded_Coral_1",8.75,33.12
+"Mauritius",2016,NA,"Anse La Raie Lagoon","Degraded_Coral_2",NA,"Pre","Mauritius_Anse La Raie Lagoon_Degraded_Coral_2",41.88,0
+"Mauritius",2016,NA,"Anse La Raie Lagoon","Live_Branching_Coral",NA,"Pre","Mauritius_Anse La Raie Lagoon_Live_Branching_Coral",5.62,51.88
+"Mauritius",2016,NA,"Anse La Raie Lagoon","Live_Branching_Coral",NA,"Post","Mauritius_Anse La Raie Lagoon_Live_Branching_Coral",0,51.88
+"Mauritius",2016,NA,"Anse La Raie Lagoon","Live_Lettuce_Coral",NA,"Pre","Mauritius_Anse La Raie Lagoon_Live_Lettuce_Coral",10,56.25
+"Mauritius",2016,NA,"Anse La Raie Lagoon","Live_Lettuce_Coral",NA,"Post","Mauritius_Anse La Raie Lagoon_Live_Lettuce_Coral",0,56.25
+"Mauritius",2016,NA,"Anse La Raie Lagoon","Snorkeling_trail",NA,"Pre","Mauritius_Anse La Raie Lagoon_Snorkeling_trail",2.64,38.67
+"Mauritius",2017,NA,"Anse La Raie Lagoon","Degraded_Coral_1",NA,"Post","Mauritius_Anse La Raie Lagoon_Degraded_Coral_1",3.12,28.75
+"Mauritius",2017,NA,"Anse La Raie Lagoon","Degraded_Coral_2",NA,"Post","Mauritius_Anse La Raie Lagoon_Degraded_Coral_2",30,0
+"Mauritius",2017,NA,"Anse La Raie Lagoon","Live_Branching_Coral",NA,"Post","Mauritius_Anse La Raie Lagoon_Live_Branching_Coral",0,40.62
+"Mauritius",2017,NA,"Anse La Raie Lagoon","Live_Lettuce_Coral",NA,"Post","Mauritius_Anse La Raie Lagoon_Live_Lettuce_Coral",0,65.62
+"Mauritius",2017,NA,"Anse La Raie Lagoon","Snorkeling_trail",NA,"Post","Mauritius_Anse La Raie Lagoon_Snorkeling_trail",2.4,40
+"Seychelles",2005,NA,"Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",0,2
+"Seychelles",2005,NA,"Mahe NW","Auberge_Reef","C","Pre","Seychelles_Mahe NW_Auberge_Reef",0,11
+"Seychelles",2005,NA,"Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",11,12
+"Seychelles",2005,NA,"Mahe NW","Bay_Ternay_Lighthouse","G","Pre","Seychelles_Mahe NW_Bay_Ternay_Lighthouse",0,20
+"Seychelles",2005,NA,"Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",1,17
+"Seychelles",2005,NA,"Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",0,6
+"Seychelles",2005,NA,"Mahe NW","Conception_Central_East_Face","C","Pre","Seychelles_Mahe NW_Conception_Central_East_Face",0,7
+"Seychelles",2005,NA,"Mahe NW","Conception_North_Point","G","Pre","Seychelles_Mahe NW_Conception_North_Point",0,20
+"Seychelles",2005,NA,"Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",0,10
+"Seychelles",2005,NA,"Mahe NW","L'ilot_North_Face","G","Pre","Seychelles_Mahe NW_L'ilot_North_Face",0,5
+"Seychelles",2005,NA,"Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",2,13
+"Seychelles",2005,NA,"Mahe NW","Port_Launay_West_Rocks","G","Pre","Seychelles_Mahe NW_Port_Launay_West_Rocks",17,23
+"Seychelles",2005,NA,"Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",0,6
+"Seychelles",2005,NA,"Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",0,27
+"Seychelles",2005,NA,"Mahe NW","Therese_North_End","G","Pre","Seychelles_Mahe NW_Therese_North_End",0,14
+"Seychelles",2005,NA,"Mahe NW","Therese_South","G","Pre","Seychelles_Mahe NW_Therese_South",5,22
+"Seychelles",2005,NA,"Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",2,8
+"Seychelles",2005,NA,"Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",2,19
+"Seychelles",2005,NA,"Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",0,9
+"Seychelles",2005,NA,"Mahe NW","Willie's_Bay_Reef","C","Pre","Seychelles_Mahe NW_Willie's_Bay_Reef",0,8
+"Seychelles",2006,NA,"Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",0,2.5
+"Seychelles",2006,NA,"Mahe NW","Auberge_Reef","C","Pre","Seychelles_Mahe NW_Auberge_Reef",0,9
+"Seychelles",2006,NA,"Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",0.5,15
+"Seychelles",2006,NA,"Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",0,21.5
+"Seychelles",2006,NA,"Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",0.5,6
+"Seychelles",2006,NA,"Mahe NW","Conception_Central_East_Face","C","Pre","Seychelles_Mahe NW_Conception_Central_East_Face",0,13.5
+"Seychelles",2006,NA,"Mahe NW","Conception_North_Point","G","Pre","Seychelles_Mahe NW_Conception_North_Point",1,17
+"Seychelles",2006,NA,"Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",0,5.5
+"Seychelles",2006,NA,"Mahe NW","L'ilot_North_Face","G","Pre","Seychelles_Mahe NW_L'ilot_North_Face",0,20
+"Seychelles",2006,NA,"Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",1,11.5
+"Seychelles",2006,NA,"Mahe NW","Port_Launay_West_Rocks","G","Pre","Seychelles_Mahe NW_Port_Launay_West_Rocks",0,20
+"Seychelles",2006,NA,"Mahe NW","Ray's_Point","G","Pre","Seychelles_Mahe NW_Ray's_Point",0,15
+"Seychelles",2006,NA,"Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",0,17.5
+"Seychelles",2006,NA,"Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",0.5,16
+"Seychelles",2006,NA,"Mahe NW","Therese_North_East","C","Pre","Seychelles_Mahe NW_Therese_North_East",0,8
+"Seychelles",2006,NA,"Mahe NW","Therese_North_End","G","Pre","Seychelles_Mahe NW_Therese_North_End",1,28.5
+"Seychelles",2006,NA,"Mahe NW","Therese_South","G","Pre","Seychelles_Mahe NW_Therese_South",0,15.5
+"Seychelles",2006,NA,"Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",1,6
+"Seychelles",2006,NA,"Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",0,7
+"Seychelles",2006,NA,"Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",0,12
+"Seychelles",2006,NA,"Mahe NW","Willie's_Bay_Reef","C","Pre","Seychelles_Mahe NW_Willie's_Bay_Reef",0,4
+"Seychelles",2007,NA,"Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",0,11.5
+"Seychelles",2007,NA,"Mahe NW","Auberge_Reef","C","Pre","Seychelles_Mahe NW_Auberge_Reef",0,16
+"Seychelles",2007,NA,"Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",0,29
+"Seychelles",2007,NA,"Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",0,16
+"Seychelles",2007,NA,"Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",0.5,11
+"Seychelles",2007,NA,"Mahe NW","Conception_Central_East_Face","C","Pre","Seychelles_Mahe NW_Conception_Central_East_Face",0.5,22
+"Seychelles",2007,NA,"Mahe NW","Conception_North_Point","G","Pre","Seychelles_Mahe NW_Conception_North_Point",1,23.5
+"Seychelles",2007,NA,"Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",0,12.5
+"Seychelles",2007,NA,"Mahe NW","L'ilot_North_Face","G","Pre","Seychelles_Mahe NW_L'ilot_North_Face",0,12
+"Seychelles",2007,NA,"Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",0,25
+"Seychelles",2007,NA,"Mahe NW","Port_Launay_West_Rocks","G","Pre","Seychelles_Mahe NW_Port_Launay_West_Rocks",0,35.5
+"Seychelles",2007,NA,"Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",0,13
+"Seychelles",2007,NA,"Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",0,14
+"Seychelles",2007,NA,"Mahe NW","Therese_North_East","C","Pre","Seychelles_Mahe NW_Therese_North_East",0,17.5
+"Seychelles",2007,NA,"Mahe NW","Therese_North_End","G","Pre","Seychelles_Mahe NW_Therese_North_End",0,42.5
+"Seychelles",2007,NA,"Mahe NW","Therese_South","G","Pre","Seychelles_Mahe NW_Therese_South",0,28
+"Seychelles",2007,NA,"Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",0,16.5
+"Seychelles",2007,NA,"Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",0,13
+"Seychelles",2007,NA,"Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",0,22
+"Seychelles",2008,NA,"Mahe NW","Anse_Major_Point","G","Pre","Seychelles_Mahe NW_Anse_Major_Point",0,26
+"Seychelles",2008,NA,"Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",0.5,12.5
+"Seychelles",2008,NA,"Mahe NW","Auberge_Reef","C","Pre","Seychelles_Mahe NW_Auberge_Reef",0,16
+"Seychelles",2008,NA,"Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",0,33
+"Seychelles",2008,NA,"Mahe NW","Bay_Ternay_Lighthouse","G","Pre","Seychelles_Mahe NW_Bay_Ternay_Lighthouse",0,32
+"Seychelles",2008,NA,"Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",0,28
+"Seychelles",2008,NA,"Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",0.5,13.5
+"Seychelles",2008,NA,"Mahe NW","Conception_Central_East_Face","C","Pre","Seychelles_Mahe NW_Conception_Central_East_Face",0.5,30.5
+"Seychelles",2008,NA,"Mahe NW","Conception_North_Point","G","Pre","Seychelles_Mahe NW_Conception_North_Point",2,32
+"Seychelles",2008,NA,"Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",0,23.5
+"Seychelles",2008,NA,"Mahe NW","L'ilot_North_Face","G","Pre","Seychelles_Mahe NW_L'ilot_North_Face",1,26
+"Seychelles",2008,NA,"Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",1,28
+"Seychelles",2008,NA,"Mahe NW","Port_Launay_West_Rocks","G","Pre","Seychelles_Mahe NW_Port_Launay_West_Rocks",0.5,42.5
+"Seychelles",2008,NA,"Mahe NW","Ray's_Point","G","Pre","Seychelles_Mahe NW_Ray's_Point",0,36
+"Seychelles",2008,NA,"Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",1,21
+"Seychelles",2008,NA,"Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",0.5,17.5
+"Seychelles",2008,NA,"Mahe NW","Therese_North_East","C","Pre","Seychelles_Mahe NW_Therese_North_East",0,30
+"Seychelles",2008,NA,"Mahe NW","Therese_North_End","G","Pre","Seychelles_Mahe NW_Therese_North_End",0,37.5
+"Seychelles",2008,NA,"Mahe NW","Therese_South","G","Pre","Seychelles_Mahe NW_Therese_South",1,28
+"Seychelles",2008,NA,"Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",0,20
+"Seychelles",2008,NA,"Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",0,19.5
+"Seychelles",2008,NA,"Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",0,34
+"Seychelles",2009,NA,"Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",0,9
+"Seychelles",2009,NA,"Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",0,34
+"Seychelles",2009,NA,"Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",3,23
+"Seychelles",2009,NA,"Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",0,12
+"Seychelles",2009,NA,"Mahe NW","Conception_Central_East_Face","C","Pre","Seychelles_Mahe NW_Conception_Central_East_Face",0,14
+"Seychelles",2009,NA,"Mahe NW","Conception_North_Point","G","Pre","Seychelles_Mahe NW_Conception_North_Point",0,21
+"Seychelles",2009,NA,"Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",0,13
+"Seychelles",2009,NA,"Mahe NW","L'ilot_North_Face","G","Pre","Seychelles_Mahe NW_L'ilot_North_Face",1,21
+"Seychelles",2009,NA,"Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",2,19
+"Seychelles",2009,NA,"Mahe NW","Port_Launay_West_Rocks","G","Pre","Seychelles_Mahe NW_Port_Launay_West_Rocks",1,37
+"Seychelles",2009,NA,"Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",0,17
+"Seychelles",2009,NA,"Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",0,13
+"Seychelles",2009,NA,"Mahe NW","Therese_North_East","C","Pre","Seychelles_Mahe NW_Therese_North_East",0,31
+"Seychelles",2009,NA,"Mahe NW","Therese_North_End","G","Pre","Seychelles_Mahe NW_Therese_North_End",0,29
+"Seychelles",2009,NA,"Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",0,15
+"Seychelles",2009,NA,"Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",0,29
+"Seychelles",2009,NA,"Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",2,25
+"Seychelles",2010,NA,"Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",0,27
+"Seychelles",2010,NA,"Mahe NW","Auberge_Reef","C","Pre","Seychelles_Mahe NW_Auberge_Reef",0,25
+"Seychelles",2010,NA,"Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",0,30
+"Seychelles",2010,NA,"Mahe NW","Bay_Ternay_Lighthouse","G","Pre","Seychelles_Mahe NW_Bay_Ternay_Lighthouse",0,39
+"Seychelles",2010,NA,"Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",0,35
+"Seychelles",2010,NA,"Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",0,22
+"Seychelles",2010,NA,"Mahe NW","Conception_Central_East_Face","C","Pre","Seychelles_Mahe NW_Conception_Central_East_Face",0,39
+"Seychelles",2010,NA,"Mahe NW","Conception_North_Point","G","Pre","Seychelles_Mahe NW_Conception_North_Point",0,35
+"Seychelles",2010,NA,"Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",0,15
+"Seychelles",2010,NA,"Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",0,43
+"Seychelles",2010,NA,"Mahe NW","Port_Launay_West_Rocks","G","Pre","Seychelles_Mahe NW_Port_Launay_West_Rocks",0,47
+"Seychelles",2010,NA,"Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",0,39
+"Seychelles",2010,NA,"Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",0,20
+"Seychelles",2010,NA,"Mahe NW","Therese_North_East","C","Pre","Seychelles_Mahe NW_Therese_North_East",0,59
+"Seychelles",2010,NA,"Mahe NW","Therese_North_End","G","Pre","Seychelles_Mahe NW_Therese_North_End",1,48
+"Seychelles",2010,NA,"Mahe NW","Therese_South","G","Pre","Seychelles_Mahe NW_Therese_South",0,47
+"Seychelles",2010,NA,"Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",0,33
+"Seychelles",2010,NA,"Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",0,19
+"Seychelles",2010,NA,"Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",0,28
+"Seychelles",2011,NA,"Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",0,21
+"Seychelles",2011,NA,"Mahe NW","Auberge_Reef","C","Pre","Seychelles_Mahe NW_Auberge_Reef",0,27
+"Seychelles",2011,NA,"Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",0,43
+"Seychelles",2011,NA,"Mahe NW","Bay_Ternay_Lighthouse","G","Pre","Seychelles_Mahe NW_Bay_Ternay_Lighthouse",0,38
+"Seychelles",2011,NA,"Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",0,29
+"Seychelles",2011,NA,"Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",0,29
+"Seychelles",2011,NA,"Mahe NW","Conception_Central_East_Face","C","Pre","Seychelles_Mahe NW_Conception_Central_East_Face",0,22
+"Seychelles",2011,NA,"Mahe NW","Conception_North_Point","G","Pre","Seychelles_Mahe NW_Conception_North_Point",0,37
+"Seychelles",2011,NA,"Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",0,37
+"Seychelles",2011,NA,"Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",0,40
+"Seychelles",2011,NA,"Mahe NW","Port_Launay_West_Rocks","G","Pre","Seychelles_Mahe NW_Port_Launay_West_Rocks",0,54
+"Seychelles",2011,NA,"Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",0,35
+"Seychelles",2011,NA,"Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",0,26
+"Seychelles",2011,NA,"Mahe NW","Therese_North_East","C","Pre","Seychelles_Mahe NW_Therese_North_East",0,43
+"Seychelles",2011,NA,"Mahe NW","Therese_North_End","G","Pre","Seychelles_Mahe NW_Therese_North_End",0,39
+"Seychelles",2011,NA,"Mahe NW","Therese_South","G","Pre","Seychelles_Mahe NW_Therese_South",0,38
+"Seychelles",2011,NA,"Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",0,44
+"Seychelles",2011,NA,"Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",0,30
+"Seychelles",2011,NA,"Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",0,21
+"Seychelles",2012,NA,"Mahe NW","Anse_Major_Point","G","Pre","Seychelles_Mahe NW_Anse_Major_Point",0,37
+"Seychelles",2012,NA,"Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",0,32
+"Seychelles",2012,NA,"Mahe NW","Auberge_Reef","C","Pre","Seychelles_Mahe NW_Auberge_Reef",0,37
+"Seychelles",2012,NA,"Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",0,49
+"Seychelles",2012,NA,"Mahe NW","Bay_Ternay_Lighthouse","G","Pre","Seychelles_Mahe NW_Bay_Ternay_Lighthouse",0,38
+"Seychelles",2012,NA,"Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",0,38
+"Seychelles",2012,NA,"Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",0,37
+"Seychelles",2012,NA,"Mahe NW","Conception_Central_East_Face","C","Pre","Seychelles_Mahe NW_Conception_Central_East_Face",0,37
+"Seychelles",2012,NA,"Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",1,39
+"Seychelles",2012,NA,"Mahe NW","L'ilot_North_Face","G","Pre","Seychelles_Mahe NW_L'ilot_North_Face",0,34
+"Seychelles",2012,NA,"Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",0,34
+"Seychelles",2012,NA,"Mahe NW","Port_Launay_West_Rocks","G","Pre","Seychelles_Mahe NW_Port_Launay_West_Rocks",0,49
+"Seychelles",2012,NA,"Mahe NW","Ray's_Point","G","Pre","Seychelles_Mahe NW_Ray's_Point",0,29
+"Seychelles",2012,NA,"Mahe NW","Secret_Beach_Reef","C","Pre","Seychelles_Mahe NW_Secret_Beach_Reef",0,30
+"Seychelles",2012,NA,"Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",0,49
+"Seychelles",2012,NA,"Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",0,34
+"Seychelles",2012,NA,"Mahe NW","Therese_North_East","C","Pre","Seychelles_Mahe NW_Therese_North_East",0,57
+"Seychelles",2012,NA,"Mahe NW","Therese_North_End","G","Pre","Seychelles_Mahe NW_Therese_North_End",0,47
+"Seychelles",2012,NA,"Mahe NW","Therese_South","G","Pre","Seychelles_Mahe NW_Therese_South",0,34
+"Seychelles",2012,NA,"Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",0,30
+"Seychelles",2012,NA,"Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",0,29
+"Seychelles",2012,NA,"Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",0,31
+"Seychelles",2013,NA,"Mahe NW","Anse_Major_Point","G","Pre","Seychelles_Mahe NW_Anse_Major_Point",0,29
+"Seychelles",2013,NA,"Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",0,18
+"Seychelles",2013,NA,"Mahe NW","Auberge_Reef","C","Pre","Seychelles_Mahe NW_Auberge_Reef",0,30
+"Seychelles",2013,NA,"Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",0,64
+"Seychelles",2013,NA,"Mahe NW","Bay_Ternay_Lighthouse","G","Pre","Seychelles_Mahe NW_Bay_Ternay_Lighthouse",0,50
+"Seychelles",2013,NA,"Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",0,35
+"Seychelles",2013,NA,"Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",0,29
+"Seychelles",2013,NA,"Mahe NW","Conception_North_Point","G","Pre","Seychelles_Mahe NW_Conception_North_Point",0,44
+"Seychelles",2013,NA,"Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",0,38
+"Seychelles",2013,NA,"Mahe NW","L'ilot_North_Face","G","Pre","Seychelles_Mahe NW_L'ilot_North_Face",0,35
+"Seychelles",2013,NA,"Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",0,42
+"Seychelles",2013,NA,"Mahe NW","Port_Launay_West_Rocks","G","Pre","Seychelles_Mahe NW_Port_Launay_West_Rocks",0,48
+"Seychelles",2013,NA,"Mahe NW","Ray's_Point","G","Pre","Seychelles_Mahe NW_Ray's_Point",0,36
+"Seychelles",2013,NA,"Mahe NW","Secret_Beach_Reef","C","Pre","Seychelles_Mahe NW_Secret_Beach_Reef",0,25
+"Seychelles",2013,NA,"Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",0,45
+"Seychelles",2013,NA,"Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",0,33
+"Seychelles",2013,NA,"Mahe NW","Therese_North_East","C","Pre","Seychelles_Mahe NW_Therese_North_East",0,45
+"Seychelles",2013,NA,"Mahe NW","Therese_North_End","G","Pre","Seychelles_Mahe NW_Therese_North_End",0,60
+"Seychelles",2013,NA,"Mahe NW","Therese_South","G","Pre","Seychelles_Mahe NW_Therese_South",0,35
+"Seychelles",2013,NA,"Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",0,40
+"Seychelles",2013,NA,"Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",0,26
+"Seychelles",2013,NA,"Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",0,36
+"Seychelles",2014,NA,"Mahe NW","Anse_Major_Point","G","Pre","Seychelles_Mahe NW_Anse_Major_Point",0,35
+"Seychelles",2014,NA,"Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",0,10
+"Seychelles",2014,NA,"Mahe NW","Auberge_Reef","C","Pre","Seychelles_Mahe NW_Auberge_Reef",0,19
+"Seychelles",2014,NA,"Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",0,47
+"Seychelles",2014,NA,"Mahe NW","Bay_Ternay_Lighthouse","G","Pre","Seychelles_Mahe NW_Bay_Ternay_Lighthouse",0,48
+"Seychelles",2014,NA,"Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",0,44
+"Seychelles",2014,NA,"Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",0,43
+"Seychelles",2014,NA,"Mahe NW","Conception_Central_East_Face","C","Pre","Seychelles_Mahe NW_Conception_Central_East_Face",0,33
+"Seychelles",2014,NA,"Mahe NW","Conception_North_Point","G","Pre","Seychelles_Mahe NW_Conception_North_Point",0,49
+"Seychelles",2014,NA,"Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",0,42
+"Seychelles",2014,NA,"Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",0,48
+"Seychelles",2014,NA,"Mahe NW","Port_Launay_West_Rocks","G","Pre","Seychelles_Mahe NW_Port_Launay_West_Rocks",0,65
+"Seychelles",2014,NA,"Mahe NW","Ray's_Point","G","Pre","Seychelles_Mahe NW_Ray's_Point",0,31
+"Seychelles",2014,NA,"Mahe NW","Secret_Beach_Reef","C","Pre","Seychelles_Mahe NW_Secret_Beach_Reef",0,39
+"Seychelles",2014,NA,"Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",0,50
+"Seychelles",2014,NA,"Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",0,33
+"Seychelles",2014,NA,"Mahe NW","Therese_North_East","C","Pre","Seychelles_Mahe NW_Therese_North_East",0,46
+"Seychelles",2014,NA,"Mahe NW","Therese_North_End","G","Pre","Seychelles_Mahe NW_Therese_North_End",0,42
+"Seychelles",2014,NA,"Mahe NW","Therese_South","G","Pre","Seychelles_Mahe NW_Therese_South",0,43
+"Seychelles",2014,NA,"Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",0,38
+"Seychelles",2014,NA,"Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",0,25
+"Seychelles",2014,NA,"Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",0,34
+"Seychelles",2014,NA,"North Reef","Coral_Gardens_North","U","Pre","Seychelles_North Reef_Coral_Gardens_North",23,15
+"Seychelles",2014,NA,"North Reef","Coral_Gardens_South","U","Pre","Seychelles_North Reef_Coral_Gardens_South",33,5
+"Seychelles",2014,NA,"North Reef","House_Reef","U","Pre","Seychelles_North Reef_House_Reef",31,5
+"Seychelles",2014,NA,"North Reef","North_East_Point","U","Pre","Seychelles_North Reef_North_East_Point",23,8
+"Seychelles",2014,NA,"North Reef","Sprat_City","U","Pre","Seychelles_North Reef_Sprat_City",10,0
+"Seychelles",2015,NA,"Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",0,23
+"Seychelles",2015,NA,"Mahe NW","Auberge_Reef","C","Pre","Seychelles_Mahe NW_Auberge_Reef",0,26
+"Seychelles",2015,NA,"Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",1,66
+"Seychelles",2015,NA,"Mahe NW","Bay_Ternay_Lighthouse","G","Pre","Seychelles_Mahe NW_Bay_Ternay_Lighthouse",1,45
+"Seychelles",2015,NA,"Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",2,45
+"Seychelles",2015,NA,"Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",5,48
+"Seychelles",2015,NA,"Mahe NW","Conception_North_Point","G","Pre","Seychelles_Mahe NW_Conception_North_Point",17,51
+"Seychelles",2015,NA,"Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",0,37
+"Seychelles",2015,NA,"Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",0,53
+"Seychelles",2015,NA,"Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",0,48
+"Seychelles",2015,NA,"Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",0,49
+"Seychelles",2015,NA,"Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",0,49
+"Seychelles",2015,NA,"Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",0,33
+"Seychelles",2015,NA,"Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",0,38
+"Seychelles",2015,NA,"North Reef","Coral_Gardens_North","U","Pre","Seychelles_North Reef_Coral_Gardens_North",10,48
+"Seychelles",2015,NA,"North Reef","Coral_Gardens_South","U","Pre","Seychelles_North Reef_Coral_Gardens_South",8,35
+"Seychelles",2015,NA,"North Reef","House_Reef","U","Pre","Seychelles_North Reef_House_Reef",0,9
+"Seychelles",2015,NA,"North Reef","North_East_Point","U","Pre","Seychelles_North Reef_North_East_Point",1,41
+"Seychelles",2015,NA,"North Reef","Sprat_City","U","Pre","Seychelles_North Reef_Sprat_City",0,82
+"Seychelles",2016,"","Cerf Island","Cerf_Island","Reef Flat","Pre","Seychelles_Cerf Island_Cerf_Island",0,33
+"Seychelles",2016,"","Cerf Island","Fairy_Tern","Reef Flat","Pre","Seychelles_Cerf Island_Fairy_Tern",0,51
+"Seychelles",2016,"","Cerf Island","Habitation","Reef Flat","Pre","Seychelles_Cerf Island_Habitation",2,27
+"Seychelles",2016,"","Mahe NW","Anse_Major_Reef","C","Pre","Seychelles_Mahe NW_Anse_Major_Reef",55.88,18.85
+"Seychelles",2016,"","Mahe NW","Auberge_Reef","C","Pre","Seychelles_Mahe NW_Auberge_Reef",42.48,22.95
+"Seychelles",2016,"","Mahe NW","Bay_Ternay_Centre","C","Pre","Seychelles_Mahe NW_Bay_Ternay_Centre",22.5,54.66
+"Seychelles",2016,"","Mahe NW","Bay_Ternay_North_East","G","Pre","Seychelles_Mahe NW_Bay_Ternay_North_East",36.8,50.63
+"Seychelles",2016,"","Mahe NW","Bay_Ternay_North_West","C","Pre","Seychelles_Mahe NW_Bay_Ternay_North_West",53.26,30.97
+"Seychelles",2016,"","Mahe NW","Conception_Central_East_Face","C","Pre","Seychelles_Mahe NW_Conception_Central_East_Face",5.22,2.77
+"Seychelles",2016,"","Mahe NW","Conception_North_Point","G","Pre","Seychelles_Mahe NW_Conception_North_Point",38.22,43.42
+"Seychelles",2016,"","Mahe NW","Corsaire_Reef","C","Pre","Seychelles_Mahe NW_Corsaire_Reef",54.12,16.91
+"Seychelles",2016,"","Mahe NW","Port_Launay_South_Reef","C","Pre","Seychelles_Mahe NW_Port_Launay_South_Reef",52.02,27.28
+"Seychelles",2016,"","Mahe NW","Port_Launay_West_Rocks","G","Pre","Seychelles_Mahe NW_Port_Launay_West_Rocks",52.13,27.62
+"Seychelles",2016,"","Mahe NW","Secret_Beach_Reef","C","Pre","Seychelles_Mahe NW_Secret_Beach_Reef",59.41,16.34
+"Seychelles",2016,"","Mahe NW","Site_X","G","Pre","Seychelles_Mahe NW_Site_X",49.73,20.87
+"Seychelles",2016,"","Mahe NW","Site_Y","G","Pre","Seychelles_Mahe NW_Site_Y",41.22,40.14
+"Seychelles",2016,"","Mahe NW","Therese_North_East","C","Pre","Seychelles_Mahe NW_Therese_North_East",42.77,41.64
+"Seychelles",2016,"","Mahe NW","Therese_North_End","G","Pre","Seychelles_Mahe NW_Therese_North_End",47.63,33.02
+"Seychelles",2016,"","Mahe NW","Therese_South","G","Pre","Seychelles_Mahe NW_Therese_South",25.45,59.93
+"Seychelles",2016,"","Mahe NW","Whale_Rock","G","Pre","Seychelles_Mahe NW_Whale_Rock",66.52,14.37
+"Seychelles",2016,"","Mahe NW","White_Villa_Reef","C","Pre","Seychelles_Mahe NW_White_Villa_Reef",52.43,27.15
+"Seychelles",2016,"","Mahe NW","Willie's_Bay_Point","G","Pre","Seychelles_Mahe NW_Willie's_Bay_Point",50.28,24.63
+"Seychelles",2016,"","Mahe NW","Willie's_Bay_Reef","C","Pre","Seychelles_Mahe NW_Willie's_Bay_Reef",62.41,29.94
+"Seychelles",2016,"","North Reef","Coral_Gardens_North","U","Post","Seychelles_North Reef_Coral_Gardens_North",43,5.69
+"Seychelles",2016,"","North Reef","Coral_Gardens_South","U","Post","Seychelles_North Reef_Coral_Gardens_South",40,15
+"Seychelles",2016,"","North Reef","North_East_Point","U","Post","Seychelles_North Reef_North_East_Point",58,2.4
+"Seychelles",2016,"","North Reef","Sprat_City","U","Post","Seychelles_North Reef_Sprat_City",2,10.56
+"Seychelles",2016,NA,"North Reef","House_Reef","U","Post","Seychelles_North Reef_House_Reef",67,6.51
+"Seychelles",2017,"","Cerf Island","Cerf_Island","Reef Flat","Post","Seychelles_Cerf Island_Cerf_Island",0,61
+"Seychelles",2017,"","Cerf Island","Fairy_Tern","Reef Flat","Post","Seychelles_Cerf Island_Fairy_Tern",0,34
+"Seychelles",2017,"","Cerf Island","Habitation","Reef Flat","Post","Seychelles_Cerf Island_Habitation",0,52
+"Seychelles",2017,"","Mahe NW","Anse_Major_Point","G","Post","Seychelles_Mahe NW_Anse_Major_Point",64.57,19.28
+"Seychelles",2017,"","Mahe NW","Anse_Major_Reef","C","Post","Seychelles_Mahe NW_Anse_Major_Reef",58.14,12.8
+"Seychelles",2017,"","Mahe NW","Auberge_Reef","C","Post","Seychelles_Mahe NW_Auberge_Reef",49.59,16.58
+"Seychelles",2017,"","Mahe NW","Bay_Ternay_Centre","C","Post","Seychelles_Mahe NW_Bay_Ternay_Centre",32.13,16.77
+"Seychelles",2017,"","Mahe NW","Bay_Ternay_Lighthouse","G","Post","Seychelles_Mahe NW_Bay_Ternay_Lighthouse",61.97,10.32
+"Seychelles",2017,"","Mahe NW","Bay_Ternay_North_East","G","Post","Seychelles_Mahe NW_Bay_Ternay_North_East",51.73,14.22
+"Seychelles",2017,"","Mahe NW","Bay_Ternay_North_West","C","Post","Seychelles_Mahe NW_Bay_Ternay_North_West",38.72,7.55
+"Seychelles",2017,"","Mahe NW","Conception_Central_East_Face","C","Post","Seychelles_Mahe NW_Conception_Central_East_Face",62.75,11.79
+"Seychelles",2017,"","Mahe NW","Conception_North_Point","G","Post","Seychelles_Mahe NW_Conception_North_Point",51.03,4.82
+"Seychelles",2017,"","Mahe NW","Corsaire_Reef","C","Post","Seychelles_Mahe NW_Corsaire_Reef",48.2,18.47
+"Seychelles",2017,"","Mahe NW","L'ilot_North_Face","G","Post","Seychelles_Mahe NW_L'ilot_North_Face",48.6,18.02
+"Seychelles",2017,"","Mahe NW","Port_Launay_South_Reef","C","Post","Seychelles_Mahe NW_Port_Launay_South_Reef",34.47,21.77
+"Seychelles",2017,"","Mahe NW","Port_Launay_West_Rocks","G","Post","Seychelles_Mahe NW_Port_Launay_West_Rocks",29.86,17.29
+"Seychelles",2017,"","Mahe NW","Ray's_Point","G","Post","Seychelles_Mahe NW_Ray's_Point",58.63,22.59
+"Seychelles",2017,"","Mahe NW","Secret_Beach_Reef","C","Post","Seychelles_Mahe NW_Secret_Beach_Reef",44.75,9.57
+"Seychelles",2017,"","Mahe NW","Site_X","G","Post","Seychelles_Mahe NW_Site_X",59.97,12.22
+"Seychelles",2017,"","Mahe NW","Site_Y","G","Post","Seychelles_Mahe NW_Site_Y",49.48,18.08
+"Seychelles",2017,"","Mahe NW","Therese_North_East","C","Post","Seychelles_Mahe NW_Therese_North_East",34.87,26.22
+"Seychelles",2017,"","Mahe NW","Therese_North_End","G","Post","Seychelles_Mahe NW_Therese_North_End",30.18,22.11
+"Seychelles",2017,"","Mahe NW","Therese_South","G","Post","Seychelles_Mahe NW_Therese_South",5.01,2.53
+"Seychelles",2017,"","Mahe NW","Whale_Rock","G","Post","Seychelles_Mahe NW_Whale_Rock",58.26,8.9
+"Seychelles",2017,"","Mahe NW","White_Villa_Reef","C","Post","Seychelles_Mahe NW_White_Villa_Reef",43.48,24.42
+"Seychelles",2017,"","Mahe NW","Willie's_Bay_Point","G","Post","Seychelles_Mahe NW_Willie's_Bay_Point",76.13,9.63
+"Seychelles",2017,"","Mahe NW","Willie's_Bay_Reef","C","Post","Seychelles_Mahe NW_Willie's_Bay_Reef",67.49,8.32
+"Tanzania",1992,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,57
+"Tanzania",1992,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",0,69
+"Tanzania",1992,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",0,30
+"Tanzania",1993,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",1,35
+"Tanzania",1994,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,54
+"Tanzania",1994,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",1,60
+"Tanzania",1994,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",2,39
+"Tanzania",1995,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",3,41
+"Tanzania",1996,"Zanzibar","Zanzibar","Chumbe_MPA",NA,"Pre","Tanzania_Zanzibar_Chumbe_MPA",19.95,63.95
+"Tanzania",1996,NA,"Tanga","Funguni",NA,"Pre","Tanzania_Tanga_Funguni",40,NA
+"Tanzania",1996,NA,"Tanga","Makome",NA,"Pre","Tanzania_Tanga_Makome",28,NA
+"Tanzania",1996,NA,"Tanga","Taa",NA,"Pre","Tanzania_Tanga_Taa",17,NA
+"Tanzania",1996,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",1,51
+"Tanzania",1996,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",10,55
+"Tanzania",1996,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",5,43
+"Tanzania",1997,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,53
+"Tanzania",1997,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",0,50
+"Tanzania",1997,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",0,44
+"Tanzania",1998,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",1,47
+"Tanzania",1998,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",4,48
+"Tanzania",1998,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",1,40
+"Tanzania",1999,NA,"Mafia","Kitutia",NA,"Pre","Tanzania_Mafia_Kitutia",15,15
+"Tanzania",1999,NA,"Mafia","Utumbi",NA,"Pre","Tanzania_Mafia_Utumbi",1,29
+"Tanzania",1999,NA,"Mtwara","Kitelele",NA,"Pre","Tanzania_Mtwara_Kitelele",9,11
+"Tanzania",1999,NA,"Mtwara","Matenga",NA,"Pre","Tanzania_Mtwara_Matenga",1,34
+"Tanzania",1999,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,57
+"Tanzania",1999,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",13,43
+"Tanzania",1999,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",0,35
+"Tanzania",2000,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,54
+"Tanzania",2000,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",6,44
+"Tanzania",2000,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",0,41
+"Tanzania",2001,NA,"Mafia","Kitutia",NA,"Pre","Tanzania_Mafia_Kitutia",24,19
+"Tanzania",2001,NA,"Mafia","Utumbi",NA,"Pre","Tanzania_Mafia_Utumbi",5,25
+"Tanzania",2001,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,52
+"Tanzania",2001,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",3,46
+"Tanzania",2001,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",0,44
+"Tanzania",2002,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,51
+"Tanzania",2002,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",3,52
+"Tanzania",2002,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",0,47
+"Tanzania",2003,NA,"Mafia","Kitutia",NA,"Pre","Tanzania_Mafia_Kitutia",44,17
+"Tanzania",2003,NA,"Mafia","Utumbi",NA,"Pre","Tanzania_Mafia_Utumbi",10,43
+"Tanzania",2003,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,48
+"Tanzania",2003,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",2,46
+"Tanzania",2003,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",0,42
+"Tanzania",2004,NA,"Tanga","Funguni",NA,"Pre","Tanzania_Tanga_Funguni",27.44444444,NA
+"Tanzania",2004,NA,"Tanga","Makome",NA,"Pre","Tanzania_Tanga_Makome",14,NA
+"Tanzania",2004,NA,"Tanga","Taa",NA,"Pre","Tanzania_Tanga_Taa",11.22222222,NA
+"Tanzania",2004,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,45
+"Tanzania",2004,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",1,44
+"Tanzania",2004,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",0,39
+"Tanzania",2005,"Zanzibar","Zanzibar","Chumbe_MPA",NA,"Pre","Tanzania_Zanzibar_Chumbe_MPA",25.86,61.82
+"Tanzania",2005,NA,"Mafia","Kitutia",NA,"Pre","Tanzania_Mafia_Kitutia",21,23
+"Tanzania",2005,NA,"Mafia","Utumbi",NA,"Pre","Tanzania_Mafia_Utumbi",2,42
+"Tanzania",2005,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,43
+"Tanzania",2005,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",2,47
+"Tanzania",2005,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",1,37
+"Tanzania",2006,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,40
+"Tanzania",2006,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",0,46
+"Tanzania",2006,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",3,36
+"Tanzania",2007,NA,"Tanga","Kitanga",NA,"Pre","Tanzania_Tanga_Kitanga",2,60
+"Tanzania",2007,NA,"Tanga","Makome",NA,"Pre","Tanzania_Tanga_Makome",17,39
+"Tanzania",2007,NA,"Tanga","Taa",NA,"Pre","Tanzania_Tanga_Taa",4,10
+"Tanzania",2007,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",1,42
+"Tanzania",2007,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",0,51
+"Tanzania",2007,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",3,36
+"Tanzania",2008,NA,"Tanga","Kitanga",NA,"Pre","Tanzania_Tanga_Kitanga",3,49
+"Tanzania",2008,NA,"Tanga","Makome",NA,"Pre","Tanzania_Tanga_Makome",26,41
+"Tanzania",2008,NA,"Tanga","Taa",NA,"Pre","Tanzania_Tanga_Taa",9,6
+"Tanzania",2008,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",0,42
+"Tanzania",2008,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",0,47
+"Tanzania",2010,NA,"Tanga","Funguni",NA,"Pre","Tanzania_Tanga_Funguni",50.25,14.875
+"Tanzania",2010,NA,"Tanga","Makome",NA,"Pre","Tanzania_Tanga_Makome",38,26.375
+"Tanzania",2010,NA,"Tanga","Taa",NA,"Pre","Tanzania_Tanga_Taa",13.875,22.375
+"Tanzania",2010,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",0,54
+"Tanzania",2011,NA,"Mtwara","Bwahari",NA,"Pre","Tanzania_Mtwara_Bwahari",10,43
+"Tanzania",2011,NA,"Mtwara","Lanzi",NA,"Pre","Tanzania_Mtwara_Lanzi",5,27
+"Tanzania",2011,NA,"Mtwara","Naumbu",NA,"Pre","Tanzania_Mtwara_Naumbu",32,25
+"Tanzania",2011,NA,"Mtwara","Pemba",NA,"Pre","Tanzania_Mtwara_Pemba",0,51
+"Tanzania",2011,NA,"Zanzibar","Changuu",NA,"Pre","Tanzania_Zanzibar_Changuu",0,50
+"Tanzania",2012,"Zanzibar","Zanzibar","Chumbe_MPA",NA,"Pre","Tanzania_Zanzibar_Chumbe_MPA",10.55,83.79
+"Tanzania",2013,"Zanzibar","Zanzibar","Chumbe_MPA",NA,"Pre","Tanzania_Zanzibar_Chumbe_MPA",1.92,86.04
+"Tanzania",2015,"Zanzibar","Zanzibar","Chumbe_MPA",NA,"Pre","Tanzania_Zanzibar_Chumbe_MPA",9.71,65.39
+"Tanzania",2015,NA,"Mafia","Kitutia",NA,"Pre","Tanzania_Mafia_Kitutia",7,45
+"Tanzania",2015,NA,"Mafia","Utumbi",NA,"Pre","Tanzania_Mafia_Utumbi",5,44
+"Tanzania",2015,NA,"Mafia","Yuyuni",NA,"Pre","Tanzania_Mafia_Yuyuni",0,16
+"Tanzania",2015,NA,"Songosongo","Amana_South",NA,"Pre","Tanzania_Songosongo_Amana_South",0,35
+"Tanzania",2015,NA,"Songosongo","Jewe",NA,"Pre","Tanzania_Songosongo_Jewe",31,27
+"Tanzania",2015,NA,"Songosongo","Machangi_East",NA,"Pre","Tanzania_Songosongo_Machangi_East",0,70
+"Tanzania",2015,NA,"Songosongo","Pwayasi",NA,"Pre","Tanzania_Songosongo_Pwayasi",0,53
+"Tanzania",2015,NA,"Songosongo","Songosongo",NA,"Pre","Tanzania_Songosongo_Songosongo",17,25
+"Tanzania",2015,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",1.78,64.04
+"Tanzania",2015,NA,"Zanzibar","Chapwani",NA,"Pre","Tanzania_Zanzibar_Chapwani",0,62.27
+"Tanzania",2015,NA,"Zanzibar","Murogo",NA,"Pre","Tanzania_Zanzibar_Murogo",1.21,67.84
+"Tanzania",2016,"","Mafia","Kitutia",NA,"Post","Tanzania_Mafia_Kitutia",24.999999997,50.76666667
+"Tanzania",2016,"","Mafia","Utumbi",NA,"Post","Tanzania_Mafia_Utumbi",1.666666667,38.299999996
+"Tanzania",2016,"","Mafia","Yuyuni",NA,"Post","Tanzania_Mafia_Yuyuni",38.9,18.366666667
+"Tanzania",2016,"","Mtwara","Matenga",NA,"Post","Tanzania_Mtwara_Matenga",1.4,32.9
+"Tanzania",2016,"Zanzibar","Zanzibar","Chumbe_MPA",NA,"Post","Tanzania_Zanzibar_Chumbe_MPA",4.12,32.61
+"Tanzania",2016,NA,"Tanga","Funguni",NA,"Pre","Tanzania_Tanga_Funguni",59.44,10
+"Tanzania",2016,NA,"Tanga","Makome",NA,"Pre","Tanzania_Tanga_Makome",21.11,47.78
+"Tanzania",2016,NA,"Tanga","Maziwe_South",NA,"Pre","Tanzania_Tanga_Maziwe_South",7.86,56.43
+"Tanzania",2016,NA,"Tanga","Taa",NA,"Pre","Tanzania_Tanga_Taa",23.89,43.89
+"Tanzania",2016,NA,"Zanzibar","Bawe",NA,"Pre","Tanzania_Zanzibar_Bawe",2.94,27.23
+"Tanzania",2017,"","Mafia","Kitutia",NA,"Post","Tanzania_Mafia_Kitutia",6.833333333,49.216666673
+"Tanzania",2017,"","Mafia","Utumbi",NA,"Post","Tanzania_Mafia_Utumbi",1.3,18.683333334
+"Tanzania",2017,"","Mafia","Yuyuni",NA,"Post","Tanzania_Mafia_Yuyuni",0,34.950000004
+"Tanzania",2017,"","Mtwara","Bwahari",NA,"Post","Tanzania_Mtwara_Bwahari",30.21,36.04
+"Tanzania",2017,"","Mtwara","Kitelele",NA,"Post","Tanzania_Mtwara_Kitelele",36.88,33.33
+"Tanzania",2017,"","Mtwara","Lanzi",NA,"Post","Tanzania_Mtwara_Lanzi",36.46,23.13
+"Tanzania",2017,"","Mtwara","Matenga",NA,"Post","Tanzania_Mtwara_Matenga",1.8,36
+"Tanzania",2017,"","Mtwara","Naumbu",NA,"Post","Tanzania_Mtwara_Naumbu",12.71,35.83
+"Tanzania",2017,"","Mtwara","Pemba",NA,"Post","Tanzania_Mtwara_Pemba",3.96,56.04
+"Tanzania",2017,"","Songosongo","Amana_South",NA,"Post","Tanzania_Songosongo_Amana_South",21.26,49.38
+"Tanzania",2017,"","Songosongo","Jewe",NA,"Post","Tanzania_Songosongo_Jewe",13.75,54
+"Tanzania",2017,"","Songosongo","Machangi_East",NA,"Post","Tanzania_Songosongo_Machangi_East",10.76,65.58
+"Tanzania",2017,"","Songosongo","Pwayasi",NA,"Post","Tanzania_Songosongo_Pwayasi",5.46,70.91
+"Tanzania",2017,"","Songosongo","Songosongo",NA,"Post","Tanzania_Songosongo_Songosongo",38.4,29.2
+"Tanzania",2017,"","Tanga","Funguni",NA,"Post","Tanzania_Tanga_Funguni",54.6,16.8
+"Tanzania",2017,"","Tanga","Kitanga",NA,"Post","Tanzania_Tanga_Kitanga",6.38,55.4
+"Tanzania",2017,"","Tanga","Makome",NA,"Post","Tanzania_Tanga_Makome",10.16,45.86
+"Tanzania",2017,"","Tanga","Maziwe_South",NA,"Post","Tanzania_Tanga_Maziwe_South",2.68,37.04
+"Tanzania",2017,"","Tanga","Taa",NA,"Post","Tanzania_Tanga_Taa",7.075,52.775
+"Tanzania",2017,"","Zanzibar","Bawe",NA,"Post","Tanzania_Zanzibar_Bawe",15.983333337,26.650000002
+"Tanzania",2017,"","Zanzibar","Changuu",NA,"Post","Tanzania_Zanzibar_Changuu",25.233333333,19.149999998
+"Tanzania",2017,"","Zanzibar","Chapwani",NA,"Post","Tanzania_Zanzibar_Chapwani",12.366666667,14.433333334
+"Tanzania",2017,"","Zanzibar","Murogo",NA,"Post","Tanzania_Zanzibar_Murogo",37.85,32.716666667

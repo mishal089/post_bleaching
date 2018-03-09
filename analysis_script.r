@@ -236,6 +236,10 @@ write.csv(national2,"national_averages_of_algae_and_coral_pre_vs_post.csv",row.n
 
 write.csv(r6,"hard_coral_cover_changes_at_each_station.csv",row.names = F)
 
+write.csv(alg2,"dataset_for_HC_FA_trend.csv",row.names = F)
+
+write.csv(algae_r2,"dataset_for_HC_FA_column_2012_on.csv",row.names = F)
+
 # Plot 1: HC trend with Station lines - per country ---------------------------------------------
 
 
@@ -614,6 +618,150 @@ jpeg("HC_single_plot_all_countries_lines.jpeg", width = 6.25, height = 4, units 
 q
 dev.off()
 
+
+# Plot 6: Regional - HC with sampling point all countries in singl --------
+
+q<-NA
+q<- ggplot(ben_HC, aes(x=Year, y=cover , group=Country))+
+  geom_point(position = position_jitter(w = 0.3, h = 0.3),colour="blue", size=2, shape=21, fill="white")+
+  stat_summary(geom="ribbon", fun.data=mean_cl_boot, 
+               fun.args=list(conf.int=0.95), fill="grey",alpha=0.6)+
+  stat_summary(aes(y = cover,group=1),colour="dark blue", geom="line",group=1,size=0.8,
+               fun.y=mean)+
+  stat_smooth(method = "lm", col = "red",fill=NA,size=1,fullrange = F)
+  
+  # stat_summary(data=subset(data_wide2,Country =="Mauritius" & inst=='other'),geom="ribbon", fun.data=mean_cl_boot, 
+  #              fun.args=list(conf.int=0.95), fill="grey",alpha=0.6)+
+  # stat_summary(data=subset(data_wide2,Country =="Mauritius"& inst=='MOI'),geom="ribbon", fun.data=mean_cl_boot, 
+  #              fun.args=list(conf.int=0.95), fill="grey",alpha=0.6)+
+  # 
+  # stat_summary(data=subset(data_wide2,Country =="Mauritius" & inst=='other'),colour="dark blue", geom="line",group=1,size=0.8,
+  #              fun.y=mean)+
+  # geom_smooth(data=subset(data_wide2,Country =="Mauritius"& inst=='other'),
+  #             color='red',method=lm,se=FALSE)+
+  # stat_summary(data=subset(data_wide2,Country =="Mauritius" & inst=='MOI'),colour="dark blue", geom="line",group=1,size=0.8,
+  #              fun.y=mean)+
+  # geom_smooth(data=subset(data_wide2,Country =="Mauritius"& inst=='MOI'),
+  #             color='red',method=lm,se=FALSE)
+
+# geom_smooth(data=subset(maur,inst='MOI'),aes(x=Year,y=HC,group=Country),
+#             color='orange',method=lm,se=FALSE)
+q <- q + theme_bw()+theme(plot.title=element_text(size=11),
+                          axis.line = element_line(size=1,colour = "black"),
+                          panel.grid.major = element_blank(),
+                          panel.grid.minor = element_blank(),
+                          panel.border = element_blank(),
+                          panel.background = element_blank(),
+                          text = element_text(size=11,face="bold"),
+                          axis.ticks.length=unit(0.2,"cm"),
+                          axis.text = element_text(colour="black"))
+q<- q +facet_wrap(~Country, ncol=3)+theme(strip.text.x = element_text(size=12,face="bold"),
+                                          strip.background = element_blank(),
+                                          panel.grid.major = element_blank(),
+                                          panel.grid.minor = element_blank(),
+                                          panel.border = element_blank(),
+                                          panel.background = element_blank())
+q <- q + ylab("Hard coral cover (%)")
+q <- q + theme(plot.title = element_text(size = 11, face = "bold"))
+# q<-q + expand_limits(y=0)+ylim(0,100)
+q<- q + scale_x_continuous(breaks=seq(1992,2016,by=1),
+                           labels = c(1992, rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016))
+q <- q + scale_y_continuous(limits=c(0,100),
+                            breaks = seq(0,100,by=5),
+                            labels=c(0,"",10,"",20,"",30,"",40,"",50,"",60,"",70,"",80,"",90,"",100))
+
+
+q <- q + theme(plot.title = element_text(size = 11, face = "bold"))
+
+q <- q + theme(panel.spacing.x=unit(1, "lines"))
+p <- q + theme(panel.spacing.y=unit(0.1, "lines"))
+q <- q + annotate("segment", x=-Inf, xend=Inf, y=-Inf, yend=-Inf,size=1)
+q <- q +  annotate("segment", x=-Inf, xend=-Inf, y=-Inf, yend=Inf,size=1)
+q
+
+facetAdjust(q)
+
+
+# Plot 7: Regional - FA and HC all countries on a single plot ------------------------
+
+p<-NA 
+p<- ggplot(alg2, aes(x=Year, y=HC))
+p<-p +  stat_summary(geom="ribbon", fun.data=mean_cl_boot, 
+                     fun.args=list(conf.int=0.95), aes(fill="HC"),alpha=0.3)
+p<-p +  stat_summary(geom="smooth", fun.y=mean, linetype="solid", size=1,aes(colour='HC',shape='HC'))
+p<- p+  stat_summary(geom="point", fun.y=mean,fill='white', aes(shape='HC',color='HC'),size=2)
+
+
+
+p<- p +  stat_summary(aes(x=Year, y=FA, colour='FA'),geom="smooth", fun.y=mean, linetype="solid", size=1)
+p<- p +  stat_summary(aes(y=FA,fill='FA'),geom="ribbon", fun.data=mean_cl_boot, 
+                      fun.args=list(conf.int=0.95),alpha=0.3)
+p<-p +  stat_summary(aes(y=FA,color='FA',shape='FA'),geom="point", fun.y=mean,size=2,fill='white')
+
+p <- p + theme_bw()+theme(plot.title=element_text(size=9.5),
+                          axis.line = element_line(size=1,colour = "black"),
+                          panel.grid.major = element_blank(),
+                          panel.grid.minor = element_blank(),
+                          panel.border = element_blank(),
+                          panel.background = element_blank(),
+                          text = element_text(size=9.5,face="bold"),
+                          axis.ticks.length=unit(0.2,"cm"),
+                          axis.text = element_text(colour="black"))
+p<- p + theme(legend.key = element_blank(),
+              # legend.position="bottom",
+              legend.key.height=unit(0, "cm"),
+              # legend.justification="left",
+              plot.margin = unit(c(0,0.2,0,0.2), "lines"),
+              legend.spacing=unit(0.2, "cm"),
+              legend.position=c(0.75,0.06),
+              legend.direction = "horizontal",
+              legend.text = element_text(size=10))
+
+#p<- p + ggtitle(e[i])
+p<- p + ylab("Cover (%)")
+p<- p + scale_x_continuous(breaks=seq(1992,2016,by=1),
+                           labels = c(1992, rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016))
+p<- p + scale_y_continuous(breaks = seq(0,100,by=10),
+                           labels=c(0,10,20,30,40,50,60,70,80,90,100))
+p<- p + theme(strip.text.x = element_text(size=11,face="bold"),
+              strip.background = element_blank(),
+              panel.grid.major = element_blank(),
+              panel.grid.minor = element_blank(),
+              panel.border = element_blank(),
+              panel.background = element_blank())
+p<- p + expand_limits(y=0,x=1996)
+p<- p + facet_wrap(~Country, scales="fixed", ncol=2)+theme(strip.text.x = element_text(size=9.5,face="bold"),
+                                                           strip.background = element_blank(),
+                                                           panel.grid.major = element_blank(),
+                                                           panel.grid.minor = element_blank(),
+                                                           panel.border = element_blank(),
+                                                           panel.background = element_blank())
+p <- p + theme(panel.spacing.x=unit(1, "lines"))
+p <- p + theme(panel.spacing.y=unit(0.1, "lines"))
+p<- p + annotate("segment", x=-Inf, xend=Inf, y=-Inf, yend=-Inf,size=1)
+p<- p +  annotate("segment", x=-Inf, xend=-Inf, y=-Inf, yend=Inf,size=1)
+
+p<-p+scale_fill_manual("", 
+                       breaks = c("HC", "FA"),
+                       values = c('HC'="blue", "FA"="green"))
+
+p<-p+ scale_colour_manual("", 
+                          breaks = c("HC", "FA"),
+                          values = c("HC"="blue", "FA"="dark green"))
+p<-p+scale_shape_manual("", 
+                        breaks = c("HC", "FA"),
+                        values = c('HC'= 21, "FA"= 19))
+# p + guides(fill = guide_legend(override.aes = list(shape = 21)))
+
+
+print(p)
+
+
+
+jpeg("FA and HC single grid.jpeg",width=6,height=5,units="in",res=300)
+print(p)
+# facetAdjust(p)
+dev.off()
 
 
 # Seychelles sub-national analysis ----------------------------------------
