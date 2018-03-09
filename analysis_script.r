@@ -24,6 +24,11 @@ ben_lev1$Reef.zone[which(ben_lev1$Reef.zone=="")]<-NA
 
 ben_lev1$Period<-factor(ben_lev1$Period,levels=c("Pre","Post"))     #USED FOR PLOT 1 AND 5
 
+#remove Tanzania 2012,2013 data (Chumbe data) here
+ben_lev1<-ben_lev1[-which(ben_lev1$Country=='Tanzania' & ben_lev1$Year==2012),]
+ben_lev1<-ben_lev1[-which(ben_lev1$Country=='Tanzania' & ben_lev1$Year==2013),]
+
+
 ben_lev2<-ddply(ben_lev1,c(1,2,7,8),summarise,
                 mean_cover=mean(cover,na.rm = T),
                 sd=sd(cover,na.rm = T))
@@ -619,7 +624,7 @@ q
 dev.off()
 
 
-# Plot 6: Regional - HC with sampling point all countries in singl --------
+# Plot 6: Regional - HC with sampling point all countries in single plot --------
 
 q<-NA
 q<- ggplot(ben_HC, aes(x=Year, y=cover , group=Country))+
@@ -630,23 +635,7 @@ q<- ggplot(ben_HC, aes(x=Year, y=cover , group=Country))+
                fun.y=mean)+
   stat_smooth(method = "lm", col = "red",fill=NA,size=1,fullrange = F)
   
-  # stat_summary(data=subset(data_wide2,Country =="Mauritius" & inst=='other'),geom="ribbon", fun.data=mean_cl_boot, 
-  #              fun.args=list(conf.int=0.95), fill="grey",alpha=0.6)+
-  # stat_summary(data=subset(data_wide2,Country =="Mauritius"& inst=='MOI'),geom="ribbon", fun.data=mean_cl_boot, 
-  #              fun.args=list(conf.int=0.95), fill="grey",alpha=0.6)+
-  # 
-  # stat_summary(data=subset(data_wide2,Country =="Mauritius" & inst=='other'),colour="dark blue", geom="line",group=1,size=0.8,
-  #              fun.y=mean)+
-  # geom_smooth(data=subset(data_wide2,Country =="Mauritius"& inst=='other'),
-  #             color='red',method=lm,se=FALSE)+
-  # stat_summary(data=subset(data_wide2,Country =="Mauritius" & inst=='MOI'),colour="dark blue", geom="line",group=1,size=0.8,
-  #              fun.y=mean)+
-  # geom_smooth(data=subset(data_wide2,Country =="Mauritius"& inst=='MOI'),
-  #             color='red',method=lm,se=FALSE)
-
-# geom_smooth(data=subset(maur,inst='MOI'),aes(x=Year,y=HC,group=Country),
-#             color='orange',method=lm,se=FALSE)
-q <- q + theme_bw()+theme(plot.title=element_text(size=11),
+  q <- q + theme_bw()+theme(plot.title=element_text(size=11),
                           axis.line = element_line(size=1,colour = "black"),
                           panel.grid.major = element_blank(),
                           panel.grid.minor = element_blank(),
@@ -664,8 +653,8 @@ q<- q +facet_wrap(~Country, ncol=3)+theme(strip.text.x = element_text(size=12,fa
 q <- q + ylab("Hard coral cover (%)")
 q <- q + theme(plot.title = element_text(size = 11, face = "bold"))
 # q<-q + expand_limits(y=0)+ylim(0,100)
-q<- q + scale_x_continuous(breaks=seq(1992,2016,by=1),
-                           labels = c(1992, rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016))
+q<- q + scale_x_continuous(breaks=seq(1992,2017,by=1),
+                           labels = c(1992, rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
 q <- q + scale_y_continuous(limits=c(0,100),
                             breaks = seq(0,100,by=5),
                             labels=c(0,"",10,"",20,"",30,"",40,"",50,"",60,"",70,"",80,"",90,"",100))
@@ -719,8 +708,8 @@ p<- p + theme(legend.key = element_blank(),
 
 #p<- p + ggtitle(e[i])
 p<- p + ylab("Cover (%)")
-p<- p + scale_x_continuous(breaks=seq(1992,2016,by=1),
-                           labels = c(1992, rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016))
+p<- p + scale_x_continuous(breaks=seq(1992,2017,by=1),
+                           labels = c(1992, rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
 p<- p + scale_y_continuous(breaks = seq(0,100,by=10),
                            labels=c(0,10,20,30,40,50,60,70,80,90,100))
 p<- p + theme(strip.text.x = element_text(size=11,face="bold"),
