@@ -1,9 +1,9 @@
 ---
-title: "test"
+title: "Kenya WIO post-bleaching national chapter test version"
 author: "Mishal"
 date: "12 March 2018"
 output:
-  html_document: default
+  word_document: default
   pdf_document: default
 ---
 
@@ -16,24 +16,25 @@ read_chunk('../post_bleaching/analysis_script.r')
 
 ```
 
-## R Markdown
+## Trends in hard coral cover and algae
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 ```{r part1, echo=F,results='hide',warning=F, message=F,eval=T}
 ```
 
-Comoros hard coral cover plot
+Kenya hard coral cover plot with station lines
 
 ```{r plot1, echo=F, warning=F, message=F, error=FALSE, results='hide',fig.keep='none'}
 ```
 
 ```{r  echo=F,message=F, warning=F, results='hide'}
-print(com)
+print(ken)
 ```
 
+Kenya trend line for coral cover and fleshy algae
 ```{r plot2, echo=F, warning=F, message=F, error=FALSE, results='hide',fig.keep='none'}
 ```
 
-```{r  echo=F,message=F,results='hide'}
-print(mad)
+```{r  echo=F,message=F,results='hide',fig.cap="figure caption. \\label{figurelabel}"}
+knitr::opts_chunk$set(fig.path = 'figures/', echo = FALSE, warning = FALSE, message = FALSE)
+print(ken)
 ```
