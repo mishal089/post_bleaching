@@ -261,6 +261,8 @@ write.csv(algae_r2,"dataset_for_HC_FA_column_2012_on.csv",row.names = F)
 
 # Plot 1: HC trend with Station lines - per country ---------------------------------------------
 
+## @knitr plot1
+
 #remove ken 2016 pre and tz 2012,2013
 
 # #remove Tanzania 2012,2013 data (Chumbe data) here
@@ -327,6 +329,7 @@ for (i in 1:length(unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country))
 
 # Plot 2: HC & FA -TREND LINE national plots ------------------------------------------------
 
+## @knitr plot2
 
 
 p<-NA 
@@ -414,6 +417,8 @@ for (i in 1:5){
 
 # Plot 3: HC & FA - pre vs post BAR PLOT ------------------------------------------
 
+## @knitr plot3
+
 ###plot
 p<-NA 
 p<- ggplot(algae_r2,aes(x=benthic_category,y=recent_cover,fill=Period))
@@ -479,7 +484,10 @@ for (i in 1:length(g)){
   print(s[i])
   dev.off()
 }
+
 # Plot 4: Hard Coral only Pre vs post -REGIONAL bar plot --------------------------------------------------
+
+## @knitr plot4
 
 library(Hmisc)
 library(ggplot2)
@@ -571,6 +579,8 @@ for (i in 1:length(unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country))
 
 # Plot 5: regional plot - hc trend all countries on single plot -------------------
 
+## @knitr plot5
+
 
 #to get the linear regression equation - for region
 ben_lev1_a2$Year2<-ben_lev1_a2$Year-1992  #create a new year category where 1992 is year 0
@@ -644,6 +654,8 @@ dev.off()
 
 # Plot 6: Regional - HC with sampling point all countries in single plot --------
 
+## @knitr plot6
+
 q<-NA
 q<- ggplot(ben_HC2, aes(x=Year, y=cover , group=Country))+
   geom_point(position = position_jitter(w = 0.3, h = 0.3),colour="blue", size=2, shape=21, fill="white")+
@@ -690,6 +702,9 @@ facetAdjust(q)
 
 
 # Plot 7: Regional - FA and HC all countries on a single plot ------------------------
+
+## @knitr plot7
+
 
 p<-NA 
 p<- ggplot(alg4, aes(x=Year, y=HC))
@@ -772,6 +787,9 @@ dev.off()
 
 
 # Plot 8 - regional overall HC vs FA trend  -------------------------------
+## @knitr plot8
+
+
 p<-NA 
 
 p<- ggplot(alg4, aes(x=Year,group=Period))
@@ -838,6 +856,8 @@ print(p)
 
 
 # Plot 9 - regional HC vs FA column chart ---------------------------------
+
+## @knitr plot9
 
 p<-NA 
 p<- ggplot(algae_r2,aes(x=benthic_category,y=cover,fill=Period))
