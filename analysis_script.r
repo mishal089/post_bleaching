@@ -316,16 +316,24 @@ p<-p+scale_shape_manual("Period",
                         values = c("Pre" = 21, "Post" = 22),
                         labels = c("Pre"="Pre", "Post"='Post (July 2016 on)'))
 
-print(p)
+# print(p)
 
-s<-dlply(ben_lev1[which(ben_lev1$level1_code=='HC'),], .(Country), function(x) p %+% x)
-g<-unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country)
+s<-dlply(ben_lev1_a4, .(Country), function(x) p %+% x)
+g<-unique(ben_lev1_a4$Country)
 
-for (i in 1:length(unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country))){
-  jpeg(paste("graphs/",g[i],"HC_station_lines.jpeg"), width = 4, height = 3.5, units = 'in', res = 300)
-  print(s[i])
-  dev.off()
-}
+com<-(s[1])
+ken<-(s[2])
+mad<-(s[3])
+maur<-(s[4])
+sey<-(s[5])
+tan<-(s[6])
+
+# 
+# for (i in 1:length(unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country))){
+#   jpeg(paste("graphs/",g[i],"HC_station_lines.jpeg"), width = 4, height = 3.5, units = 'in', res = 300)
+#   print(s[i])
+#   dev.off()
+# }
 
 
 # Plot 2: HC & FA -TREND LINE national plots ------------------------------------------------
@@ -403,17 +411,25 @@ p<-p+scale_linetype_manual("Period",
 # p + guides(fill = guide_legend(override.aes = list(shape = 21)))
 
 
-print(p)
+# print(p)
 
 library(plyr)
+s<-NA
 s<-dlply(alg2, .(Country), function(x) p %+% x)
+g<-unique(alg2$Country)
 
-for (i in 1:5){
-  g<-unique(alg2$Country)
-  jpeg(paste("graphs/",g[i],"FA and HC together.jpeg"), width = 4.5, height = 3.5, units = 'in', res = 300)
-  print(s[i])
-  dev.off()
-}
+ken<-(s[1])
+mad<-(s[2])
+maur<-(s[3])
+sey<-(s[4])
+tan<-(s[5])
+
+# for (i in 1:5){
+#   g<-unique(alg2$Country)
+#   jpeg(paste("graphs/",g[i],"FA and HC together.jpeg"), width = 4.5, height = 3.5, units = 'in', res = 300)
+#   print(s[i])
+#   dev.off()
+# }
 
 
 # Plot 3: HC & FA - pre vs post BAR PLOT ------------------------------------------

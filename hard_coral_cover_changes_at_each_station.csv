@@ -1,0 +1,98 @@
+"Country","Site","Station","Reef.zone","pre_coral_cover","post_coral_cover","year_gap","pct.chg"
+"Comoros",NA,"nkandzoni","Fore reef",61,35.82,2,-41.2786885245902
+"Comoros",NA,"wani","Fore reef",61,64.84,2,6.29508196721312
+"Comoros",NA,"Mea","Fore reef",59,62.9,2,6.61016949152542
+"Comoros",NA,"Moroni","Fore reef",70,87.9,2,25.5714285714286
+"Comoros",NA,"mitsamiuli","Back reef",43,57.84,2,34.5116279069767
+"Kenya","Lamu","Pezali_Rock",NA,56.4,21,1,-62.7659574468085
+"Kenya","Mombasa","Starfish",NA,25.6,13.37,3,-47.7734375
+"Kenya","Shimoni","Wasini_Tengefu",NA,50.1,34.65,3,-30.8383233532934
+"Kenya","Lamu","Majongooni",NA,21.5,16.99,3,-20.9767441860465
+"Kenya","Watamu","Coral_Garden",NA,34.5,28.5,3,-17.3913043478261
+"Kenya","Mombasa","Nyali",NA,28.6,25.37,3,-11.2937062937063
+"Kenya","Kilifi","Kuruwitu",NA,28.2,28.32,3,0.425531914893621
+"Kenya","Mombasa","Ras_Iwatine",NA,29.2,30.48,3,4.38356164383562
+"Kenya","Mombasa","Coral_Garden",NA,32,34.36,3,7.375
+"Kenya","Malindi","Old_Coral_Garden",NA,22.5,24.64,1,9.51111111111111
+"Kenya","Malindi","New_Coral_Garden",NA,36.5,40.36,1,10.5753424657534
+"Kenya","Watamu","Richard_Bernets",NA,23.5,28.79,1,22.5106382978723
+"Kenya","Shimoni","Kibuyuni",NA,28.4,35,3,23.2394366197183
+"Kenya","Lamu","Tausi",NA,49.14541403,63.67,3,29.5543058425222
+"Kenya","Malindi","North_Reef",NA,16,23,2,43.75
+"Kenya","Kisite","Mkwiro",NA,17.1,28.83,2,68.5964912280701
+"Kenya","Shimoni","Mpunguti-Lower",NA,16.7,28.33,3,69.6407185628743
+"Kenya","Lamu","Iweni",NA,29.7,52.66,1,77.3063973063973
+"Kenya","Malindi","Kivulini",NA,5.42426057,9.68,2,78.4575035634765
+"Kenya","Shimoni","Mpunguti-Upper",NA,30.5,61,5,100
+"Kenya","Malindi","Mayunguni",NA,5.3,15.34,2,189.433962264151
+"Madagascar","Nosy Be","Home_Reef","Fore reef",47.17,18.06,3,-61.7129531481874
+"Madagascar","Nosy Be","Nosy_Vorona","Fore reef",32.93,14.28,3,-56.6352869723656
+"Madagascar","Nosy Be","Turtle_towers","Fore reef",65.11,42.29,3,-35.048379665182
+"Madagascar","Nosy Komba","Turtle_Towers","Crest",59.23,39.18,1,-33.8510889751815
+"Madagascar","Nosy Komba","Galaxea","Crest",58.26,43.61,1,-25.1458976999657
+"Madagascar","Nosy Komba","Dragon's_Den","Crest",65.47,50.64,1,-22.6515961509088
+"Madagascar","Nosy Be","Three_Brothers","Fore reef",51.22,40.25,3,-21.4174150722374
+"Madagascar","Andavadoaka","Lost",NA,30.000000001,26.25,1,-12.5000000029167
+"Madagascar","Andavadoaka","Ns_Coco_Beach",NA,56.29,60.125,1,6.81293302540416
+"Madagascar","Andavadoaka","Recruitment_North",NA,20.25,24.875,1,22.8395061728395
+"Mauritius","Anse La Raie Lagoon","Degraded_Coral_1",NA,37.5,28.75,1,-23.3333333333333
+"Mauritius","Anse La Raie Lagoon","Snorkeling_trail",NA,40.83,40,1,-2.03281900563311
+"Mauritius","Anse La Raie Lagoon","Live_Branching_Coral",NA,36.25,40.62,1,12.0551724137931
+"Mauritius","Anse La Raie Lagoon","Live_Lettuce_Coral",NA,43.12,65.62,1,52.1799628942486
+"Seychelles","Mahe NW","Therese_South","G",59.93,2.53,1,-95.7784081428333
+"Seychelles","North Reef","North_East_Point","U",41,2.4,1,-94.1463414634146
+"Seychelles","Mahe NW","Conception_North_Point","G",43.42,4.82,1,-88.8991248272685
+"Seychelles","North Reef","Coral_Gardens_North","U",48,5.69,1,-88.1458333333333
+"Seychelles","North Reef","Sprat_City","U",82,10.56,1,-87.1219512195122
+"Seychelles","Mahe NW","Bay_Ternay_Lighthouse","G",45,10.32,2,-77.0666666666667
+"Seychelles","Mahe NW","Bay_Ternay_North_West","C",30.97,7.55,1,-75.6215692605747
+"Seychelles","Mahe NW","Willie's_Bay_Reef","C",29.94,8.32,1,-72.2110888443554
+"Seychelles","Mahe NW","Bay_Ternay_North_East","G",50.63,14.22,1,-71.9138850483903
+"Seychelles","Desroches","Oxi_rock","C",95,28.2,1,-70.3157894736842
+"Seychelles","Mahe NW","Bay_Ternay_Centre","C",54.66,16.77,1,-69.3194291986828
+"Seychelles","Alphonse","A1","C",49.8,17.1,0,-65.6626506024096
+"Seychelles","Mahe NW","Willie's_Bay_Point","G",24.63,9.63,1,-60.9013398294762
+"Seychelles","North Reef","Coral_Gardens_South","U",35,15,1,-57.1428571428571
+"Seychelles","Mahe NW","Site_Y","G",40.14,18.08,1,-54.9576482311908
+"Seychelles","Mahe NW","L'ilot_North_Face","G",35,18.02,4,-48.5142857142857
+"Seychelles","Mahe NW","Anse_Major_Point","G",35,19.28,3,-44.9142857142857
+"Seychelles","Mahe NW","Site_X","G",20.87,12.22,1,-41.447053186392
+"Seychelles","Mahe NW","Secret_Beach_Reef","C",16.34,9.57,1,-41.4320685434516
+"Seychelles","Mahe NW","Whale_Rock","G",14.37,8.9,1,-38.0654140570633
+"Seychelles","Mahe NW","Port_Launay_West_Rocks","G",27.62,17.29,1,-37.400434467777
+"Seychelles","Mahe NW","Therese_North_East","C",41.64,26.22,1,-37.0317002881844
+"Seychelles","Cerf Island","Fairy_Tern","Reef Flat",51,34,1,-33.3333333333333
+"Seychelles","Mahe NW","Therese_North_End","G",33.02,22.11,1,-33.0405814657783
+"Seychelles","Mahe NW","Anse_Major_Reef","C",18.85,12.8,1,-32.0954907161804
+"Seychelles","Mahe NW","Auberge_Reef","C",22.95,16.58,1,-27.755991285403
+"Seychelles","North Reef","House_Reef","U",9,6.51,1,-27.6666666666667
+"Seychelles","Desroches","Lobster_rock","C",21,15.3,1,-27.1428571428571
+"Seychelles","Mahe NW","Ray's_Point","G",31,22.59,3,-27.1290322580645
+"Seychelles","Alphonse","A8","C",52.8,40.7,0,-22.9166666666667
+"Seychelles","Mahe NW","Port_Launay_South_Reef","C",27.28,21.77,1,-20.1979472140763
+"Seychelles","Mahe NW","White_Villa_Reef","C",27.15,24.42,1,-10.0552486187845
+"Seychelles","Alphonse","A7","C",42.7,38.7,0,-9.36768149882904
+"Seychelles","Alphonse","A18","C",59.6,54.1,0,-9.22818791946309
+"Seychelles","Desroches","Aquarium","C",17,17.6,1,3.52941176470589
+"Seychelles","Alphonse","A15","C",68.8,72,0,4.65116279069768
+"Seychelles","Mahe NW","Corsaire_Reef","C",16.91,18.47,1,9.22531046717918
+"Seychelles","Alphonse","A11","C",51.5,60.6,0,17.6699029126214
+"Seychelles","Cerf Island","Cerf_Island","Reef Flat",33,61,1,84.8484848484848
+"Seychelles","Cerf Island","Habitation","Reef Flat",27,52,1,92.5925925925926
+"Seychelles","Mahe NW","Conception_Central_East_Face","C",2.77,11.79,1,325.631768953069
+"Tanzania","Zanzibar","Chapwani",NA,62.27,14.433333334,2,-76.8213693046411
+"Tanzania","Mafia","Utumbi",NA,44,18.683333334,2,-57.5378787863636
+"Tanzania","Zanzibar","Murogo",NA,67.84,32.716666667,2,-51.7737814460495
+"Tanzania","Zanzibar","Chumbe_MPA",NA,65.39,32.61,1,-50.1299892949992
+"Tanzania","Tanga","Maziwe_South",NA,56.43,37.04,1,-34.361155413787
+"Tanzania","Songosongo","Machangi_East",NA,70,65.58,2,-6.31428571428572
+"Tanzania","Tanga","Makome",NA,47.78,45.86,1,-4.01841774801172
+"Tanzania","Zanzibar","Bawe",NA,27.23,26.650000002,1,-2.13000366507529
+"Tanzania","Mafia","Kitutia",NA,45,49.216666673,2,9.37037038444444
+"Tanzania","Songosongo","Songosongo",NA,25,29.2,2,16.8
+"Tanzania","Tanga","Taa",NA,43.89,52.775,1,20.2437912964229
+"Tanzania","Songosongo","Pwayasi",NA,53,70.91,2,33.7924528301887
+"Tanzania","Songosongo","Amana_South",NA,35,49.38,2,41.0857142857143
+"Tanzania","Tanga","Funguni",NA,10,16.8,1,68
+"Tanzania","Songosongo","Jewe",NA,27,54,2,100
+"Tanzania","Mafia","Yuyuni",NA,16,34.950000004,2,118.437500025
