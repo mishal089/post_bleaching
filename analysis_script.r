@@ -1,6 +1,7 @@
 
 # Data analysis -----------------------------------------------------------
 
+## @knitr part1
 
 library(plyr)
 library(ggplot2)

@@ -1,0 +1,32 @@
+---
+title: "test"
+author: "Mishal"
+date: "12 March 2018"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, echo=FALSE}
+library(knitr)
+library(ggplot2)
+library(plyr)
+read_chunk('../post_bleaching/analysis_script.r')
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+```{r part1, echo=F}
+
+head(benthic)
+
+```
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r plot1}
+
+  print(s[1])
+```
+
