@@ -416,8 +416,8 @@ p<-p+scale_linetype_manual("Period",
 
 library(plyr)
 s<-NA
-s<-dlply(alg2, .(Country), function(x) p %+% x)
-g<-unique(alg2$Country)
+s<-dlply(alg5, .(Country), function(x) p %+% x)
+g<-unique(alg52$Country)
 
 ken<-(s[1])
 mad<-(s[2])
@@ -426,7 +426,7 @@ sey<-(s[4])
 tan<-(s[5])
 
 # for (i in 1:5){
-#   g<-unique(alg2$Country)
+#   g<-unique(alg5$Country)
 #   jpeg(paste("graphs/",g[i],"FA and HC together.jpeg"), width = 4.5, height = 3.5, units = 'in', res = 300)
 #   print(s[i])
 #   dev.off()
@@ -494,6 +494,7 @@ p<-p+ scale_fill_manual("Period",
 print(p)
 
 library(plyr)
+s<-NA
 s<-dlply(algae_r2, .(Country), function(x) p %+% x)
 g<-unique(algae_r2$Country)
 
