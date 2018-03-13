@@ -1,0 +1,62 @@
+---
+title: "Seychelles national chapter test"
+author: "Mishal"
+date: "13 March 2018"
+output: 
+  word_document:
+        fig_caption: yes
+---
+
+```{r echo=FALSE, include=F , cache=F}
+library(knitr)
+library(ggplot2)
+library(plyr)
+read_chunk('../post_bleaching/analysis_script.r')
+        
+
+```
+
+## Background to the bleaching event 
+
+![Coral reef monitoring stations in Seychelles for which data was included in this study](/Users/USER/Documents/CORDIO/IOC post-bleaching project/Post-bleaching assessment/National chapters/Drafts December/Post bleaching maps/Seychelles.jpg)
+
+
+## Trends in hard coral cover and algae
+
+```{r part1, echo=F,results='hide',warning=F, message=F,eval=T}
+```
+
+Seychelles hard coral cover plot with station lines
+
+```{r plot1, echo=F, warning=F, message=F, error=FALSE, results='hide',fig.keep='none'}
+```
+
+```{r  echo=F,message=F, warning=F, results='hide'}
+print(sey)
+```
+
+Seychelles trend line for coral cover and fleshy algae
+```{r plot2, echo=F, warning=F, message=F, error=FALSE, results='hide',fig.keep='none'}
+```
+
+```{r  echo=F,message=F,results='hide',fig.cap="Trends in fleshy algae (green line, closed circles) and hard coral cover (blue line, open-circles) in the Seychelles before (solid line) and after (dotted line) the 2016 bleaching event. Shaded areas represent the 95% confidence limit. Only stations with data for both periods and with both fleshy-algae and hard coral cover were included in the analysis (n=32). The post-bleaching period from July 2016 onwards."}
+print(sey)
+```
+
+Seychelles bar plot HC and FA pre vs post
+```{r plot3, echo=F, warning=F, message=F, error=FALSE, results='hide',fig.keep='none'}
+```
+
+```{r  echo=F,message=F,results='hide',fig.cap="figure caption. \\label{figurelabel}"}
+print(s[4])
+```
+
+Seychelles sub-national analysis
+```{r plot10, echo=F, warning=F, message=F, error=FALSE, results='hide',fig.keep='none'}
+```
+
+```{r  echo=F,message=F,results='hide',fig.cap="figure caption. \\label{figurelabel}"}
+par(mfrow=c(1,2))
+print(s[4])
+print(p)
+```

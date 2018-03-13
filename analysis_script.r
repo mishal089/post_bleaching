@@ -927,6 +927,7 @@ p<-p+ scale_fill_manual("Period",
 
 print(p)
 
+## @knitr plot10
 
 # Seychelles sub-national analysis ----------------------------------------
 
@@ -1027,6 +1028,7 @@ jpeg("Seychelles_inner_vs_outer_coral_cover.jpeg",res=300,height=4,width=4,units
 p
 dev.off()
 
+## @knitr plot11
 
 # Kenya - sub-national analysis -------------------------------------------
 
@@ -1142,6 +1144,8 @@ df2 <- ave_ken%>%
 write.csv(df2,"Kenya_change_in_coral_cover_per_site.csv",row.names =F)
 
 
+## @knitr plot12
+
 # Comoros sub-national anaylsis --------------------------------------------
 
 com2<-r2[which(r2$Country=='Comoros'),]    #sites with data for both periods from 2012
@@ -1228,6 +1232,7 @@ jpeg("Comoros_3_islands_coral_cover.jpeg",res=300,height=4,width=4,units = 'in')
 p
 dev.off()
 
+## @knitr plot13
 
 # Tanzania sub-national analysis ------------------------------------------
 
@@ -1306,6 +1311,8 @@ jpeg("Tanzania_coral_cover_change_per_site.jpeg",res=300,height=4,width=4,units 
 p
 dev.off()
 
+
+## @knitr plot14
 
 # Madagascar sub-national analysis ----------------------------------------
 mad2<-r2[which(r2$Country=='Madagascar'),]    #sites with data for both periods from 2012
