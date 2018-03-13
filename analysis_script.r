@@ -240,6 +240,7 @@ r6<-r5[order(r5$Country,r5$pct.chg),]
 #           ave_cover=mean(recent_Coral,na.rm = T))
 # ((r3[2,2]-r3[1,2])/r3[1,2])*100    #calculate percentage change in coral cover
 
+## @knitr part0
 
 # File saving -------------------------------------------------------------
 

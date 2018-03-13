@@ -3,8 +3,9 @@ title: "Kenya WIO post-bleaching national chapter test version"
 author: "Mishal"
 date: "12 March 2018"
 output:
-  word_document: default
+  html_document: default
   pdf_document: default
+  word_document: default
 ---
 
 ```{r echo=FALSE, include=F , cache=F}
@@ -35,6 +36,13 @@ Kenya trend line for coral cover and fleshy algae
 ```
 
 ```{r  echo=F,message=F,results='hide',fig.cap="figure caption. \\label{figurelabel}"}
-knitr::opts_chunk$set(fig.path = 'figures/', echo = FALSE, warning = FALSE, message = FALSE)
 print(ken)
+```
+
+Kenya bar plot HC and FA pre vs post
+```{r plot3, echo=F, warning=F, message=F, error=FALSE, results='hide',fig.keep='none'}
+```
+
+```{r  echo=F,message=F,results='hide',fig.cap="figure caption. \\label{figurelabel}"}
+print(s[1])
 ```
