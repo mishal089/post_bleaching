@@ -243,7 +243,11 @@ r6<-r5[order(r5$Country,r5$pct.chg),]
 ## @knitr part0
 
 # File saving -------------------------------------------------------------
+sit<-unique(benthic[c("Country","Site","Station")])
+sit1<-sit[order(sit[1],sit[2],sit[3]),]
 
+
+write.csv(sit1,"All_Sites_used_in_analysis.csv",row.names = F)
 
 write.csv(ben_lev2[which(ben_lev2$Country=="Kenya"),],"Kenya_summarised_benthic_data.csv",row.names = F)
 
@@ -959,17 +963,23 @@ write.csv(df3,"Seychelles_change_in_coral_cover_per_island_groups.csv",row.names
 ave_sey<-ddply(seyc2,c("Period","Site"),summarise,
                mean_cover=mean(recent_Coral),
                sd=sd(recent_Coral),
-               Year=tail(recent_year,n=1))
+               Year=tail(recent_year,n=1),
+               n=length(recent_Coral))
 
 ave_sey2<-ave_sey[order(ave_sey$Site,ave_sey$Period),]   #change in mean coral cover at each site
+
+ave_sey$mean_cover<-round(ave_sey$mean_cover,1)
+ave_sey$sd<-round(ave_sey$sd,1)
 
 library(dplyr)
 
 df2 <- ave_sey%>%
   group_by(Site) %>%
   arrange(Site,Period) %>%
-  mutate(pct.chg = (mean_cover - lag(mean_cover))/lag(mean_cover)*100)
+  mutate(pct.chg = (mean_cover - lag(mean_cover))/lag(mean_cover)*100) %>%
+  mutate(pre.bl= paste(mean_cover,"±",sd))
 
+df2$pct.chg<-round(df2$pct.chg,1)
 # df2$pct.chg[df2$Period=='Pre']<-NA
 
 write.csv(df2,"Seychelles_change_in_coral_cover_per_site.csv",row.names =F)
