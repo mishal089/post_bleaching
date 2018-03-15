@@ -670,7 +670,7 @@ q <- q + guides(fill = guide_legend(nrow=2))
 
 q
 
-jpeg(paste("graphs/regional","HC_single_plot_all_countries_lines.jpeg"), width = 6.25, height = 4, units = 'in', res = 300)
+jpeg(paste("graphs/regional/","HC_single_plot_all_countries_lines.jpeg"), width = 6.25, height = 4, units = 'in', res = 300)
 q
 dev.off()
 
@@ -688,32 +688,32 @@ q<- ggplot(ben_HC2, aes(x=Year, y=cover , group=Country))+
                fun.y=mean)+
   stat_smooth(method = "lm", col = "red",fill=NA,size=1,fullrange = F)
   
-  q <- q + theme_bw()+theme(plot.title=element_text(size=11),
+  q <- q + theme_bw()+theme(plot.title=element_text(size=9.5),
                           axis.line = element_line(size=1,colour = "black"),
                           panel.grid.major = element_blank(),
                           panel.grid.minor = element_blank(),
                           panel.border = element_blank(),
                           panel.background = element_blank(),
-                          text = element_text(size=11,face="bold"),
+                          text = element_text(size=9.5,face="bold"),
                           axis.ticks.length=unit(0.2,"cm"),
                           axis.text = element_text(colour="black"))
-q<- q +facet_wrap(~Country, ncol=3)+theme(strip.text.x = element_text(size=12,face="bold"),
+q<- q +facet_wrap(~Country, ncol=2)+theme(strip.text.x = element_text(size=9.5,face="bold"),
                                           strip.background = element_blank(),
                                           panel.grid.major = element_blank(),
                                           panel.grid.minor = element_blank(),
                                           panel.border = element_blank(),
                                           panel.background = element_blank())
 q <- q + ylab("Hard coral cover (%)")
-q <- q + theme(plot.title = element_text(size = 11, face = "bold"))
+q <- q + theme(plot.title = element_text(size = 9.5, face = "bold"))
 # q<-q + expand_limits(y=0)+ylim(0,100)
 q<- q + scale_x_continuous(breaks=seq(1992,2017,by=1),
                            labels = c(1992, rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
 q <- q + scale_y_continuous(limits=c(0,100),
-                            breaks = seq(0,100,by=5),
-                            labels=c(0,"",10,"",20,"",30,"",40,"",50,"",60,"",70,"",80,"",90,"",100))
+                            breaks = seq(0,100,by=10),
+                            labels=c(0,10,20,30,40,50,60,70,80,90,100))
 
 
-q <- q + theme(plot.title = element_text(size = 11, face = "bold"))
+q <- q + theme(plot.title = element_text(size = 9.5, face = "bold"))
 
 q <- q + theme(panel.spacing.x=unit(1, "lines"))
 p <- q + theme(panel.spacing.y=unit(0.1, "lines"))
@@ -721,7 +721,11 @@ q <- q + annotate("segment", x=-Inf, xend=Inf, y=-Inf, yend=-Inf,size=1)
 q <- q +  annotate("segment", x=-Inf, xend=-Inf, y=-Inf, yend=Inf,size=1)
 q
 
-facetAdjust(q)
+# facetAdjust(q)
+
+jpeg(paste("graphs/regional/","HC_sample_circle_all_countries_single_plot.jpeg"), width = 6, height = 5, units = 'in', res = 300)
+q
+dev.off()
 
 
 # Plot 7: Regional - FA and HC all countries on a single plot ------------------------
@@ -803,7 +807,7 @@ print(p)
 
 
 
-jpeg(paste("graphs/regional","FA and HC single grid.jpeg"),width=6,height=5,units="in",res=300)
+jpeg(paste("graphs/regional/","FA and HC single grid.jpeg"),width=6,height=5,units="in",res=300)
 print(p)
 # facetAdjust(p)
 dev.off()
@@ -875,7 +879,11 @@ p<-p+scale_linetype_manual("Period",
 # p + guides(fill = guide_legend(override.aes = list(shape = 21)))
 
 
+jpeg(paste("graphs/regional/","overall FA and HC plot.jpeg"),width=6,height=5,units="in",res=300)
 print(p)
+# facetAdjust(p)
+dev.off()
+
 
 
 # Plot 9 - regional HC vs FA column chart ---------------------------------
@@ -929,7 +937,11 @@ p<-p+ scale_fill_manual("Period",
 # p + guides(fill = guide_legend(override.aes = list(shape = 21)))
 
 
+jpeg(paste("graphs/regional/","overall HC and FA pre_vs_post column chart.jpeg"),width=6,height=5,units="in",res=300)
 print(p)
+# facetAdjust(p)
+dev.off()
+
 
 ## @knitr plot10
 
