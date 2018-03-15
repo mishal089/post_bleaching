@@ -186,6 +186,16 @@ national2<-national[order(national$Country,national$benthic_category),]
 
 
 #regional
+
+#table with pre-bleaching mean vs post-bleaching mean
+
+regional<-ddply(algae_r2,c("Period","benthic_category"),summarise,
+                cover=mean(recent_cover,na.rm=T),
+                se=sd(recent_cover)/sqrt(length(Period))
+                )
+
+reg<-regional[order(regional$Period,regional$benthic_category),]
+
 #To create a seperate dataset from ben_lev1 with just the pre-bleaching data from latest year for each station and the post-bleac
 #data equivalent 
 
@@ -246,6 +256,7 @@ r6<-r5[order(r5$Country,r5$pct.chg),]
 sit<-unique(benthic[c("Country","Site","Station")])
 sit1<-sit[order(sit[1],sit[2],sit[3]),]
 
+write.csv(reg,"Regional averages for HC and FA pre vs post",row.names = F)
 
 write.csv(sit1,"All_Sites_used_in_analysis.csv",row.names = F)
 
@@ -891,7 +902,7 @@ dev.off()
 ## @knitr plot9
 
 p<-NA 
-p<- ggplot(algae_r2,aes(x=benthic_category,y=cover,fill=Period))
+p<- ggplot(algae_r2,aes(x=benthic_category,y=recent_cover,fill=Period))
 
 p<- p + stat_summary(fun.y="mean", geom="bar",position=position_dodge(),alpha=0.8)
 p<- p + stat_summary(fun.data = 'mean_se', geom = "errorbar",width=.2,size=0.8,position=position_dodge(.9))
