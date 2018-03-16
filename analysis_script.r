@@ -280,17 +280,16 @@ write.csv(algae_r2,"dataset_for_HC_FA_column_2012_on.csv",row.names = F)
 
 ## @knitr plot1
 
-#remove ken 2016 pre and tz 2012,2013
-
-# #remove Tanzania 2012,2013 data (Chumbe data) here
+#to make sure that stations with same name are drawn with separate lines e.g. coral gardens
+ben_lev1_a4$station2<-paste(ben_lev1_a4$Site,ben_lev1_a4$Station) 
 
 p<-NA
-p<-ggplot(data=ben_lev1_a4,aes(x=Year,y=cover,group=Period,colour=Period,shape=Period))
-p <- p + geom_line(aes(group=Station),size=1,alpha=0.2)
+p<-ggplot(data=ben_lev1_a4,aes(x=Year,y=cover))
+p <- p + geom_line(aes(group=station2),size=1,alpha=0.2,colour='purple')
 p<- p + stat_summary(geom="ribbon", fun.data=mean_cl_boot, 
                      fun.args=list(conf.int=0.95), fill="grey",alpha=0.5,colour=NA)
-p <- p +  stat_summary(geom="line", fun.y=mean, linetype="solid", size=1.2,alpha=1)
-p<- p + stat_summary(geom="point", fun.y=mean,size=2,fill='white')
+p <- p +  stat_summary(geom="line", fun.y=mean, linetype="solid", size=1.2,alpha=1,aes(group=Period,colour=Period,shape=Period))
+p<- p + stat_summary(geom="point", fun.y=mean,size=2,fill='white',aes(group=Period,colour=Period,shape=Period))
 p <- p + theme_bw()+theme(plot.title=element_text(size=9),
                           axis.line = element_line(size=1,colour = "black"),
                           panel.grid.major = element_blank(),
