@@ -1418,7 +1418,7 @@ p<-p+ scale_fill_manual("Period",
 
 print(p)
 
-jpeg("Madagascar_coral_cover_change_per_site.jpeg",res=300,height=4,width=4,units = 'in')
+jpeg(paste("graphs/","Madagascar_coral_cover_change_per_site.jpeg"),res=300,height=3.5,width=3.5,units = 'in')
 p
 dev.off()
 
