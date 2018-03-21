@@ -1,0 +1,187 @@
+"Transect_ID","COUNTRY","NAP","YEAR","benthic_cover","mean_cover","sd","samples","benthic_code","Organization","Period","Source","no_rep"
+"Ambari_11","Madagascar","Ankarea",2016,"Coral",59.25,27.543028538137,20,"HC","WCS Madagascar","Pre","New",6
+"Ambari_11","Madagascar","Ankarea",2016,"Soft coral",7.5,15.8529426124516,20,"SC","WCS Madagascar","Pre","New",6
+"Ambari_11","Madagascar","Ankarea",2016,"Algae-macro/fleshy",6.75,13.3056181248453,20,"AMAC","WCS Madagascar","Pre","New",6
+"Ambari_11","Madagascar","Ankarea",2017,"Coral",52.325,26.0161562229201,40,"HC","WCS Madagascar","Post","New",6
+"Ambari_11","Madagascar","Ankarea",2017,"Soft coral",2.9,9.26753362482055,40,"SC","WCS Madagascar","Post","New",6
+"Ambari_11","Madagascar","Ankarea",2017,"Algae-macro/fleshy",13.075,19.4466891256254,40,"AMAC","WCS Madagascar","Post","New",6
+"Ambatofisaka_19","Madagascar","Ankivonjy",2016,"Coral",47,34.0587727318528,15,"HC","WCS Madagascar","Pre","New",6
+"Ambatofisaka_19","Madagascar","Ankivonjy",2016,"Soft coral",3.33333333333333,12.9099444873581,15,"SC","WCS Madagascar","Pre","New",6
+"Ambatofisaka_19","Madagascar","Ankivonjy",2016,"Algae-macro/fleshy",13.6666666666667,17.7750493938099,15,"AMAC","WCS Madagascar","Pre","New",6
+"Ambatofisaka_19","Madagascar","Ankivonjy",2017,"Coral",33.25,23.1923395841087,40,"HC","WCS Madagascar","Post","New",6
+"Ambatofisaka_19","Madagascar","Ankivonjy",2017,"Soft coral",9.175,18.0893615144372,40,"SC","WCS Madagascar","Post","New",6
+"Ambatofisaka_19","Madagascar","Ankivonjy",2017,"Algae-macro/fleshy",10.575,13.6511246836371,40,"AMAC","WCS Madagascar","Post","New",6
+"Ambatomilay_18","Madagascar","Ankivonjy",2016,"Coral",26,26.9795243998501,20,"HC","WCS Madagascar","Pre","New",6
+"Ambatomilay_18","Madagascar","Ankivonjy",2016,"Soft coral",8,12.9167374078425,20,"SC","WCS Madagascar","Pre","New",6
+"Ambatomilay_18","Madagascar","Ankivonjy",2016,"Algae-macro/fleshy",0,0,20,"AMAC","WCS Madagascar","Pre","New",6
+"Ambatomilay_18","Madagascar","Ankivonjy",2017,"Coral",38.625,22.9823650341757,40,"HC","WCS Madagascar","Post","New",6
+"Ambatomilay_18","Madagascar","Ankivonjy",2017,"Soft coral",9.675,16.0805464571007,40,"SC","WCS Madagascar","Post","New",6
+"Ambatomilay_18","Madagascar","Ankivonjy",2017,"Algae-macro/fleshy",0.275,0.960435264573255,40,"AMAC","WCS Madagascar","Post","New",6
+"Ampa_10","Madagascar","Ankarea",2016,"Coral",74,24.2162873171874,15,"HC","WCS Madagascar","Pre","New",6
+"Ampa_10","Madagascar","Ankarea",2016,"Soft coral",3.33333333333333,4.49867705421219,15,"SC","WCS Madagascar","Pre","New",6
+"Ampa_10","Madagascar","Ankarea",2016,"Algae-macro/fleshy",1.33333333333333,2.96808419852332,15,"AMAC","WCS Madagascar","Pre","New",6
+"Ampa_10","Madagascar","Ankarea",2017,"Coral",59.125,24.7522985205674,40,"HC","WCS Madagascar","Post","New",6
+"Ampa_10","Madagascar","Ankarea",2017,"Soft coral",4.45,7.66594199473663,40,"SC","WCS Madagascar","Post","New",6
+"Ampa_10","Madagascar","Ankarea",2017,"Algae-macro/fleshy",8.5,12.1275274923178,40,"AMAC","WCS Madagascar","Post","New",6
+"Andravona_08","Madagascar","Soariake",2016,"Coral",35,24.4162619201598,14,"HC","WCS Madagascar","Pre","New",6
+"Andravona_08","Madagascar","Soariake",2016,"Soft coral",34.6428571428571,24.3740313980557,14,"SC","WCS Madagascar","Pre","New",6
+"Andravona_08","Madagascar","Soariake",2016,"Algae-macro/fleshy",0,0,14,"AMAC","WCS Madagascar","Pre","New",6
+"Andravona_08","Madagascar","Soariake",2017,"Coral",7.05,6.21945165970188,20,"HC","WCS Madagascar","Post","New",6
+"Andravona_08","Madagascar","Soariake",2017,"Soft coral",33.35,26.5434598942545,20,"SC","WCS Madagascar","Post","New",6
+"Andravona_08","Madagascar","Soariake",2017,"Algae-macro/fleshy",28.6,17.0553279219813,20,"AMAC","WCS Madagascar","Post","New",6
+"Andravona_12","Madagascar","Soariake",2016,"Coral",67,28.2055944017416,10,"HC","WCS Madagascar","Pre","New",6
+"Andravona_12","Madagascar","Soariake",2016,"Soft coral",22.5,21.8898758942728,10,"SC","WCS Madagascar","Pre","New",6
+"Andravona_12","Madagascar","Soariake",2016,"Algae-macro/fleshy",0,0,10,"AMAC","WCS Madagascar","Pre","New",6
+"Andravona_12","Madagascar","Soariake",2017,"Coral",31.75,24.1854131766715,20,"HC","WCS Madagascar","Post","New",6
+"Andravona_12","Madagascar","Soariake",2017,"Soft coral",31,23.5416763701269,20,"SC","WCS Madagascar","Post","New",6
+"Andravona_12","Madagascar","Soariake",2017,"Algae-macro/fleshy",6.6,6.57267069006199,20,"AMAC","WCS Madagascar","Post","New",6
+"Andre_07","Madagascar","Soariake",2016,"Coral",24,22.6936114358204,15,"HC","WCS Madagascar","Pre","New",6
+"Andre_07","Madagascar","Soariake",2016,"Soft coral",60.6666666666667,22.1090371524751,15,"SC","WCS Madagascar","Pre","New",6
+"Andre_07","Madagascar","Soariake",2016,"Algae-macro/fleshy",1.33333333333333,5.16397779494322,15,"AMAC","WCS Madagascar","Pre","New",6
+"Andre_07","Madagascar","Soariake",2017,"Coral",20.5526315789474,12.6783436730919,38,"HC","WCS Madagascar","Post","New",6
+"Andre_07","Madagascar","Soariake",2017,"Soft coral",55.6842105263158,22.735976091194,38,"SC","WCS Madagascar","Post","New",6
+"Andre_07","Madagascar","Soariake",2017,"Algae-macro/fleshy",12.7631578947368,13.3425436420219,38,"AMAC","WCS Madagascar","Post","New",6
+"Anka_01","Madagascar","Soariake",2016,"Coral",65.5,29.8561365365462,10,"HC","WCS Madagascar","Pre","New",6
+"Anka_01","Madagascar","Soariake",2016,"Soft coral",17,26.9979423084221,10,"SC","WCS Madagascar","Pre","New",6
+"Anka_01","Madagascar","Soariake",2016,"Algae-macro/fleshy",11.6,25.7992247945554,10,"AMAC","WCS Madagascar","Pre","New",6
+"Anka_01","Madagascar","Soariake",2017,"Coral",45.75,18.6585376072463,40,"HC","WCS Madagascar","Post","New",6
+"Anka_01","Madagascar","Soariake",2017,"Soft coral",11.325,11.4475112063938,40,"SC","WCS Madagascar","Post","New",6
+"Anka_01","Madagascar","Soariake",2017,"Algae-macro/fleshy",26.725,19.4237331699241,40,"AMAC","WCS Madagascar","Post","New",6
+"Ankarea_03","Madagascar","Ankarea",2016,"Coral",83.25,17.2653440528464,20,"HC","WCS Madagascar","Pre","New",6
+"Ankarea_03","Madagascar","Ankarea",2016,"Soft coral",4,9.26226072210292,20,"SC","WCS Madagascar","Pre","New",6
+"Ankarea_03","Madagascar","Ankarea",2016,"Algae-macro/fleshy",1,4.47213595499958,20,"AMAC","WCS Madagascar","Pre","New",6
+"Ankarea_03","Madagascar","Ankarea",2017,"Coral",64.425,23.3566412891,40,"HC","WCS Madagascar","Post","New",6
+"Ankarea_03","Madagascar","Ankarea",2017,"Soft coral",5,5.99572497273832,40,"SC","WCS Madagascar","Post","New",6
+"Ankarea_03","Madagascar","Ankarea",2017,"Algae-macro/fleshy",8.4,9.61249187255833,40,"AMAC","WCS Madagascar","Post","New",6
+"Ankaso_15","Madagascar","Ankivonjy",2016,"Coral",52.5,34.9247310956758,20,"HC","WCS Madagascar","Pre","New",6
+"Ankaso_15","Madagascar","Ankivonjy",2016,"Soft coral",34.25,28.8496556578921,20,"SC","WCS Madagascar","Pre","New",6
+"Ankaso_15","Madagascar","Ankivonjy",2016,"Algae-macro/fleshy",0,0,20,"AMAC","WCS Madagascar","Pre","New",6
+"Ankaso_15","Madagascar","Ankivonjy",2017,"Coral",49.25,18.5896993810261,40,"HC","WCS Madagascar","Post","New",6
+"Ankaso_15","Madagascar","Ankivonjy",2017,"Soft coral",16.125,16.0722527261211,40,"SC","WCS Madagascar","Post","New",6
+"Ankaso_15","Madagascar","Ankivonjy",2017,"Algae-macro/fleshy",4.1,7.31279174302968,40,"AMAC","WCS Madagascar","Post","New",6
+"Anki_14","Madagascar","Ankivonjy",2016,"Coral",61.7647058823529,25.6747186249546,17,"HC","WCS Madagascar","Pre","New",6
+"Anki_14","Madagascar","Ankivonjy",2016,"Soft coral",25.5882352941176,21.7860586830472,17,"SC","WCS Madagascar","Pre","New",6
+"Anki_14","Madagascar","Ankivonjy",2016,"Algae-macro/fleshy",0,0,17,"AMAC","WCS Madagascar","Pre","New",6
+"Anki_14","Madagascar","Ankivonjy",2017,"Coral",68.25,18.7954577164067,40,"HC","WCS Madagascar","Post","New",6
+"Anki_14","Madagascar","Ankivonjy",2017,"Soft coral",25.825,16.3783589234588,40,"SC","WCS Madagascar","Post","New",6
+"Anki_14","Madagascar","Ankivonjy",2017,"Algae-macro/fleshy",0.25,1.10360713931576,40,"AMAC","WCS Madagascar","Post","New",6
+"Antsa_09","Madagascar","Soariake",2016,"Coral",9.47368421052632,10.787690624311,19,"HC","WCS Madagascar","Pre","New",6
+"Antsa_09","Madagascar","Soariake",2016,"Soft coral",8.68421052631579,9.69566129530195,19,"SC","WCS Madagascar","Pre","New",6
+"Antsa_09","Madagascar","Soariake",2016,"Algae-macro/fleshy",41.8421052631579,10.5686284083011,19,"AMAC","WCS Madagascar","Pre","New",6
+"Antsa_09","Madagascar","Soariake",2017,"Coral",11.5526315789474,10.4148993284986,38,"HC","WCS Madagascar","Post","New",6
+"Antsa_09","Madagascar","Soariake",2017,"Soft coral",9.39473684210526,6.58228364908292,38,"SC","WCS Madagascar","Post","New",6
+"Antsa_09","Madagascar","Soariake",2017,"Algae-macro/fleshy",69.6578947368421,15.9987775137529,38,"AMAC","WCS Madagascar","Post","New",6
+"Antsoa_07","Madagascar","Ankarea",2016,"Coral",75.7894736842105,20.1565510370103,19,"HC","WCS Madagascar","Pre","New",6
+"Antsoa_07","Madagascar","Ankarea",2016,"Soft coral",9.73684210526316,15.2273223197396,19,"SC","WCS Madagascar","Pre","New",6
+"Antsoa_07","Madagascar","Ankarea",2016,"Algae-macro/fleshy",0,0,19,"AMAC","WCS Madagascar","Pre","New",6
+"Antsoa_07","Madagascar","Ankarea",2017,"Coral",39.75,19.3135398234715,40,"HC","WCS Madagascar","Post","New",6
+"Antsoa_07","Madagascar","Ankarea",2017,"Soft coral",24.05,18.5830774962268,40,"SC","WCS Madagascar","Post","New",6
+"Antsoa_07","Madagascar","Ankarea",2017,"Algae-macro/fleshy",3.3,5.76105403461412,40,"AMAC","WCS Madagascar","Post","New",6
+"Beangovo_04","Madagascar","Ankarea",2016,"Coral",45.3333333333333,24.8902352243568,15,"HC","WCS Madagascar","Pre","New",6
+"Beangovo_04","Madagascar","Ankarea",2016,"Soft coral",41.3333333333333,24.818387960389,15,"SC","WCS Madagascar","Pre","New",6
+"Beangovo_04","Madagascar","Ankarea",2016,"Algae-macro/fleshy",0,0,15,"AMAC","WCS Madagascar","Pre","New",6
+"Beangovo_04","Madagascar","Ankarea",2017,"Coral",60.8,21.3867919940058,40,"HC","WCS Madagascar","Post","New",6
+"Beangovo_04","Madagascar","Ankarea",2017,"Soft coral",22.025,20.119498770328,40,"SC","WCS Madagascar","Post","New",6
+"Beangovo_04","Madagascar","Ankarea",2017,"Algae-macro/fleshy",0.625,2.0215188501566,40,"AMAC","WCS Madagascar","Post","New",6
+"Beko_03","Madagascar","Soariake",2016,"Coral",45,25.8198889747161,22,"HC","WCS Madagascar","Pre","New",6
+"Beko_03","Madagascar","Soariake",2016,"Soft coral",13.6363636363636,18.0067327475704,22,"SC","WCS Madagascar","Pre","New",6
+"Beko_03","Madagascar","Soariake",2016,"Algae-macro/fleshy",5.45454545454545,12.6217019180204,22,"AMAC","WCS Madagascar","Pre","New",6
+"Beko_03","Madagascar","Soariake",2017,"Coral",48.25,19.7273076385671,40,"HC","WCS Madagascar","Post","New",6
+"Beko_03","Madagascar","Soariake",2017,"Soft coral",17.975,18.1581196078313,40,"SC","WCS Madagascar","Post","New",6
+"Beko_03","Madagascar","Soariake",2017,"Algae-macro/fleshy",12.75,13.7257945452143,40,"AMAC","WCS Madagascar","Post","New",6
+"Kisi_16","Madagascar","Ankivonjy",2016,"Coral",51,22.8504454473618,15,"HC","WCS Madagascar","Pre","New",6
+"Kisi_16","Madagascar","Ankivonjy",2016,"Soft coral",12.3333333333333,19.0737915425729,15,"SC","WCS Madagascar","Pre","New",6
+"Kisi_16","Madagascar","Ankivonjy",2016,"Algae-macro/fleshy",0,0,15,"AMAC","WCS Madagascar","Pre","New",6
+"Kisi_16","Madagascar","Ankivonjy",2017,"Coral",57.625,23.424387357558,40,"HC","WCS Madagascar","Post","New",6
+"Kisi_16","Madagascar","Ankivonjy",2017,"Soft coral",5.525,6.89476761847856,40,"SC","WCS Madagascar","Post","New",6
+"Kisi_16","Madagascar","Ankivonjy",2017,"Algae-macro/fleshy",11.35,10.6735955059971,40,"AMAC","WCS Madagascar","Post","New",6
+"Madiro_17","Madagascar","Ankivonjy",2016,"Coral",52.5,30.9711240725258,20,"HC","WCS Madagascar","Pre","New",6
+"Madiro_17","Madagascar","Ankivonjy",2016,"Soft coral",8.25,19.2131396924632,20,"SC","WCS Madagascar","Pre","New",6
+"Madiro_17","Madagascar","Ankivonjy",2016,"Algae-macro/fleshy",0,0,20,"AMAC","WCS Madagascar","Pre","New",6
+"Madiro_17","Madagascar","Ankivonjy",2017,"Coral",50,21.1829636434081,40,"HC","WCS Madagascar","Post","New",6
+"Madiro_17","Madagascar","Ankivonjy",2017,"Soft coral",7.45,9.33411168915613,40,"SC","WCS Madagascar","Post","New",6
+"Madiro_17","Madagascar","Ankivonjy",2017,"Algae-macro/fleshy",13.975,12.8810883040773,40,"AMAC","WCS Madagascar","Post","New",6
+"Marotogny_20","Madagascar","Ankivonjy",2016,"Coral",43.8235294117647,27.9804290847139,17,"HC","WCS Madagascar","Pre","New",6
+"Marotogny_20","Madagascar","Ankivonjy",2016,"Soft coral",3.52941176470588,6.55855974146404,17,"SC","WCS Madagascar","Pre","New",6
+"Marotogny_20","Madagascar","Ankivonjy",2016,"Algae-macro/fleshy",10,11.9895788082818,17,"AMAC","WCS Madagascar","Pre","New",6
+"Marotogny_20","Madagascar","Ankivonjy",2017,"Coral",52.25,22.7288927161568,40,"HC","WCS Madagascar","Post","New",6
+"Marotogny_20","Madagascar","Ankivonjy",2017,"Soft coral",4.95,10.238063719178,40,"SC","WCS Madagascar","Post","New",6
+"Marotogny_20","Madagascar","Ankivonjy",2017,"Algae-macro/fleshy",18.575,16.979455912276,40,"AMAC","WCS Madagascar","Post","New",6
+"NosyFisaka_02","Madagascar","Ankarea",2016,"Coral",81.4705882352941,23.6355601981919,17,"HC","WCS Madagascar","Pre","New",6
+"NosyFisaka_02","Madagascar","Ankarea",2016,"Soft coral",4.70588235294118,8.19118967154919,17,"SC","WCS Madagascar","Pre","New",6
+"NosyFisaka_02","Madagascar","Ankarea",2016,"Algae-macro/fleshy",0,0,17,"AMAC","WCS Madagascar","Pre","New",6
+"NosyFisaka_02","Madagascar","Ankarea",2017,"Coral",59.95,27.7922235941584,40,"HC","WCS Madagascar","Post","New",6
+"NosyFisaka_02","Madagascar","Ankarea",2017,"Soft coral",5.3,6.58747840944255,40,"SC","WCS Madagascar","Post","New",6
+"NosyFisaka_02","Madagascar","Ankarea",2017,"Algae-macro/fleshy",3.725,9.00423689444487,40,"AMAC","WCS Madagascar","Post","New",6
+"NosyKaine_09","Madagascar","Ankarea",2016,"Coral",87.9411764705882,23.1205281844817,17,"HC","WCS Madagascar","Pre","New",6
+"NosyKaine_09","Madagascar","Ankarea",2016,"Soft coral",2.05882352941176,7.30128916900377,17,"SC","WCS Madagascar","Pre","New",6
+"NosyKaine_09","Madagascar","Ankarea",2016,"Algae-macro/fleshy",0,0,17,"AMAC","WCS Madagascar","Pre","New",6
+"NosyKaine_09","Madagascar","Ankarea",2017,"Coral",67.075,23.2029921810495,40,"HC","WCS Madagascar","Post","New",6
+"NosyKaine_09","Madagascar","Ankarea",2017,"Soft coral",4.175,6.54329760822046,40,"SC","WCS Madagascar","Post","New",6
+"NosyKaine_09","Madagascar","Ankarea",2017,"Algae-macro/fleshy",0.6,1.99743425166978,40,"AMAC","WCS Madagascar","Post","New",6
+"NosyKarabo_06","Madagascar","Ankarea",2016,"Coral",87.8947368421053,15.9265492420748,19,"HC","WCS Madagascar","Pre","New",6
+"NosyKarabo_06","Madagascar","Ankarea",2016,"Soft coral",10.7894736842105,15.1165066046962,19,"SC","WCS Madagascar","Pre","New",6
+"NosyKarabo_06","Madagascar","Ankarea",2016,"Algae-macro/fleshy",0,0,19,"AMAC","WCS Madagascar","Pre","New",6
+"NosyKarabo_06","Madagascar","Ankarea",2017,"Coral",60.075,24.473310947192,40,"HC","WCS Madagascar","Post","New",6
+"NosyKarabo_06","Madagascar","Ankarea",2017,"Soft coral",8.55,10.0382601414123,40,"SC","WCS Madagascar","Post","New",6
+"NosyKarabo_06","Madagascar","Ankarea",2017,"Algae-macro/fleshy",4.45,7.37963239998947,40,"AMAC","WCS Madagascar","Post","New",6
+"NosyLava_01","Madagascar","Ankarea",2016,"Coral",86.5625,20.9538182678003,16,"HC","WCS Madagascar","Pre","New",6
+"NosyLava_01","Madagascar","Ankarea",2016,"Soft coral",1.25,3.87298334620742,16,"SC","WCS Madagascar","Pre","New",6
+"NosyLava_01","Madagascar","Ankarea",2016,"Algae-macro/fleshy",0,0,16,"AMAC","WCS Madagascar","Pre","New",6
+"NosyLava_01","Madagascar","Ankarea",2017,"Coral",79.75,21.332231542061,40,"HC","WCS Madagascar","Post","New",6
+"NosyLava_01","Madagascar","Ankarea",2017,"Soft coral",0.05,0.316227766016838,40,"SC","WCS Madagascar","Post","New",6
+"NosyLava_01","Madagascar","Ankarea",2017,"Algae-macro/fleshy",2.85,5.00538171909457,40,"AMAC","WCS Madagascar","Post","New",6
+"NosyVazoa_05","Madagascar","Ankarea",2016,"Coral",79.25,22.8999540335094,20,"HC","WCS Madagascar","Pre","New",6
+"NosyVazoa_05","Madagascar","Ankarea",2016,"Soft coral",8.75,20.2533298107016,20,"SC","WCS Madagascar","Pre","New",6
+"NosyVazoa_05","Madagascar","Ankarea",2016,"Algae-macro/fleshy",0,0,20,"AMAC","WCS Madagascar","Pre","New",6
+"NosyVazoa_05","Madagascar","Ankarea",2017,"Coral",63.125,24.3554737700604,40,"HC","WCS Madagascar","Post","New",6
+"NosyVazoa_05","Madagascar","Ankarea",2017,"Soft coral",2.1,8.05684929192674,40,"SC","WCS Madagascar","Post","New",6
+"NosyVazoa_05","Madagascar","Ankarea",2017,"Algae-macro/fleshy",6.875,9.45213990152223,40,"AMAC","WCS Madagascar","Post","New",6
+"Plateau_13","Madagascar","Ankivonjy",2016,"Coral",19.0625,8.79749017239197,16,"HC","WCS Madagascar","Pre","New",6
+"Plateau_13","Madagascar","Ankivonjy",2016,"Soft coral",13.125,15.2616076042685,16,"SC","WCS Madagascar","Pre","New",6
+"Plateau_13","Madagascar","Ankivonjy",2016,"Algae-macro/fleshy",0,0,16,"AMAC","WCS Madagascar","Pre","New",6
+"Plateau_13","Madagascar","Ankivonjy",2017,"Coral",27.325,23.0065626088932,40,"HC","WCS Madagascar","Post","New",6
+"Plateau_13","Madagascar","Ankivonjy",2017,"Soft coral",22.475,17.9586240978305,40,"SC","WCS Madagascar","Post","New",6
+"Plateau_13","Madagascar","Ankivonjy",2017,"Algae-macro/fleshy",16.7,22.1164748895131,40,"AMAC","WCS Madagascar","Post","New",6
+"Rata_12","Madagascar","Ankarea",2016,"Coral",73.25,27.3993372950976,20,"HC","WCS Madagascar","Pre","New",6
+"Rata_12","Madagascar","Ankarea",2016,"Soft coral",6.75,15.9171374046307,20,"SC","WCS Madagascar","Pre","New",6
+"Rata_12","Madagascar","Ankarea",2016,"Algae-macro/fleshy",0,0,20,"AMAC","WCS Madagascar","Pre","New",6
+"Rata_12","Madagascar","Ankarea",2017,"Coral",68.3,23.015268064973,40,"HC","WCS Madagascar","Post","New",6
+"Rata_12","Madagascar","Ankarea",2017,"Soft coral",7.025,8.73098666847729,40,"SC","WCS Madagascar","Post","New",6
+"Rata_12","Madagascar","Ankarea",2017,"Algae-macro/fleshy",1.85,4.82806963601981,40,"AMAC","WCS Madagascar","Post","New",6
+"Sal_N1_11","Madagascar","Soariake",2016,"Coral",48.3333333333333,28.3110429252465,12,"HC","WCS Madagascar","Pre","New",6
+"Sal_N1_11","Madagascar","Soariake",2016,"Soft coral",17.5,22.9128784747792,12,"SC","WCS Madagascar","Pre","New",6
+"Sal_N1_11","Madagascar","Soariake",2016,"Algae-macro/fleshy",16.6666666666667,19.1089380958628,12,"AMAC","WCS Madagascar","Pre","New",6
+"Sal_N1_11","Madagascar","Soariake",2017,"Coral",33.8571428571429,20.2588293854119,35,"HC","WCS Madagascar","Post","New",6
+"Sal_N1_11","Madagascar","Soariake",2017,"Soft coral",17.0857142857143,19.2497080628305,35,"SC","WCS Madagascar","Post","New",6
+"Sal_N1_11","Madagascar","Soariake",2017,"Algae-macro/fleshy",18.7714285714286,17.2321275090279,35,"AMAC","WCS Madagascar","Post","New",6
+"Sal_N2_02","Madagascar","Soariake",2016,"Coral",39.375,21.7842505363065,8,"HC","WCS Madagascar","Pre","New",6
+"Sal_N2_02","Madagascar","Soariake",2016,"Soft coral",31.875,24.1923098761333,8,"SC","WCS Madagascar","Pre","New",6
+"Sal_N2_02","Madagascar","Soariake",2016,"Algae-macro/fleshy",21.875,36.0493213726496,8,"AMAC","WCS Madagascar","Pre","New",6
+"Sal_N2_02","Madagascar","Soariake",2017,"Coral",53.2702702702703,17.5904782460547,37,"HC","WCS Madagascar","Post","New",6
+"Sal_N2_02","Madagascar","Soariake",2017,"Soft coral",15.9189189189189,10.5944911743435,37,"SC","WCS Madagascar","Post","New",6
+"Sal_N2_02","Madagascar","Soariake",2017,"Algae-macro/fleshy",13.2162162162162,8.5411914831569,37,"AMAC","WCS Madagascar","Post","New",6
+"Sal_N2_05","Madagascar","Soariake",2016,"Coral",35,21.6794833886788,6,"HC","WCS Madagascar","Pre","New",6
+"Sal_N2_05","Madagascar","Soariake",2016,"Soft coral",53.3333333333333,23.1660671385254,6,"SC","WCS Madagascar","Pre","New",6
+"Sal_N2_05","Madagascar","Soariake",2016,"Algae-macro/fleshy",0,0,6,"AMAC","WCS Madagascar","Pre","New",6
+"Sal_N2_05","Madagascar","Soariake",2017,"Coral",48.375,27.4419550585576,40,"HC","WCS Madagascar","Post","New",6
+"Sal_N2_05","Madagascar","Soariake",2017,"Soft coral",7.125,10.04142062684,40,"SC","WCS Madagascar","Post","New",6
+"Sal_N2_05","Madagascar","Soariake",2017,"Algae-macro/fleshy",36.675,28.2964050448381,40,"AMAC","WCS Madagascar","Post","New",6
+"Sal_N2_13","Madagascar","Soariake",2016,"Coral",5.75,6.54438288675266,20,"HC","WCS Madagascar","Pre","New",6
+"Sal_N2_13","Madagascar","Soariake",2016,"Soft coral",48.75,19.1857266024292,20,"SC","WCS Madagascar","Pre","New",6
+"Sal_N2_13","Madagascar","Soariake",2016,"Algae-macro/fleshy",12.75,12.2983738762488,20,"AMAC","WCS Madagascar","Pre","New",6
+"Sal_N2_13","Madagascar","Soariake",2017,"Coral",10.6486486486486,12.4191076263246,37,"HC","WCS Madagascar","Post","New",6
+"Sal_N2_13","Madagascar","Soariake",2017,"Soft coral",56.9459459459459,21.7752993932038,37,"SC","WCS Madagascar","Post","New",6
+"Sal_N2_13","Madagascar","Soariake",2017,"Algae-macro/fleshy",19.9459459459459,15.1839570781978,37,"AMAC","WCS Madagascar","Post","New",6
+"Tsand_10","Madagascar","Soariake",2016,"Coral",14.7619047619048,15.848989752993,21,"HC","WCS Madagascar","Pre","New",6
+"Tsand_10","Madagascar","Soariake",2016,"Soft coral",14.047619047619,10.561610627533,21,"SC","WCS Madagascar","Pre","New",6
+"Tsand_10","Madagascar","Soariake",2016,"Algae-macro/fleshy",51.4285714285714,19.5027470592515,21,"AMAC","WCS Madagascar","Pre","New",6
+"Tsand_10","Madagascar","Soariake",2017,"Coral",50.5675675675676,19.9270064381378,37,"HC","WCS Madagascar","Post","New",6
+"Tsand_10","Madagascar","Soariake",2017,"Soft coral",16.5405405405405,12.210183806503,37,"SC","WCS Madagascar","Post","New",6
+"Tsand_10","Madagascar","Soariake",2017,"Algae-macro/fleshy",6.94594594594595,6.52323175677153,37,"AMAC","WCS Madagascar","Post","New",6
+"Tsara_08","Madagascar","Ankarea",2016,"Coral",83.3333333333333,20.5866345916355,15,"HC","WCS Madagascar","Pre","New",6
+"Tsara_08","Madagascar","Ankarea",2016,"Soft coral",3.33333333333333,7.94325110362489,15,"SC","WCS Madagascar","Pre","New",6
+"Tsara_08","Madagascar","Ankarea",2016,"Algae-macro/fleshy",0,0,15,"AMAC","WCS Madagascar","Pre","New",6
+"Tsara_08","Madagascar","Ankarea",2017,"Coral",66.575,22.3146353032701,40,"HC","WCS Madagascar","Post","New",6
+"Tsara_08","Madagascar","Ankarea",2017,"Soft coral",3.325,7.7007741868544,40,"SC","WCS Madagascar","Post","New",6
+"Tsara_08","Madagascar","Ankarea",2017,"Algae-macro/fleshy",6.875,14.7059860478999,40,"AMAC","WCS Madagascar","Post","New",6
