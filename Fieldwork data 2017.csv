@@ -1,0 +1,80 @@
+data source,Country,Year,Sector,Site,Station,Zone,Benthic category,Benthic code,# samples,mean cover (%),standard deviation
+CNRO,Madagascar,2017,Nosy Be,Andokobe,Antsakabaniany,Platier récifal,Hard coral,HC,8,50.3,7.2
+CNRO,Madagascar,2017,Nosy Be,Andokobe,Antsakabaniany,Platier récifal,Algae-Halimeda,Ahal,8,0.38,0.12
+CNRO,Madagascar,2017,Nosy Be,Andokobe,Antsakabaniany,Platier récifal,Sponge,SPO,8,0.31,0.14
+CNRO,Madagascar,2017,Nosy Be,Andokobe,Antsakabaniany,Platier récifal,Dead Standing coral,DC,8,25.44,2.75
+CNRO,Madagascar,2017,Nosy Be,Andokobe,Antsakabaniany,Platier récifal,Silt/sand,S,8,12.34,1.63
+CNRO,Madagascar,2017,Nosy Be,Andokobe,Antsakabaniany,Platier récifal,Coral remains ,CR,8,10.46,1.11
+CNRO,Madagascar,2017,Nosy Be,Andokobe,Antsakabaniany,Platier récifal,Branching coral,CB,8,0.77,
+CNRO,Madagascar,2017,Nosy Be,Sakatia,Ampijoroa,Pente externe,Hard coral,HC,8,37.08,2.33
+CNRO,Madagascar,2017,Nosy Be,Sakatia,Ampijoroa,Pente externe,Algae-Halimeda,AHAL,8,4.56,0.91
+CNRO,Madagascar,2017,Nosy Be,Sakatia,Ampijoroa,Pente externe,Algae-macro,AMAC,8,5.18,0.19
+CNRO,Madagascar,2017,Nosy Be,Sakatia,Ampijoroa,Pente externe,Soft coral,SC,8,6.06,0.92
+CNRO,Madagascar,2017,Nosy Be,Sakatia,Ampijoroa,Pente externe,Sponge,SPO,8,0.63,0.17
+CNRO,Madagascar,2017,Nosy Be,Sakatia,Ampijoroa,Pente externe,Silt/sand,S,8,19.20,1.05
+CNRO,Madagascar,2017,Nosy Be,Sakatia,Ampijoroa,Pente externe,Recent Dead Coral,RDC,8,14.44,1.58
+CNRO,Madagascar,2017,Nosy Be,Sakatia,Ampijoroa,Pente externe,Bare substrate,BS,8,10.92,1.08
+CNRO,Madagascar,2017,Nosy Be,Sakatia,Ampijoroa,Pente externe,Coral remains ,RC,8,1.94,0.4
+CNRO,Madagascar,2017,Nosy Be,Ambatozavavy,Ambatomagnoegny,Platier récifal,Hard coral,HC,8,31.45,3.66
+CNRO,Madagascar,2017,Nosy Be,Ambatozavavy,Ambatomagnoegny,Platier récifal,Algae-Halimeda,AHAL,8,5.94,1.75
+CNRO,Madagascar,2017,Nosy Be,Ambatozavavy,Ambatomagnoegny,Platier récifal,Algae-macro,AMAC,8,1.36,0.27
+CNRO,Madagascar,2017,Nosy Be,Ambatozavavy,Ambatomagnoegny,Platier récifal,Soft coral,SC,8,4.31,0.83
+CNRO,Madagascar,2017,Nosy Be,Ambatozavavy,Ambatomagnoegny,Platier récifal,Silt/sand,S,8,13.99,1.73
+CNRO,Madagascar,2017,Nosy Be,Ambatozavavy,Ambatomagnoegny,Platier récifal,Recent Dead Coral,RDC,8,30.29,3.4
+CNRO,Madagascar,2017,Nosy Be,Ambatozavavy,Ambatomagnoegny,Platier récifal,Coral remains ,RC,8,12.66,2.09
+CNRO,Madagascar,2017,Nosy Be,Nosy Komba,Nosy Vorona,Pente externe,Hard coral,HC,8,41.98,3.19
+CNRO,Madagascar,2017,Nosy Be,Nosy Komba,Nosy Vorona,Pente externe,Algae-macro,AMAC,8,1.38,0.61
+CNRO,Madagascar,2017,Nosy Be,Nosy Komba,Nosy Vorona,Pente externe,Soft coral,SC,8,3.31,0.79
+CNRO,Madagascar,2017,Nosy Be,Nosy Komba,Nosy Vorona,Pente externe,Autres,OT,8,4.91,1.65
+CNRO,Madagascar,2017,Nosy Be,Nosy Komba,Nosy Vorona,Pente externe,Silt/sand,S,8,30.78,1.3
+CNRO,Madagascar,2017,Nosy Be,Nosy Komba,Nosy Vorona,Pente externe,Recent Dead Coral,RDC,8,10.90,1.77
+CNRO,Madagascar,2017,Nosy Be,Nosy Komba,Nosy Vorona,Pente externe,Bare substrate,BS,8,3.00,0.64
+CNRO,Madagascar,2017,Nosy Be,Nosy Komba,Nosy Vorona,Pente externe,Coral remains ,RC,8,3.75,0.74
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Sud,Pente externe,Coral,HC,3,12.533,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Sud,Pente externe,Algae-coralline,ACOR,3,5.667,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Sud,Pente externe,Dead Standing coral,DC,3,0.500,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Sud,Pente externe,Soft coral,SC,3,2.833,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Sud,Pente externe,Algae-macro,AMAC,3,67.233,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Sud,Pente externe,Silt/sand,S,3,1.000,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Sud,Pente externe,Algae-turf,ATRF,3,10.233,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Sud,Pente externe,Other,O,3,0.000,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Nord,Pente externe,Coral,HC,2,52.032,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Nord,Pente externe,Algae-coralline,ACOR,2,23.538,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Nord,Pente externe,Dead Standing coral,DC,2,0.000,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Nord,Pente externe,Soft coral,SC,2,8.870,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Nord,Pente externe,Algae-macro,AMAC,2,14.767,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Nord,Pente externe,Silt/sand,S,2,0.000,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Nord,Pente externe,Algae-turf,ATRF,2,0.793,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Fausse Passe Nord,Pente externe,Other,O,2,0.000,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Ankaranjelita,Platier récifal,Coral,HC,4,44.250,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Ankaranjelita,Platier récifal,Algae-coralline,ACOR,4,8.000,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Ankaranjelita,Platier récifal,Dead Standing coral,DC,4,1.000,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Ankaranjelita,Platier récifal,Soft coral,SC,4,0.000,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Ankaranjelita,Platier récifal,Algae-macro,AMAC,4,24.225,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Ankaranjelita,Platier récifal,Silt/sand,S,4,2.250,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Ankaranjelita,Platier récifal,Algae-turf,ATRF,4,18.075,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Ankaranjelita,Platier récifal,Other,O,4,2.200,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Nosy Ve Anakao,Aquarium,Zone interne,Coral,HC,5,40.600,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Nosy Ve Anakao,Aquarium,Zone interne,Algae-coralline,ACOR,5,2.800,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Nosy Ve Anakao,Aquarium,Zone interne,Dead Standing coral,DC,5,5.900,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Nosy Ve Anakao,Aquarium,Zone interne,Soft coral,SC,5,1.300,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Nosy Ve Anakao,Aquarium,Zone interne,Algae-macro,AMAC,5,15.740,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Nosy Ve Anakao,Aquarium,Zone interne,Silt/sand,S,5,7.900,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Nosy Ve Anakao,Aquarium,Zone interne,Algae-turf,ATRF,5,25.260,
+YSO,Madagascar,2017,Toliara,Nosy Ve Anakao,Aquarium,Zone interne,Other,O,5,0.500,
+YSO,Madagascar,2017,Toliara,Nosy Ve Anakao,Nosy Ve Nord,Pente externe,Coral,HC,4,30.000,
+YSO,Madagascar,2017,Toliara,Nosy Ve Anakao,Nosy Ve Nord,Pente externe,Algae-coralline,ACOR,4,22.500,
+YSO,Madagascar,2017,Toliara,Nosy Ve Anakao,Nosy Ve Nord,Pente externe,Dead Standing coral,DC,4,0.500,
+YSO,Madagascar,2017,Toliara,Nosy Ve Anakao,Nosy Ve Nord,Pente externe,Soft coral,SC,4,3.075,
+YSO,Madagascar,2017,Toliara,Nosy Ve Anakao,Nosy Ve Nord,Pente externe,Algae-macro,AMAC,4,28.300,
+YSO,Madagascar,2017,Toliara,Nosy Ve Anakao,Nosy Ve Nord,Pente externe,Silt/sand,S,4,0.250,
+YSO,Madagascar,2017,Toliara,Nosy Ve Anakao,Nosy Ve Nord,Pente externe,Algae-turf,ATRF,4,14.375,
+YSO,Madagascar,2017,Toliara,Nosy Ve Anakao,Nosy Ve Nord,Pente externe,Other,O,4,1.000,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Massif des roses,Zone interne,Coral,HC,6,22.350,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Massif des roses,Zone interne,Algae-coralline,ACOR,6,16.300,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Massif des roses,Zone interne,Dead Standing coral,DC,6,24.967,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Massif des roses,Zone interne,Soft coral,SC,6,10.883,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Massif des roses,Zone interne,Algae-macro,AMAC,6,7.400,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Massif des roses,Zone interne,Silt/sand,S,6,14.267,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Massif des roses,Zone interne,Algae-turf,ATRF,6,2.233,
+YSO/REEF DOCTOR,Madagascar,2017,Toliara,Baie de Ranobe,Massif des roses,Zone interne,Other,O,6,1.600,

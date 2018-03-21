@@ -1366,7 +1366,7 @@ mad<-df3[order(df3$Site),]   #change in mean coral cover at each site
 
 write.csv(mad,"Madagascar_change_in_coral_cover_per_site.csv",row.names =F)
 
-# mad2$Site<-factor(mad2$Site,levels=c("madga","Zanzibar","Mafia","Songosongo","Mtwara"))
+mad2$Site<-factor(mad2$Site,levels=c("Soariake","Andavadoaka","Ankivonjy","Nosy Komba","Nosy Be","Ankarea"))
 
 #bar plot to show change in coral cover for 3 islands
 p<-NA 
@@ -1418,7 +1418,63 @@ p<-p+ scale_fill_manual("Period",
 
 print(p)
 
-jpeg(paste("graphs/","Madagascar_coral_cover_change_per_site.jpeg"),res=300,height=3.5,width=3.5,units = 'in')
+jpeg(paste("graphs/","Madagascar_coral_cover_change_per_site.jpeg"),res=300,height=3.5,width=5.5,units = 'in')
 p
 dev.off()
 
+
+# 2017 fieldwork data summaries -------------------------------------------
+library(plyr)
+ihando<-read.csv("Fieldwork data 2017.csv",header = T,stringsAsFactors = F)
+
+test<-ddply(ihando,c("Site","Station"),summarise,
+            total=sum(mean.cover....))
+
+#all add up to 100
+
+#need to stadardise benthic codes 
+
+unique(ihando$Benthic.code)
+unique(ihando$Benthic.category)
+
+ihando$Benthic.code[which(ihando$Benthic.code=='Ahal')]<-'AHAL'
+ihando$Benthic.code[which(ihando$Benthic.code=='CR')]<-'DC'
+ihando$Benthic.code[which(ihando$Benthic.code=='CB')]<-'HC'
+ihando$Benthic.code[which(ihando$Benthic.code=='RC')]<-'DC'
+
+#step 1 - for each site sum common benthic codes
+#convert long to wide and then back again
+#step 2 - average across sites for common benthic categories
+
+ihando1<-ddply(ihando,c("Country","Year","Sector","Site","Station","Zone","Benthic.code"),summarise,
+               cover=sum(mean.cover....))
+
+test1<-ddply(ihando1,c("Site","Station"),summarise,
+            total=sum(cover))
+
+library(tidyr)
+data_wide <- spread(ihando1, Benthic.code, cover)
+
+data_wide[is.na(data_wide)] <- 0
+
+data_wide$FA<-rowSums(data_wide[c("ATRF","AHAL","AMAC")])
+
+#wide to long again
+
+ihando2<-gather(data_wide,benthic_code,mean_cover,ACOR:FA)
+
+#IHANDO2 IS READY TO AVERAGE ACROSS
+
+#now need to identify correct site resolution - Nosy Be, Baie de Ranobe, Nosy Ve Anakao
+
+ihando2$site2<-ihando2$Site
+ihando2$site2[which(ihando2$Sector=='Nosy Be')]<-'Nosy Be'
+
+ihando_summary<-ddply(ihando2,c("Country","Year","site2","benthic_code"),summarise,
+                      ave_cover=mean(mean_cover),
+                      se=sd(mean_cover)/sqrt(length(mean_cover)),
+                      n = length(mean_cover))
+
+ihando_summary<-ihando_summary[which(ihando_summary$benthic_code=='HC'|ihando_summary$benthic_code=='FA'),]
+
+write.csv(ihando_summary,"2017 fieldwork HC and FA site summaries.csv", row.names = F)
