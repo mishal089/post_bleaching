@@ -94,6 +94,20 @@ wcs2$Period[which(wcs2$YEAR==2016)]<-'Pre'
 
 wcs2$Source<-'New'
 
+#Save a WCS file with all sites regardless of whether they are in both periods
+
+#FUNCTION TO CAPITALISE FIRST LETTER
+capFirst <- function(s) {
+  paste(toupper(substring(s, 1, 1)), substring(s, 2), sep = "")
+}
+wcs2$COUNTRY <- tolower(wcs2$COUNTRY) 
+wcs2$COUNTRY<- capFirst(wcs2$COUNTRY)
+
+wcs2$NAP <- tolower(wcs2$NAP) 
+wcs2$NAP <- capFirst(wcs2$NAP) ## capitalize first letter
+
+write.csv(wcs2,"WCS Madagascar all benthic data 2016 2017.csv",row.names = F)
+
 #NOW I NEED TO FILTER OUT THOSE SITES WHICH DON'T HAVE DATA PRE AND POST
 
 rep2<-ddply(wcs2,c("Transect_ID"),summarise,

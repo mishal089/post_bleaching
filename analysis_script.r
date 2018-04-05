@@ -117,7 +117,7 @@ alg5<-alg4[-which(alg4$Period=='Pre'&alg4$Year==2016&alg4$Country=='Kenya'),]
 library(tidyr)
 data_long <- gather(alg2, benthic_category, mean_cover, FA:HC, factor_key=TRUE)
 
-algae_stations_trend<-unique(alg2[c("Country", "Site", "Station")])
+algae_stations_trend<-unique(alg5[c("Country", "Site", "Station")])
 alg_st_tr1<-algae_stations_trend[order(algae_stations_trend[1],algae_stations_trend[2],algae_stations_trend[3]),]
 
 
@@ -199,6 +199,21 @@ reg<-regional[order(regional$Period,regional$benthic_category),]
 #To create a seperate dataset from ben_lev1 with just the pre-bleaching data from latest year for each station and the post-bleac
 #data equivalent 
 
+#for new plot - showing both 1998 and 2016 step changes
+#use alg2 - all values for 2012,2013,2014,2015 - not just recent_cover - give you more samples, better average
+alg2$year3<-paste(alg2$Year, alg2$Period,sep="_")
+
+regional2<-ddply(alg2,c("year3","Period","Year"),summarise,
+                cover_HC=mean(HC,na.rm=T),
+                se_HC=sd(HC)/sqrt(length(Period)),
+                cover_FA=mean(FA,na.rm=T),
+                se_FA=sd(FA)/sqrt(length(Period)),
+                n=length(Period)
+)
+
+regional2[,-c(1:3,8)]<-round(regional2[,c(4,5,6,7)],1)
+
+
 #sites with data in both periods from 2012 onwards - just hard coral cover
 #r2 is just hard coral sites - used for Seychelles analysis and any other pre vs post that is only coral
 r<-ddply(ben_lev1,c("Country","Site","Station","Reef.zone","Period","level1_code"),summarise,
@@ -256,13 +271,15 @@ r6<-r5[order(r5$Country,r5$pct.chg),]
 sit<-unique(benthic[c("Country","Site","Station")])
 sit1<-sit[order(sit[1],sit[2],sit[3]),]
 
-write.csv(reg,"Regional averages for HC and FA pre vs post",row.names = F)
+write.csv(reg,"Regional averages for HC and FA pre vs post.csv",row.names = F)
+
+write.csv(regional2[,c(2:8)],"Yearly average for HC and FA.csv",row.names = F)
 
 write.csv(sit1,"All_Sites_used_in_analysis.csv",row.names = F)
 
-write.csv(ben_lev2[which(ben_lev2$Country=="Kenya"),],"Kenya_summarised_benthic_data.csv",row.names = F)
-
-write.csv(ben_lev1[which(ben_lev1$Country=="Kenya"),],"Kenya_summarised_benthic_data_sites_level1.csv",row.names = F)
+# write.csv(ben_lev2[which(ben_lev2$Country=="Kenya"),],"Kenya_summarised_benthic_data.csv",row.names = F)
+# 
+# write.csv(ben_lev1[which(ben_lev1$Country=="Kenya"),],"Kenya_summarised_benthic_data_sites_level1.csv",row.names = F)
 
 write.csv(alg_st_tr1,"All_stations_used_in_FA_HC_trend_graphs.csv",row.names = F)
 
@@ -290,19 +307,23 @@ p<- p + stat_summary(geom="ribbon", fun.data=mean_cl_boot,
                      fun.args=list(conf.int=0.95), fill="grey",alpha=0.5,colour=NA)
 p <- p +  stat_summary(geom="line", fun.y=mean, linetype="solid", size=1.2,alpha=1,aes(group=Period,colour=Period,shape=Period))
 p<- p + stat_summary(geom="point", fun.y=mean,size=2,fill='white',aes(group=Period,colour=Period,shape=Period))
-p <- p + theme_bw()+theme(plot.title=element_text(size=9),
+p <- p + theme_bw()+theme(plot.title=element_text(size=11),
                           axis.line = element_line(size=1,colour = "black"),
                           panel.grid.major = element_blank(),
                           panel.grid.minor = element_blank(),
                           panel.border = element_blank(),
                           panel.background = element_blank(),
-                          text = element_text(size=9,face="bold"),
+                          text = element_text(size=11,face="bold"),
                           axis.ticks.length=unit(0.2,"cm"),
                           axis.text = element_text(colour='black')) 
 p<- p + ylab("Hard Coral Cover (%)")
 p<- p + scale_x_continuous(breaks=seq(1992,2017,by=1),
                            labels = c(1992, rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
 # limits = c(1992,2016))
+# #just for Mauritius
+# p<- p + scale_x_continuous(breaks=seq(1992,2017,by=1),
+#                            labels = c(1992, rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,2013,2014,2015,2016,2017))
+
 p<- p + scale_y_continuous(breaks = seq(0,100,by=5),limits=c(0,100),
                            labels=c(0,"",10,"",20,"",30,"",40,"",50,"",60,"",70,"",80,"",90,"",100))
 p<- p + expand_limits(y=0)
@@ -320,7 +341,7 @@ p<- p + theme(legend.key = element_blank(),
               legend.key.height=unit(0.2, "cm"),
               plot.margin = unit(c(0,0.1,0.1,0.1), "lines"),
               #               legend.margin=unit(0.5,"cm"),
-              legend.text=element_text(size=8,colour = 'black'))
+              legend.text=element_text(size=8.5,colour = 'black'))
 p<-p+scale_colour_manual("Period", 
                          breaks = c("Pre", "Post"),
                          values = c("Pre" = "purple", "Post" = "blue"),
@@ -344,11 +365,11 @@ sey<-(s[5])
 tan<-(s[6])
 
 # 
-# for (i in 1:length(unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country))){
-#   jpeg(paste("graphs/",g[i],"HC_station_lines.jpeg"), width = 4, height = 3.5, units = 'in', res = 300)
-#   print(s[i])
-#   dev.off()
-# }
+for (i in 1:length(unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country))){
+  jpeg(paste("graphs/",g[i],"HC_station_lines.jpeg"), width = 3, height = 3, units = 'in', res = 300)
+  print(s[i])
+  dev.off()
+}
 
 
 # Plot 2: HC & FA -TREND LINE national plots ------------------------------------------------
@@ -375,7 +396,7 @@ p <- p + theme_bw()+theme(plot.title=element_blank(),
                           panel.grid.minor = element_blank(),
                           panel.border = element_blank(),
                           panel.background = element_blank(),
-                          text = element_text(size=9,face="bold"),
+                          text = element_text(size=11,face="bold"),
                           axis.ticks.length=unit(0.2,"cm"),
                           axis.text = element_text(colour="black"))
 p<- p + theme(legend.key = element_blank(),
@@ -383,12 +404,18 @@ p<- p + theme(legend.key = element_blank(),
               legend.key.height=unit(0, "cm"),
               # legend.justification="left",
               legend.spacing =unit(0,"cm"),
-              legend.text = element_text(size=8))
+              legend.text = element_text(size=7.5),
+              legend.title = element_text(size=7.5),
+              legend.justification = 'left')
 
 #p<- p + ggtitle(e[i])
 p<- p + ylab("Cover (%)")
 p<- p + scale_x_continuous(breaks=seq(1992,2017,by=1),
                            labels = c(1992,rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
+#just for mauritius
+# p<- p + scale_x_continuous(breaks=seq(1992,2017,by=1),
+#                            labels = c(1992,rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,2013,2014,2015,2016,2017))
+
 p<- p + scale_y_continuous(breaks = seq(0,100,by=5),
                            labels=c(0,"",10,"",20,"",30,"",40,"",50,"",60,"",70,"",80,"",90,"",100))
 p<- p + theme(strip.text.x = element_text(size=11,face="bold"),
@@ -423,8 +450,7 @@ p<-p+scale_shape_manual("Cover type",
 p<-p+scale_linetype_manual("Period", 
                            breaks = c("Pre", "Post"),
                            values = c("Pre"='solid', "Post"='dotted'))
-# p + guides(fill = guide_legend(override.aes = list(shape = 21)))
-
+# p<- p + guides(fill = guide_legend(nrow=2,byrow=TRUE))
 
 # print(p)
 
@@ -439,12 +465,12 @@ maur<-(s[3])
 sey<-(s[4])
 tan<-(s[5])
 
-# for (i in 1:5){
+for (i in 1:5){
   g<-unique(alg5$Country)
-  jpeg(paste("graphs/",g[i],"FA and HC together.jpeg"), width = 4.5, height = 3.5, units = 'in', res = 300)
+  jpeg(paste("graphs/",g[i],"FA and HC together.jpeg"), width = 4.25, height = 3, units = 'in', res = 300)
   print(s[i])
   dev.off()
-# }
+}
 
 
 # Plot 3: HC & FA - pre vs post BAR PLOT ------------------------------------------
@@ -464,7 +490,7 @@ p <- p + theme_bw()+theme(plot.title=element_blank(),
                           panel.grid.minor = element_blank(),
                           panel.border = element_blank(),
                           panel.background = element_blank(),
-                          text = element_text(size=9.5,face="bold"),
+                          text = element_text(size=11,face="bold"),
                           axis.ticks.length=unit(0.2,"cm"),
                           axis.text = element_text(colour="black"),
                           axis.title.x = element_blank())
@@ -474,7 +500,8 @@ p<- p + theme(legend.key = element_blank(),
               legend.key.height=unit(0.2, "cm"),
               plot.margin = unit(c(0,0.1,0.1,0.1), "lines"),
               #               legend.margin=unit(0.5,"cm"),
-              legend.text=element_text(size=8))
+              legend.text=element_text(size=8),
+              legend.title = element_text(size=8))
 
 #p<- p + ggtitle(e[i])
 p<- p + ylab("Cover (%)")
@@ -617,7 +644,7 @@ for (i in 1:length(unique(ben_lev1[which(ben_lev1$level1_code=='HC'),]$Country))
 
 #to get the linear regression equation - for region
 ben_lev1_a2$Year2<-ben_lev1_a2$Year-1992  #create a new year category where 1992 is year 0
-lin.mod <- lm(cover~Year2,ben_lev1_a2)
+lin.mod <- lm(cover~Year2,ben_lev1_a2[which(ben_lev1_a2$level1_code=='HC'),])
 summary(lin.mod)
 coef(lin.mod)
 
@@ -633,13 +660,13 @@ q<-q+  stat_summary(geom="smooth", fun.y=mean, size=1,aes(group=Country,shape=Co
 q<-q+   stat_summary(geom="point", fun.y=mean,size=2,fill='white',aes(shape=Country,colour=Country))
 
 
-q <- q + theme_bw()+theme(plot.title=element_text(size=10.5),
+q <- q + theme_bw()+theme(plot.title=element_text(size=10),
                           axis.line = element_line(size=1,colour = "black"),
                           panel.grid.major = element_blank(),
                           panel.grid.minor = element_blank(),
                           panel.border = element_blank(),
                           panel.background = element_blank(),
-                          text = element_text(size=10.5,face="bold"),
+                          text = element_text(size=10,face="bold"),
                           axis.ticks.length=unit(0.2,"cm"),
                           axis.text = element_text(colour='black'))
 
@@ -648,7 +675,7 @@ q<- q + theme(legend.key = element_blank(),
               legend.key.height=unit(0.3, "cm"),
               legend.justification="left",
               plot.margin = unit(c(0,0.2,0,0.2), "lines"),
-              legend.margin=unit(0, "cm"))
+              legend.spacing = unit(0, "cm"))
 
 q <- q + ylab("Hard coral cover (%)")
 # q<-q+ scale_colour_manual(values = c("Kenya" = "dark green", "La Reunion" = "red2",'Mozambique'='blue','Mauritius'='orange','Rodrigues'='orange','South Africa'='green',"Seychelles"='Purple',"Tanzania"="dark blue","Comoros"="grey40","Madagascar"="brown","regional"="black"))
@@ -657,7 +684,7 @@ q<-q+scale_colour_manual("Country",
                          breaks = c("Kenya", "La Reunion", 'Mozambique','Mauritius','Rodrigues','South Africa',"Seychelles","Tanzania","Comoros","Madagascar",'regional',"trendline"),
                          values = c("Kenya" = "dark green", "La Reunion" = "red2",'Mozambique'='blue','Mauritius'='orange','Rodrigues'='orange','South Africa'='green',"Seychelles"='Purple',"Tanzania"="dark blue","Comoros"="grey40","Madagascar"="brown","regional"="black","trendline"="grey"))
 
-q <- q + theme(plot.title = element_text(size = 12, face = "bold"))
+q <- q + theme(plot.title = element_text(size = 10, face = "bold"))
 q<- q + scale_x_continuous(breaks=seq(1992,2017,by=1),
                            labels = c(1992,rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
 q <- q + scale_y_continuous(breaks = seq(0,100,by=5),
@@ -675,12 +702,12 @@ q<-q+ scale_linetype_manual("Country",
                             values=c("Kenya"= 'solid',"La Reunion"='solid','Mozambique'='solid','Mauritius'='solid','South Africa'= 'solid',"Seychelles"='solid',"Tanzania"='solid',"Madagascar"='solid',"Comoros"='solid','regional'='solid','trendline'='dashed'))
 q<-q + expand_limits(y=0,x=1996)
 
-q <- q + theme(plot.title = element_text(size = 12, face = "bold"))
+q <- q + theme(plot.title = element_text(size = 10, face = "bold"))
 q <- q + guides(fill = guide_legend(nrow=2))
 
 q
 
-jpeg(paste("graphs/regional/","HC_single_plot_all_countries_lines.jpeg"), width = 6.25, height = 4, units = 'in', res = 300)
+jpeg(paste("graphs/regional/","HC_single_plot_all_countries_lines.jpeg"), width = 5, height = 3.1, units = 'in', res = 300)
 q
 dev.off()
 
@@ -698,7 +725,7 @@ q<- ggplot(ben_HC2, aes(x=Year, y=cover , group=Country))+
                fun.y=mean)+
   stat_smooth(method = "lm", col = "red",fill=NA,size=1,fullrange = F)
   
-  q <- q + theme_bw()+theme(plot.title=element_text(size=9.5),
+  q <- q + theme_bw()+theme(plot.title=element_text(size=8),
                           axis.line = element_line(size=1,colour = "black"),
                           panel.grid.major = element_blank(),
                           panel.grid.minor = element_blank(),
@@ -714,7 +741,7 @@ q<- q +facet_wrap(~Country, ncol=2)+theme(strip.text.x = element_text(size=9.5,f
                                           panel.border = element_blank(),
                                           panel.background = element_blank())
 q <- q + ylab("Hard coral cover (%)")
-q <- q + theme(plot.title = element_text(size = 9.5, face = "bold"))
+q <- q + theme(plot.title = element_text(size = 8, face = "bold"))
 # q<-q + expand_limits(y=0)+ylim(0,100)
 q<- q + scale_x_continuous(breaks=seq(1992,2017,by=1),
                            labels = c(1992, rep("",3),1996,rep("",3),2000,rep("",3),2004,rep("",3),2008,rep("",3),2012,rep("",3),2016,rep("",1)))
@@ -723,7 +750,7 @@ q <- q + scale_y_continuous(limits=c(0,100),
                             labels=c(0,10,20,30,40,50,60,70,80,90,100))
 
 
-q <- q + theme(plot.title = element_text(size = 9.5, face = "bold"))
+q <- q + theme(plot.title = element_text(size = 8, face = "bold"))
 
 q <- q + theme(panel.spacing.x=unit(1, "lines"))
 p <- q + theme(panel.spacing.y=unit(0.1, "lines"))
@@ -733,7 +760,7 @@ q
 
 # facetAdjust(q)
 
-jpeg(paste("graphs/regional/","HC_sample_circle_all_countries_single_plot.jpeg"), width = 6, height = 5, units = 'in', res = 300)
+jpeg(paste("graphs/regional/","HC_sample_circle_all_countries_single_plot.jpeg"), width = 5, height = 5, units = 'in', res = 300)
 q
 dev.off()
 
@@ -757,7 +784,7 @@ p<- p +  stat_summary(aes(y=FA,fill='FA'),geom="ribbon", fun.data=mean_cl_boot,
                       fun.args=list(conf.int=0.95),alpha=0.3)
 p<-p +  stat_summary(aes(y=FA,color='FA',shape='FA'),geom="point", fun.y=mean,size=2,fill='white')
 
-p <- p + theme_bw()+theme(plot.title=element_text(size=9.5),
+p <- p + theme_bw()+theme(plot.title=element_text(size=8),
                           axis.line = element_line(size=1,colour = "black"),
                           panel.grid.major = element_blank(),
                           panel.grid.minor = element_blank(),
@@ -768,7 +795,7 @@ p <- p + theme_bw()+theme(plot.title=element_text(size=9.5),
                           axis.text = element_text(colour="black"))
 p<- p + theme(legend.key = element_blank(),
               # legend.position="bottom",
-              legend.key.height=unit(0, "cm"),
+              legend.key.height=unit(0.3, "cm"),
               # legend.justification="left",
               plot.margin = unit(c(0,0.2,0,0.2), "lines"),
               legend.spacing=unit(0.2, "cm"),
@@ -802,14 +829,17 @@ p<- p +  annotate("segment", x=-Inf, xend=-Inf, y=-Inf, yend=Inf,size=1)
 
 p<-p+scale_fill_manual("", 
                        breaks = c("HC", "FA"),
-                       values = c('HC'="blue", "FA"="green"))
+                       values = c('HC'="blue", "FA"="green"),
+                       labels = c('HC'='Hard Coral', "FA"="Fleshy Algae"))
 
 p<-p+ scale_colour_manual("", 
                           breaks = c("HC", "FA"),
-                          values = c("HC"="blue", "FA"="dark green"))
+                          values = c("HC"="blue", "FA"="dark green"),
+                          labels = c('HC'='Hard Coral', "FA"="Fleshy Algae"))
 p<-p+scale_shape_manual("", 
                         breaks = c("HC", "FA"),
-                        values = c('HC'= 21, "FA"= 19))
+                        values = c('HC'= 21, "FA"= 19),
+                        labels = c('HC'='Hard Coral', "FA"="Fleshy Algae"))
 # p + guides(fill = guide_legend(override.aes = list(shape = 21)))
 
 
@@ -817,7 +847,7 @@ print(p)
 
 
 
-jpeg(paste("graphs/regional/","FA and HC single grid.jpeg"),width=6,height=5,units="in",res=300)
+jpeg(paste("graphs/regional/","FA and HC single grid.jpeg"),width=5,height=5,units="in",res=300)
 print(p)
 # facetAdjust(p)
 dev.off()
@@ -829,7 +859,7 @@ dev.off()
 
 p<-NA 
 
-p<- ggplot(alg4, aes(x=Year,group=Period))
+p<- ggplot(alg2, aes(x=Year,group=Period))
 p<-p +  stat_summary(aes(y=HC, colour='HC',shape='HC',linetype=Period),geom="smooth", fun.y=mean, size=1)
 p<-p +  stat_summary(geom="ribbon", fun.data=mean_cl_boot,fun.args=list(conf.int=0.95), aes(y=HC,fill="HC"),alpha=0.3)
 p<- p+  stat_summary(geom="point", fun.y=mean, fill='white', aes(y=HC,shape='HC',color='HC'),size=2)
@@ -846,7 +876,7 @@ p <- p + theme_bw()+theme(plot.title=element_blank(),
                           panel.grid.minor = element_blank(),
                           panel.border = element_blank(),
                           panel.background = element_blank(),
-                          text = element_text(size=9,face="bold"),
+                          text = element_text(size=11,face="bold"),
                           axis.ticks.length=unit(0.2,"cm"),
                           axis.text = element_text(colour="black"))
 p<- p + theme(legend.key = element_blank(),
@@ -854,7 +884,8 @@ p<- p + theme(legend.key = element_blank(),
               legend.key.height=unit(0, "cm"),
               # legend.justification="left",
               legend.spacing =unit(0,"cm"),
-              legend.text = element_text(size=8))
+              legend.text = element_text(size=8),
+              legend.title = element_text(size=8))
 
 #p<- p + ggtitle(e[i])
 p<- p + ylab("Cover (%)")
@@ -889,7 +920,7 @@ p<-p+scale_linetype_manual("Period",
 # p + guides(fill = guide_legend(override.aes = list(shape = 21)))
 
 
-jpeg(paste("graphs/regional/","overall FA and HC plot.jpeg"),width=6,height=5,units="in",res=300)
+jpeg(paste("graphs/regional/","overall FA and HC plot.jpeg"),width=4.5,height=3,units="in",res=300)
 print(p)
 # facetAdjust(p)
 dev.off()
@@ -912,7 +943,7 @@ p <- p + theme_bw()+theme(plot.title=element_blank(),
                           panel.grid.minor = element_blank(),
                           panel.border = element_blank(),
                           panel.background = element_blank(),
-                          text = element_text(size=9.5,face="bold"),
+                          text = element_text(size=11,face="bold"),
                           axis.ticks.length=unit(0.2,"cm"),
                           axis.text = element_text(colour="black"),
                           axis.title.x = element_blank())
@@ -922,7 +953,8 @@ p<- p + theme(legend.key = element_blank(),
               legend.key.height=unit(0.2, "cm"),
               plot.margin = unit(c(0,0.1,0.1,0.1), "lines"),
               #               legend.margin=unit(0.5,"cm"),
-              legend.text=element_text(size=8))
+              legend.text=element_text(size=8),
+              legend.title = element_text(size=8))
 
 #p<- p + ggtitle(e[i])
 p<- p + ylab("Cover (%)")
@@ -947,7 +979,7 @@ p<-p+ scale_fill_manual("Period",
 # p + guides(fill = guide_legend(override.aes = list(shape = 21)))
 
 
-jpeg(paste("graphs/regional/","overall HC and FA pre_vs_post column chart.jpeg"),width=6,height=5,units="in",res=300)
+jpeg(paste("graphs/regional/","overall HC and FA pre_vs_post column chart.jpeg"),width=3,height=3,units="in",res=300)
 print(p)
 # facetAdjust(p)
 dev.off()
@@ -964,6 +996,8 @@ seyc2<-r2[which(r2$Country=='Seychelles'),]    #sites with data for both periods
 
 seyc2$island<-NA
 seyc2$island[which(seyc2$Site=='Aldabra'|seyc2$Site=='Alphonse'|seyc2$Site=='Cerf Island'|seyc2$Site=='Desroches')]<-'Outer'
+# seyc2$island[which(seyc2$Site=='Aldabra'|seyc2$Site=='Alphonse'|seyc2$Site=='Desroches')]<-'Outer'
+
 seyc2$island[which(seyc2$Site=='Mahe NW'|seyc2$Site=='North Reef')]<-'Inner'
 
 seyc2$Period<-factor(seyc2$Period,levels=c("Pre","Post"))
@@ -1030,7 +1064,8 @@ p<- p + theme(legend.key = element_blank(),
               legend.key.height=unit(0.2, "cm"),
               plot.margin = unit(c(0,0.1,0.1,0.1), "lines"),
               #               legend.margin=unit(0.5,"cm"),
-              legend.text=element_text(size=8))
+              legend.text=element_text(size=8),
+              legend.title = element_text(size=8))
 
 #p<- p + ggtitle(e[i])
 p<- p + ylab("Hard coral cover (%)")
@@ -1056,7 +1091,7 @@ p<-p+ scale_fill_manual("Period",
 
 print(p)
 
-jpeg("Seychelles_inner_vs_outer_coral_cover.jpeg",res=300,height=4,width=4,units = 'in')
+jpeg("Seychelles_inner_vs_outer_coral_cover.jpeg",res=300,height=3,width=3,units = 'in')
 p
 dev.off()
 
@@ -1067,6 +1102,8 @@ dev.off()
 kenya<-ben_lev1[which(ben_lev1$Country=='Kenya'),]
 
 ken2<-r2[which(r2$Country=='Kenya'),]    #sites with data for both periods from 2012
+
+ken2<-ken2[-which(ken2$Station=="Iweni"|ken2$Station=='Mpunguti-Upper'|ken2$Station=='Tausi'),]
 
 ken2$mgt<-NA
 
@@ -1123,7 +1160,8 @@ p<- p + theme(legend.key = element_blank(),
               legend.key.height=unit(0.2, "cm"),
               plot.margin = unit(c(0,0.1,0.1,0.1), "lines"),
               #               legend.margin=unit(0.5,"cm"),
-              legend.text=element_text(size=8))
+              legend.text=element_text(size=8),
+              legend.title = element_text(size=8))
 
 #p<- p + ggtitle(e[i])
 p<- p + ylab("Hard coral cover (%)")
@@ -1160,18 +1198,24 @@ ken2$Site[which(ken2$Site=="Kisite")]<-"Shimoni"
 ave_ken<-ddply(ken2,c("Period","Site"),summarise,
                mean_cover=mean(recent_Coral),
                sd=sd(recent_Coral),
-               Year=tail(recent_year,n=1))
+               Year=tail(recent_year,n=1),
+               n=length(Country))
 
-ave_ken2<-ave_ken[order(ave_ken$Site,ave_ken$Period),]   #change in mean coral cover at each site
+# ave_ken2<-ave_ken[order(ave_ken$Site,ave_ken$Period),]   #change in mean coral cover at each site
+
+ave_ken$mean_cover<-round(ave_ken$mean_cover,0)
+ave_ken$sd<-round(ave_ken$sd,1)
 
 library(dplyr)
 
 df2 <- ave_ken%>%
   group_by(Site) %>%
   arrange(Site,Period) %>%
-  mutate(pct.chg = (mean_cover - lag(mean_cover))/lag(mean_cover)*100)
+  mutate(pct.chg = (mean_cover - lag(mean_cover))/lag(mean_cover)*100) %>%
+  mutate(pre.bl= paste(mean_cover,"±",sd))
 
 # df2$pct.chg[df2$Period=='Pre']<-NA
+df2$pct.chg<-round(df2$pct.chg,0)
 
 write.csv(df2,"Kenya_change_in_coral_cover_per_site.csv",row.names =F)
 
@@ -1234,7 +1278,8 @@ p<- p + theme(legend.key = element_blank(),
               legend.key.height=unit(0.2, "cm"),
               plot.margin = unit(c(0,0.1,0.1,0.1), "lines"),
               #               legend.margin=unit(0.5,"cm"),
-              legend.text=element_text(size=8))
+              legend.text=element_text(size=8),
+              legend.title = element_text(size=8))
 
 #p<- p + ggtitle(e[i])
 p<- p + ylab("Hard coral cover (%)")
@@ -1260,7 +1305,7 @@ p<-p+ scale_fill_manual("Period",
 
 print(p)
 
-jpeg("Comoros_3_islands_coral_cover.jpeg",res=300,height=4,width=4,units = 'in')
+jpeg("Comoros_3_islands_coral_cover.jpeg",res=300,height=3,width=3,units = 'in')
 p
 dev.off()
 
@@ -1313,7 +1358,8 @@ p<- p + theme(legend.key = element_blank(),
               legend.key.height=unit(0.2, "cm"),
               plot.margin = unit(c(0,0.1,0.1,0.1), "lines"),
               #               legend.margin=unit(0.5,"cm"),
-              legend.text=element_text(size=8))
+              legend.text=element_text(size=8),
+              legend.title = element_text(size=8))
 
 #p<- p + ggtitle(e[i])
 p<- p + ylab("Hard coral cover (%)")
@@ -1339,7 +1385,7 @@ p<-p+ scale_fill_manual("Period",
 
 print(p)
 
-jpeg("Tanzania_coral_cover_change_per_site.jpeg",res=300,height=4,width=4,units = 'in')
+jpeg("Tanzania_coral_cover_change_per_site.jpeg",res=300,height=3,width=3.5,units = 'in')
 p
 dev.off()
 
@@ -1374,7 +1420,7 @@ p<- ggplot(mad2,aes(x=Site,y=recent_Coral,fill=Period))
 p<- p + stat_summary(fun.y="mean", geom="bar",position=position_dodge(),alpha=0.8)
 
 p<- p + stat_summary(fun.data = 'mean_se', geom = "errorbar",width=.2,size=0.8,position=position_dodge(.9))
-p
+
 
 p <- p + theme_bw()+theme(plot.title=element_blank(),
                           axis.line = element_line(size=1,colour = "black"),
@@ -1382,22 +1428,25 @@ p <- p + theme_bw()+theme(plot.title=element_blank(),
                           panel.grid.minor = element_blank(),
                           panel.border = element_blank(),
                           panel.background = element_blank(),
-                          text = element_text(size=11,face="bold"),
+                          # text = element_text(face="bold"),
                           axis.ticks.length=unit(0.2,"cm"),
                           axis.text = element_text(colour="black"),
-                          axis.title.x = element_blank())
+                          axis.title.x = element_blank(),
+                          axis.title.y = element_text(colour="black",face="bold"))
 
 p<- p + theme(legend.key = element_blank(),
               legend.position="bottom",
               legend.key.height=unit(0.2, "cm"),
               plot.margin = unit(c(0,0.1,0.1,0.1), "lines"),
               #               legend.margin=unit(0.5,"cm"),
-              legend.text=element_text(size=8))
+              legend.text=element_text(size=8,face="bold"),
+              legend.title = element_text(size=8,face="bold"))
 
 #p<- p + ggtitle(e[i])
 p<- p + ylab("Hard coral cover (%)")
 
-p<- p + theme(strip.text.x = element_text(size=11,face="bold"),
+p<- p + theme(axis.text.x = element_text(size=7.5),
+              axis.text.y = element_text(size=10,face="bold"),
               strip.background = element_blank(),
               panel.grid.major = element_blank(),
               panel.grid.minor = element_blank(),
@@ -1418,7 +1467,7 @@ p<-p+ scale_fill_manual("Period",
 
 print(p)
 
-jpeg(paste("graphs/","Madagascar_coral_cover_change_per_site.jpeg"),res=300,height=3.5,width=5.5,units = 'in')
+jpeg(paste("graphs/","Madagascar_coral_cover_change_per_site.jpeg"),res=300,height=3,width=4,units = 'in')
 p
 dev.off()
 
