@@ -1,26 +1,27 @@
 
 # Assigning Coordinates to GCRMN dataset ---------------------------------------
 
-setwd("~/Desktop/work/Merge")
+# setwd("~/Desktop/work/Merge")
+setwd("~/GitHub/post_bleaching/")
 library(plyr)
-install.packages("tidyr")
+# install.packages("tidyr")
 library(tidyr)
 
 
-GCRMN<-read.csv("GCRMN_benthic.csv",header = F,stringsAsFactors = F)
-colnames(GCRMN)<-GCRMN[1,]
-GCRMN<-GCRMN[-1,]
+GCRMN<-read.csv("GCRMN_benthic.csv",header = T,stringsAsFactors = F)  #change header=T to read in col names
+# colnames(GCRMN)<-GCRMN[1,]
+# GCRMN<-GCRMN[-1,]
 
-coord<- read.csv("GCRMN_geo.csv",header = T,na.strings = "")
+coord<- read.csv("GCRMN_geo.csv",header = T, na.strings = "", stringsAsFactors = F)
+# coord<- read.csv("GCRMN_geo.csv",header = T, stringsAsFactors = F)
+
 colnames(coord)[1] <- "Country"
-coord$Longitude<- as.numeric(as.character.factor (coord$Longitude))
+coord$Longitude<- as.numeric(coord$Longitude)
 
 #Assign a Unique ID (station and site)
-GCRMN[16]<-paste(GCRMN$Site,GCRMN$Station)
-colnames(GCRMN)[16] <- "ID"
+GCRMN$ID<-paste(GCRMN$Site,GCRMN$Station)
 
-coord[7]<-paste(coord$Site,coord$Station)
-colnames(coord)[7]<- "ID"
+coord$ID<-paste(coord$Site,coord$Station)
 
 f<-match(GCRMN$ID,coord$ID,nomatch = 0)
 which(f==0)
@@ -60,87 +61,149 @@ GCRMN$ID[which(GCRMN$ID=="Diani_Chale Shimo_la_mlango")]<-"Diani-Chale shimo_la_
 GCRMN$ID[which(GCRMN$ID=="Lamu Tenewi_north")]<-"Lamu Tenewi_north"
 GCRMN$ID[which(GCRMN$ID=="Kiunga_MNR Tenewi_South")]<-"Lamu Tenewi_South"
 GCRMN$ID[which(GCRMN$ID=="Watamu Turtle_reef")]<-"Watamu Turtle_Reef"
+GCRMN$ID[which(GCRMN$ID=="Diani_Chale Doa_la_maweni")]<-"Diani-Chale Doa_la_maweni"
+GCRMN$ID[which(GCRMN$ID=="NA South Reef")]<-"NA South Reef"
+GCRMN$ID[which(GCRMN$ID=="Lamu Tenewi_north")]<-"Lamu Tenewi_North"
+GCRMN$ID[which(GCRMN$ID=="Diani_Chale Mchingamo_mwadudu")]<-"Diani-Chale Mchingamo_mwadudu"
 
 #Assign coordinates
 t<-match(GCRMN$ID,coord$ID,nomatch=0)
 u<-which(t==0)
 
-unique(GCRMN$ID[u])
+unique(GCRMN$ID[u])   #still 59 IDs that did not match. Is it because of spelling or no information on coordinates?
+#Diani_Chale Doa_la_maweni should be Diani-Chale Doa_la_maweni (as in coords)
+#Diani_Chale Mchingamo_mwadudu -> Diani-Chale Mchingamo_mwadudu
+#NA South Reef -> NA South Reef
+#Lamu Tenewi_north -> Lamu Tenewi_North
+# the 4 listed above are related to spelling, but the rest are absent from coords dataset
+
 GCRMN$Latitude<-NA
+GCRMN$Longitude<-NA
 for (i in 1:nrow(GCRMN)){
   if (t[i]!=0){
     GCRMN$Latitude[i]<-coord$Latitude[t[i]]
     GCRMN$Longitude[i]<-coord$Longitude[t[i]]
   }}
 
-GCRMN<- GCRMN[,-16]
+GCRMN<- GCRMN[,-22]
 
-write.csv(GCRMN, "GCRMN-with-Coordinates.csv")
+write.csv(GCRMN, "GCRMN_with_coords_for_merge.csv", row.names = F)
 
 
 
 # Assigning coordinates to Post bleaching file ----------------------------
-PostB<-read.csv("2017_WIO_benthic_pre_analysis.csv",header = F,stringsAsFactors = F)
-colnames(PostB)<-PostB[1,]
-PostB<-PostB[-1,]
+PostB<-read.csv("2017_WIO_benthic_pre_analysis.csv",header = T,stringsAsFactors = F)
 
-geofile<- read.csv("2017_WIO_geo.csv",header = T,na.strings = "")
+geofile<- read.csv("2017_WIO_geo.csv",header = T,stringsAsFactors = F)
 
 #Assign a Unique ID (station and site)
-PostB[14]<-paste(PostB$Site,PostB$Station)
-colnames(PostB)[14] <- "ID"
+PostB$ID<-paste(PostB$Site,PostB$Station)
+# PostB$ID<-sub(".*? (.+)", "\\1", PostB$ID)
+PostB$ID<-sub("^\\s+", "", PostB$ID)  #removes white space before string
 
-geofile[6]<-paste(geofile$Site,geofile$Station)
-colnames(geofile)[6]<- "ID"
+geofile$ID<-paste(geofile$Site,geofile$Station)
+# geofile$ID<- gsub("$ ","",geofile$ID, perl=T)
+# geofile$ID<-sub(".*? (.+)", "\\1", geofile$ID)
+geofile$ID<-sub("^\\s+", "", geofile$ID)
 
 f<-match(PostB$ID,geofile$ID,nomatch = 0)
 which(f==0)
 unique(PostB$ID[which(f==0)])
 
 #correct ID names to match
-PostB$ID[which(PostB$ID=="Zanzibar Chumbe")]<-"Zanzibar Chumbe_MPA"
-PostB$ID[which(PostB$ID=="Ankarea Antsoa_07")]<-"NA Antsoa_07"
-PostB$ID[which(PostB$ID=="Ankarea NosyKarabo_06")]<-"NA NosyKarabo_06"
-PostB$ID[which(PostB$ID=="Ankarea Tsara_08")]<-"NA Tsara_08"
-PostB$ID[which(PostB$ID=="Ankivonjy Anki_14")]<-"NA Anki_14"
-PostB$ID[which(PostB$ID=="Ankivonjy Plateau_13")]<-"NA Plateau_13"
-PostB$ID[which(PostB$ID=="Soariake Beko_03")]<-"NA Beko_03"
-PostB$ID[which(PostB$ID=="Soariake Sal_N2_05")]<-"NA Sal_N2_05"
-PostB$ID[which(PostB$ID=="Ankarea Ambari_11")]<-"NA Ambari_11"
-PostB$ID[which(PostB$ID=="Ankarea Beangovo_04")]<-"NA Beangovo_04"
-PostB$ID[which(PostB$ID=="Ankarea NosyLava_01")]<-"NA NosyLava_01"
-PostB$ID[which(PostB$ID=="Ankivonjy Ambatofisaka_19")]<-"NA Ambatofisaka_19"
-PostB$ID[which(PostB$ID=="Ankivonjy Kisi_16")]<-"NA Kisi_16"
-PostB$ID[which(PostB$ID=="Soariake Andre_07")]<-"NA Andre_07"
-PostB$ID[which(PostB$ID=="Ankarea Ampa_10")]<-"NA Ampa_10"
-PostB$ID[which(PostB$ID=="Ankarea NosyFisaka_02")]<-"NA NosyFisaka_02"
-PostB$ID[which(PostB$ID=="Ankarea NosyVazoa_05")]<-"NA NosyVazoa_05"
-PostB$ID[which(PostB$ID=="Ankivonjy Ambatomilay_18")]<-"NA Ambatomilay_18"
-PostB$ID[which(PostB$ID=="Ankivonjy Madiro_17")]<-"NA Madiro_17"
-PostB$ID[which(PostB$ID=="Soariake Andravona_08")]<-"NA Andravona_08"
-PostB$ID[which(PostB$ID=="Soariake Anka_01")]<-"NA Anka_01"
-PostB$ID[which(PostB$ID=="Soariake Sal_N1_11")]<-"NA Sal_N1_11"
-PostB$ID[which(PostB$ID=="Soariake Tsand_10")]<-"NA Tsand_10"
+# PostB$ID[which(PostB$ID=="Zanzibar Chumbe")]<-"Zanzibar Chumbe_MPA"
+PostB$ID[which(PostB$ID=="Ankarea Antsoa_07")]<-"Antsoa_07"
+PostB$ID[which(PostB$ID=="Ankarea NosyKarabo_06")]<-"NosyKarabo_06"
+PostB$ID[which(PostB$ID=="Ankarea Tsara_08")]<-"Tsara_08"
+PostB$ID[which(PostB$ID=="Ankivonjy Anki_14")]<-"Anki_14"
+PostB$ID[which(PostB$ID=="Ankivonjy Plateau_13")]<-"Plateau_13"
+PostB$ID[which(PostB$ID=="Soariake Beko_03")]<-"Beko_03"
+PostB$ID[which(PostB$ID=="Soariake Sal_N2_05")]<-"Sal_N2_05"
+PostB$ID[which(PostB$ID=="Ankarea Ambari_11")]<-"Ambari_11"
+PostB$ID[which(PostB$ID=="Ankarea Beangovo_04")]<-"Beangovo_04"
+PostB$ID[which(PostB$ID=="Ankarea NosyLava_01")]<-"NosyLava_01"
+PostB$ID[which(PostB$ID=="Ankivonjy Ambatofisaka_19")]<-"Ambatofisaka_19"
+PostB$ID[which(PostB$ID=="Ankivonjy Kisi_16")]<-"Kisi_16"
+PostB$ID[which(PostB$ID=="Soariake Andre_07")]<-"Andre_07"
+PostB$ID[which(PostB$ID=="Ankarea Ampa_10")]<-"Ampa_10"
+PostB$ID[which(PostB$ID=="Ankarea NosyFisaka_02")]<-"NosyFisaka_02"
+PostB$ID[which(PostB$ID=="Ankarea NosyVazoa_05")]<-"NosyVazoa_05"
+PostB$ID[which(PostB$ID=="Ankivonjy Ambatomilay_18")]<-"Ambatomilay_18"
+PostB$ID[which(PostB$ID=="Ankivonjy Madiro_17")]<-"Madiro_17"
+PostB$ID[which(PostB$ID=="Soariake Andravona_08")]<-"Andravona_08"
+PostB$ID[which(PostB$ID=="Soariake Anka_01")]<-"Anka_01"
+PostB$ID[which(PostB$ID=="Soariake Sal_N1_11")]<-"Sal_N1_11"
+PostB$ID[which(PostB$ID=="Soariake Tsand_10")]<-"Tsand_10"
 PostB$ID[which(PostB$ID=="Watamu Uyombo_")]<-"Watamu Uyombo"
-PostB$ID[which(PostB$ID=="Ankarea Ankarea_03")]<-"NA Ankarea_03"
-PostB$ID[which(PostB$ID=="Ankarea NosyKaine_09")]<-"NA NosyKaine_09"
-PostB$ID[which(PostB$ID=="Ankarea Rata_12")]<-"NA Rata_12"
-PostB$ID[which(PostB$ID=="Ankivonjy Ankaso_15")]<-"NA Ankaso_15"
-PostB$ID[which(PostB$ID=="Ankivonjy Marotogny_20")]<-"NA Marotogny_20"
-PostB$ID[which(PostB$ID=="Soariake Andravona_12")]<-"NA Andravona_12"
-PostB$ID[which(PostB$ID=="Soariake Sal_N2_02")]<-"NA Sal_N2_02" 
+PostB$ID[which(PostB$ID=="Ankarea Ankarea_03")]<-"Ankarea_03"
+PostB$ID[which(PostB$ID=="Ankarea NosyKaine_09")]<-"NosyKaine_09"
+PostB$ID[which(PostB$ID=="Ankarea Rata_12")]<-"Rata_12"
+PostB$ID[which(PostB$ID=="Ankivonjy Ankaso_15")]<-"Ankaso_15"
+PostB$ID[which(PostB$ID=="Ankivonjy Marotogny_20")]<-"Marotogny_20"
+PostB$ID[which(PostB$ID=="Soariake Andravona_12")]<-"Andravona_12"
+PostB$ID[which(PostB$ID=="Soariake Sal_N2_02")]<-"Sal_N2_02" 
+PostB$ID[which(PostB$ID=="Soariake Sal_N2_13")]<-"Sal_N2_13" 
+PostB$ID[which(PostB$ID=="Soariake Antsa_09")]<-"Antsa_09" 
 
 #Assign coordinates
 t<-match(PostB$ID,geofile$ID,nomatch=0)
 u<-which(t==0)
-
 unique(PostB$ID[u])
+
 PostB$Latitude<-NA
+PostB$Longitude<-NA
+
 for (i in 1:nrow(PostB)){
   if (t[i]!=0){
     PostB$Latitude[i]<-geofile$Lat[t[i]]
     PostB$Longitude[i]<-geofile$Lon[t[i]]
   }}
+
+#create a subset dataframe which is only the postbleaching data for nonmatched - 36 sites
+subpb<-PostB[u,]
+
+#match this unmatched dataset with the coord dataset from gcrmn to get missing coords
+t1<-match(subpb$ID,coord$ID,nomatch=0)
+u1<-which(t1==0)
+unique(subpb$ID[u1])    #24 sites which do not match with gcrmn coords
+
+subpb$ID2<-subpb$ID
+subpb$ID2[which(subpb$ID2=="Watamu Turtle_reef")]<-"Watamu Turtle_Reef" 
+subpb$ID2[which(subpb$ID2=="Alphonse A9")]<-"Alphonse  A9" 
+subpb$ID2[which(subpb$ID2=="Alphonse A2")]<-"Alphonse  A2" 
+subpb$ID2[which(subpb$ID2=="Alphonse A3")]<-"Alphonse  A3" 
+
+t2<-match(subpb$ID2,coord$ID,nomatch=0)
+u2<-which(t2==0)
+unique(subpb$ID[u2]) 
+#now only 20 which do not match - do not have coordinates for these
+
+#loop to assign coordinates
+
+for (i in 1:nrow(subpb)){
+  if (t2[i]!=0){
+    subpb$Latitude[i]<-coord$Latitude[t2[i]]
+    subpb$Longitude[i]<-coord$Longitude[t2[i]]
+  }}
+
+#match this newly matched dataset with the original postbleaching
+
+# PostB$Latitude <- subpb$Latitude[match(PostB$ID, subpb$ID)]
+# PostB$Longitude2 <- subpb$Longitude[match(PostB$ID, subpb$ID)]
+
+t3<-match(PostB$ID,subpb$ID,nomatch=0)
+u3<-which(t3==0)
+unique(PostB$ID[u3]) 
+#now only 20 which do not match - do not have coordinates for these
+
+#loop to assign coordinates
+
+for (i in 1:nrow(PostB)){
+  if (t3[i]!=0){
+    PostB$Latitude[i]<-subpb$Latitude[t3[i]]
+    PostB$Longitude[i]<-subpb$Longitude[t3[i]]
+  }}
+
 
 PostB<- PostB[,-14]
 
@@ -285,14 +348,10 @@ write.csv(Source_Tz, "Source_Tz.csv")
 
 # Merging GCRMN with Source and Post bleaching with Source ----------------
 library(dplyr)
-gcs<- read.csv("GCRMN-with-Coordinates.csv",header = F,stringsAsFactors = F)
-colnames(gcs)<-gcs[1,]
-gcs<-gcs[-1,-1]
+gcs<- read.csv("GCRMN_coords_for_merge.csv",header = T,stringsAsFactors = F)
 
 
-pbs<-read.csv("Post_bleaching-with-coordinates.csv",header = F,stringsAsFactors = F)
-colnames(pbs)<-pbs[1,]
-pbs<-pbs[-1,-1]
+pbs<-read.csv("post_bleaching_coords_for_merge.csv",header = T,stringsAsFactors = F)
 
 #filter out only 'New' sites from the post bleaching source file - pbs
 pbs1<-pbs[which(pbs$Source=='New'),]
@@ -300,9 +359,11 @@ pbs1<-pbs[which(pbs$Source=='New'),]
 #match function – using fields – country, site, station, year, benthic category, mean cover
 
 #Check unique countries
-f<-match(gcs$Country,pbs1$Country,nomatch = 0)
-which(f==0)
-unique(gcs$Country[which(f==0)])
+unique(pbs1$Country)
+unique(gcs$Country)
+# f<-match(gcs$Country,pbs1$Country,nomatch = 0)
+# which(f==0)
+# unique(gcs$Country[which(f==0)])
 
 #unique sites
 f<-match(gcs$Site,pbs1$Site,nomatch = 0)
@@ -332,7 +393,13 @@ unique(gcs$benthic_category[which(f==0)])
 #correct the codes to match; the other 3 benthic categories are not present in the post bleaching file. 
 gcs$benthic_category[which(gcs$benthic_category=="Lob")]<-"lob"
 
+#YOU did not do the most important step - which is merge the two datasets based on a unique identifier
+pbs1$ID<-paste(pbs1$Country,pbs1$Year,pbs1$Site,pbs1$Station)
+gcs$ID<-paste(gcs$Country,gcs$Year,gcs$Site,gcs$Station)
 
+f1<-match(pbs1$ID,gcs$ID,nomatch = 0)
+y<-which(f1==0)
+unique(pbs1$ID[which(f1!=0)])
 #merge the 2 files into 1; gcs which is GCRMN and pbs1 which is post bleaching with 'New' filtered out.
 
 WIO_benthic <- rbind.fill(gcs, pbs1)

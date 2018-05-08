@@ -1,0 +1,732 @@
+﻿Country,Site,Station,zone,Latitude,Longitude
+Comoros,,bambao,Back reef,-12.20883333,44.5225
+Comoros,,bambao,Fore reef,-12.20883333,44.5225
+Comoros,,barakani,Back reef,-12.29296667,43.62386667
+Comoros,,bimbini,Back reef,-12.19683333,44.22866667
+Comoros,CORDIO,Chindini,,-11.935225,43.48370833
+Comoros,,bimbini,Fore reef,-12.19683333,44.22866667
+Comoros,CORDIO,Ferenga,,-12.4063,43.69545
+Comoros,,chindini,Back reef,-11.9293,43.49171667
+Comoros,,chindini,Fore reef,-11.9293,43.49171667
+Comoros,,domoni,Back reef,-12.25316667,43.64136667
+Comoros,,fomboni,Back reef,-12.27001667,43.73908333
+Comoros,,hamavouna,Back reef,-12.389465,43.843245
+Comoros,,hamba,Back reef,-12.2834,43.62168333
+Comoros,CORDIO,Itsandra,,-11.66756667,43.26343333
+Comoros,,hoani,Back reef,-12.25406667,43.66401667
+Comoros,CORDIO,Male,,-11.86995,43.49945
+Comoros,,itsamia,Back reef,-12.36921667,43.87231667
+Comoros,,itsamia,Fore reef,-12.36921667,43.87231667
+Comoros,,itsandra,Back reef,-11.67013333,43.26388333
+Comoros,,itsandra,Fore reef,-11.67013333,43.26388333
+Comoros,CORDIO,Mirereni,,-12.34021667,43.64998333
+Comoros,,male,Back reef,-11.89966667,43.52521667
+Comoros,CORDIO,Mitsamiouli,,-11.37620833,43.30193333
+Comoros,,mchaco,Fore reef,-12.2215,43.5331
+Comoros,,mea,Back reef,-12.38165,43.73766667
+Comoros,,mea,Fore reef,-12.38165,43.73766667
+Comoros,CORDIO,Moindzzaza,,-11.77658333,43.24103333
+Comoros,,memboimboini,Back reef,-11.22517,43.18.534
+Comoros,,miremani,Back reef,-12.35635,43.65743333
+Comoros,,miringoni,Back reef,-12.3169,43.63336667
+Comoros,,Miringoni,Fore reef,-12.3169,43.63336667
+Comoros,,mitsamiuli,Back reef,-11.3758,43.3097
+Comoros,,mitsamiuli,Fore reef,-11.3758,43.3097
+Comoros,,mlongo mhu,Back reef,-12.162967,44.225817
+Comoros,,moindzaza,Back reef,-11.77471667,43.23868333
+Comoros,,moroni,Fore reef,-11.43,43.1712
+Comoros,CORDIO,Shomoni,,-11.64466667,43.395
+Comoros,,moya,Fore reef,-12.1044,44.2586
+Comoros,,mtsaka,Back reef,-12.40413333,43.70853333
+Comoros,,mtsanga nyamba,Back reef,-12.41131667,43.70916667
+Comoros,,nindri,Back reef,-12.28968333,44.40696667
+Comoros,,nioumachoi,Back reef,-12.22056,43.42.654
+Comoros,,nioumachoi,Fore reef,-12.22056,43.42.654
+Comoros,,nkandzoni,Back reef,-12.2443,43.3972
+Comoros,,nkandzoni,Fore reef,-12.2443,43.3972
+Comoros,,sambia,Back reef,-12.38331667,43.78685
+Comoros,,sambia,Fore reef,-12.38331667,43.78685
+Comoros,,shiroroni,Back reef,-12.38561667,44.49415
+Comoros,,vassy,Back reef,-12.241274,44.332615
+Comoros,,wallah1,Back reef,-12.2041,43.3912
+Comoros,,wallah1,Fore reef,-12.2041,43.3912
+Comoros,,wallah2,Fore reef,-12.2008,43.3857
+Comoros,,wani,Back reef,-12.0647,44.2557
+Comoros,,wani,Fore reef,-12.0647,44.2557
+Comoros,,wenefu,Back reef,-12.3913,43.70635
+Kenya,Watamu,Anthias,,-3.62086,40.031567
+Kenya,Southcoast,Baazo,,-4.671083333,39.22658333
+Kenya,Lamu,Baia_Allegra,,-2.221766667,41.0334
+Kenya,Watamu,Bara_Bara,,-3.387003,39.988542
+Kenya,Kiunga_MNR,Bomani,,-1.742583333,41.51686111
+Kenya,Kiunga_MNR,Boso,,-1.732388889,41.52672222
+Kenya,Kiunga_MNR,Ch._Boso,,-1.745972222,41.54513889
+Kenya,Kiunga_MNR,Ch._Chano,,-2.010699967,41.33303002
+Kenya,Kiunga_MNR,Ch._Hindi,,-1.907916667,41.37144444
+Kenya,Kiunga_MNR,Ch._Kui,,-1.857833333,41.45583333
+Kenya,Kiunga_MNR,Ch._magogoni,,-1.89175,41.42866667
+Kenya,Kiunga_MNR,Ch._Mongo_Shariff,,-1.86775,41.4496
+Kenya,Kiunga_MNR,Ch._Mvundeni,,-1.934333333,41.3913
+Kenya,Kiunga_MNR,Ch._Sudhi,,-1.80559,41.47402
+Kenya,Malindi-Ugwana_bay,Che_shale,,-3.0642679,40.175438
+Kenya,Diani_Chale,Chidibwi_peremede,,-4.493656648,39.57815574
+Kenya,Diani_Chale,Chidzamba_cha_jadini,,-4.323351093,39.57476685
+Kenya,Diani-Chale,Chidzamba_cha_mavovo,,-4.3405,39.375166
+Kenya,Diani-Chale,Chidzamba_cha_mekka,,-4.3405,39.57071667
+Kenya,Diani_Chale,Chidzamba_cha_mtsangani,,-4.33626776,39.57518352
+Kenya,Diani-Chale,Chidzamba_cha_mwambogoya,,-4.364573315,39.57010018
+Kenya,Kiunga_MNR,Chole,,-1.892883333,41.3831
+Kenya,Southcoast,Chumani,,-4.654,39.337
+Kenya,Watamu,Coral_Garden,,-3.382883333,39.99198333
+Kenya,Diani-Chale,Doa_la_maweni,,-4.2807,39.312833
+Kenya,Diani-Chale,Doa_la_msusa,,-4.27785,39.311833
+Kenya,Watamu,Dolphin,,-3.367028,40.024064
+Kenya,Watamu,Drummers,,-3.369483,40.018006
+Kenya,Southcoast,Funzi,,-4.588,39.444
+Kenya,Southcoast,Funzi,,-4.588,39.444
+Kenya,Diani_Chale,Gaani,,-4.441101093,39.5380724
+Kenya,Diani_Chale,Guruti_ya_pappilloni,,-4.360878871,39.64204463
+Kenya,Diani_Chale,Hungani,,-4.35735,39.56716667
+Kenya,Lamu,Iweni,,-2.214722028,41.00655003
+Kenya,Kiunga_MNR,Kadhikia,,-1.717888889,41.54136111
+Kenya,Mombasa,Kanamai,,-3.92337,39.78758333
+Kenya,Mombasa,Kasa,,-3.98282,39.76192
+Kenya,Diani_Chale,Kibororiani,,-4.40658,39.55362
+Kenya,Southcoast,Kibuyuni,,-4.641,39.338
+Kenya,Malindi-Ugwana_bay,Kichwa_cha_kati,,-3.06245296,40.183099
+Kenya,Kiunga_MNR,Kijiweni,,-1.784616667,41.49433333
+Kenya,Lamu,Kinyika_outer,,-2.43023,40.8401
+Kenya,Southcoast,Kiromo,,-4.643,39.32
+Kenya,Kiunga_MNR,Kishanga,,-1.83445,41.44301667
+Kenya,Southcoast,Kisite_Deep,,-4.724272222,39.37363333
+Kenya,Southcoast,Kisite-Exposed,,-4.709,39.38
+Kenya,Southcoast,Kisite-Sheltered,,-4.723,39.371
+Kenya,Diani_Chale,Komeo_la_Mwananyamala,,-4.590045537,39.75065574
+Kenya,Diani_Chale,Konodzuru,,-4.437878871,39.53990574
+Kenya,Kiunga_MNR,Kui,,-1.828833333,41.44475
+Kenya,Kiunga_MNR,Kupi,,-1.832916667,41.43794444
+Kenya,Kiunga_MNR,Kwa_Radi,,-1.924111111,41.35988889
+Kenya,Watamu,Lambis,,-3.386055555,39.98930555
+Kenya,Diani-Chale,Ligagana_,,-4.417795537,39.54912796
+Kenya,Diani_Chale,Ligagana_,,-4.417795537,39.54912796
+Kenya,Mombasa,Likoni,,-4.09337,39.6861
+Kenya,Diani-Chale,Limwinyumwinyu,,-4.585323315,39.63676685
+Kenya,Kiunga_MNR,Magogoni,,-1.883066667,41.40168333
+Kenya,Lamu,Majongooni,,-2.218386009,41.02975197
+Kenya,Lamu,Majongooni,,-2.218386009,41.02975197
+Kenya,Southcoast,Makokokwe,,-4.722,39.335
+Kenya,Diani-Chale,Makonde,,-4.408378871,39.5543224
+Kenya,Lamu,Manda-Toto,,-2.217428964,40.97798701
+Kenya,Malindi-Ugwana_bay,Marereni,,-3.03160403,40.19718
+Kenya,Diani_Chale,Masikati,,-4.337035519,39.5720337
+Kenya,Southcoast,Masolini,,-4.722,39.335
+Kenya,Malindi,Mayungu,,-3.24667,40.14635
+Kenya,Diani-Chale,Mchingamo_mwadudu,,-4.45801776,39.52885018
+Kenya,Kiunga_MNR,Melini,,-4.45801776,39.52985018
+Kenya,Kiunga_MNR,Mike's_inner,,-4.43801776,39.48885018
+Kenya,Kiunga_MNR,Mike's_outer,,-4.45801776,39.52985018
+Kenya,Kiunga_MNR,Mketeni,,-4.53801776,39.52885018
+Kenya,Kiunga_MNR,Mketeni,,-2.04522,41.27631
+Kenya,Diani-Chale,Mkingamo_gazi,,-4.45801776,39.52985018
+Kenya,Kiunga_MNR,Mkokoni_Coral_Garden,,-1.96355,41.30437
+Kenya,Diani_Chale,Mkono_wa_gutu,,-4.363376093,39.56516129
+Kenya,Southcoast,Mkwiro,,-4.501333,39.622
+Kenya,Kiunga_MNR,Ml._Hindi,,-1.907916667,41.37144444
+Kenya,Kiunga_MNR,Mlango_Mkuu,,-1.7706,41.51121667
+Kenya,Lamu,Mlangoni-Manda,,-2.225382971,41.00930801
+Kenya,Diani_Chale,Moana_lagoon,,-4.590045537,39.68148907
+Kenya,Watamu,Moray,,-3.378833,40.010731
+Kenya,Southcoast,Mpunguti-Lower,,-4.683,39.397
+Kenya,Southcoast,Mpunguti-Upper,,-4.695,39.411
+Kenya,Diani-Chale,Mtengo,,-4.339795537,39.57290574
+Kenya,Lamu,Mw._Kitau,,-2.314833333,41.00676667
+Kenya,Kiunga_MNR,Mw._Mkuu,,-1.7706,41.51121667
+Kenya,Lamu,Mw._Pate,,-2.183833333,41.05818333
+Kenya,Diani_Chale,Mwagogo,,-4.31326776,39.58443352
+Kenya,Diani-Chale,Mwamba_mkubwa,,-4.364878871,39.5713224
+Kenya,Lamu,Mwamba_Nguri,,-2.281,41.00356667
+Kenya,Lamu,Mwamba_Nguri,,-2.281,41.00356667
+Kenya,Diani-Chale,Mwamba_wa_Chala,,-4.370378871,39.56787796
+Kenya,Diani-Chale,Mwamba_wa_Mwatajiri,,-4.354818333,39.57148333
+Kenya,Diani-Chale,Mwamba_wa_Rashidi,,-4.351118333,39.57138333
+Kenya,Diani-Chale,Mwanadzinani,,-4.380716667,39.56411667
+Kenya,Diani_Chale,Mwananyamala,,-4.313906648,39.57935018
+Kenya,Diani-Chale,Mwanyundo,,-4.33626776,39.57518352
+Kenya,Southcoast,Mwarembo,,-4.33626776,39.57518352
+Kenya,Diani-Chale,Mwaromba,,-4.397851093,39.55646129
+Kenya,Southcoast,Mwipa,,-4.692,39.315
+Kenya,Malindi,New_Coral_Garden,,-3.25588,40.14112
+Kenya,Diani_Chale,Ngomani,,-4.4138,39.54765
+Kenya,Diani-Chale,Nguma,,-4.342073315,39.5728224
+Kenya,Diani-Chale,Ngunguluni,,-4.2151833,39.3370833
+Kenya,Diani-Chale,Njau,,-4.310212204,39.58535018
+Kenya,Malindi,North_Reef,,-3.27312,40.13018
+Kenya,Mombasa,Nyali,,-4.06173,39.7097
+Kenya,Malindi,Old_Coral_Garden,,-3.25955,40.14607
+Kenya,Lamu,Pezali_Rock,,-2.20333999,41.05569698
+Kenya,Mombasa,Ras_Iwatine,,-4.01667,39.73333
+Kenya,Watamu,Richard_Bernets,,-3.379166667,39.99638333
+Kenya,Diani_Chale,Seacrest_lagoon,,-4.40976776,39.71954463
+Kenya,Mombasa,Shark_Point,,-3.97082,39.77167
+Kenya,Mombasa,Shelly,,-4.10413,39.6861
+Kenya,Kiunga_MNR,Shili,,-1.704116667,41.52975
+Kenya,Diani-Chale,Shimo_la_chitsanga,,-4.412406648,39.5513224
+Kenya,Diani-Chale,shimo_la_mlango,,-4.411968333,39.54863333
+Kenya,Kiunga_MNR,Shimo_la_Tewa,,-2.042957407,41.24666296
+Kenya,Southcoast,Sii_Island_west,,-4.678,39.281
+Kenya,Kiunga_MNR,Soio,,-2.002611111,41.29755556
+Kenya,Kiunga_MNR,Soio,,-2.00261,41.29756
+Kenya,Lamu,Tenewi_North,,-2.477724021,40.77136899
+Kenya,Lamu,Tenewi_South,,-2.476841994,40.77224096
+Kenya,Diani-Chale,Tsipitali,,-4.382333333,39.56745
+Kenya,Diani_Chale,Tsuini,,-4.407823315,39.59676685
+Kenya,Watamu,Turtle_Reef,,-3.377394,40.004581
+Kenya,Lamu,Utende,,-2.35865,40.91526667
+Kenya,Lamu,Utende,,-2.35865,40.91526667
+Kenya,Watamu,Uyombo,,-3.46,39.97672222
+Kenya,Diani_Chale,Vidzyani,,-4.400601093,39.78621129
+Kenya,Southcoast,Wasini_Tengefu,,-4.646,39.377
+La Reunion,NA,Alize Plage PE,,-21.34857,55.47102
+La Reunion,NA,Alize Plage PL,,-21.34558,55.47233
+La Reunion,NA,Etang Sale PE,,-21.26878,55.32828
+La Reunion,NA,Etang Sale PL,,-21.26951,55.33292
+La Reunion,NA,La Corne PE,,-21.16404,55.28261
+La Reunion,NA,La Corne PL,,-21.16572,55.28474
+La Reunion,NA,La Varangue PE,,-21.17355,55.28249
+La Reunion,NA,La Varangue PL,,-21.17339,55.28579
+La Reunion,NA,Planch'Alizes PE,,-21.099,55.22969
+La Reunion,NA,Planch'Alizes PL,,-21.09635,55.23277
+La Reunion,NA,Ravine Blanche PE,,-21.34575,55.4592
+La Reunion,NA,Ravine Blanche PL,,-21.34255,55.46116
+La Reunion,NA,Trois Chameaux PE,,-21.08126,55.21701
+La Reunion,NA,Trois Chameaux PL,,-21.08154,55.22134
+Madagascar,NA,007 North,,-22.12369831,43.1969756
+Madagascar,NA,007 South,,-22.123698,43.196976
+Madagascar,NA,Ambatobe,,-22.00730771,43.20068585
+Madagascar,CORDIO,Ambo_Inner,,-12.37121667,49.44038333
+Madagascar,CORDIO,Ambo_Outer,,-12.34525833,49.45049167
+Madagascar,CORDIO,Ambo_S,,-12.36549167,49.45544167
+Madagascar,Vatoharana,Ambodirafia,Pente externe,-15.2756,50.50345
+Madagascar,NA,Ampassy,,-22.00269112,43.19999786
+Madagascar,NA,Andrivampasy,,-21.94782855,43.19501993
+Madagascar,NA,Ankafotia,,-22.19440361,43.15262561
+Madagascar,CORDIO,Ankao_NE,,-12.76676667,49.82216667
+Madagascar,CORDIO,AnkaoNNE,,-12.79138333,49.81213333
+Madagascar,CORDIO,AnkaS,,-12.82805,49.81281667
+Madagascar,Ouest,Antrema Mahajanga,Platier,-15.65999,46.16
+Madagascar,NA,Bass 3,,-22.01169446,43.19919446
+Madagascar,NA,Belamera,,-21.97933068,43.19993122
+Madagascar,Ouest sud ouest,Belo sur Mer,Pente externe,-20.69599,43.883
+Madagascar,NA,Bevato Ankarambanda,,-21.88308061,43.24805257
+Madagascar,NA,Bevato Permanent Reserve,,-21.88308061,43.24805257
+Madagascar,NA,Bevato Spillover,,-22.17421629,43.21972962
+Madagascar,NA,Bic Cave,,-22.05417671,43.18969131
+Madagascar,NA,Christmas Reef,,-22.14002366,43.23218043
+Madagascar,NA,Cloisters,,-22.07672202,43.18450375
+Madagascar,Nord-Ouest,Dzamandjar,Pente externe,-13.36499,48.173
+Madagascar,NA,Fish Bowl,,-21.93786875,43.26135959
+Madagascar,Est,Foulpointe,Pente externe,-17.68199921,49.534
+Madagascar,NA,Garpy,,-22.11531649,43.21862136
+Madagascar,Toamasina,Ile aux Prunes,Pente externe,-18.03653,49.27514
+Madagascar,Toamasina,Ile aux Prunes,Platier,-18.02627,49.27642
+Madagascar,NA,Javic North,,-22.11835854,43.21718646
+Madagascar,NA,Javic South,,-22.07725,43.18555551
+Madagascar,CORDIO,Loky_S,,-12.73075833,49.69595
+Madagascar,CORDIO,LokyNW,,-12.71310833,49.66636667
+Madagascar,NA,Lost,,-22.06792613,43.22631561
+Madagascar,NA,Lovobe,,-22.09212729,43.22488306
+Madagascar,NA,Mah,,-21.99251021,43.2444346
+Madagascar,NA,Mobie,,-21.99251021,43.2444346
+Madagascar,NA,NE Nosy Mitata (MOBIE),,-21.87364175,43.26632872
+Madagascar,NA,No Bad Reef,,-22.0668012,43.18187392
+Madagascar,Toamasina,Nosy Faho,Pente externe,-18.17153,49.24951
+Madagascar,Toamasina,Nosy Faho,Platier,-18.18093,49.24594
+Madagascar,NA,Nosy Fasy,,-22.07328016,43.22589551
+Madagascar,NA,NS Andavadoaka,,-22.08405987,43.22722178
+Madagascar,NA,NS Coco Beach ,,-22.07509249,43.22613062
+Madagascar,NA,NS Halfmoon,,-22.10399992,43.23333328
+Madagascar,NA,NS LagunaBlu,,-22.12230549,43.19822215
+Madagascar,NA,Recruitment North,,-22.12255552,43.1983333
+Madagascar,NA,Recruitment South,,-21.8721579,43.26597249
+Madagascar,NA,Reef Boy - Reef Man,,-22.12988885,43.18130555
+Madagascar,NA,Shark Alley,,-22.129889,43.181306
+Madagascar,NA,South Reef ,,-22.12789689,43.23072265
+Madagascar,NA,South Reef 4,,-22.127897,43.230723
+Madagascar,NA,South Reef 6,,-22.21347218,43.22694442
+Madagascar,NA,Tampolove North (Kimboro),,-22.21096214,43.22574849
+Madagascar,NA,Tampolove South (Balovo),,-22.12336111,43.19819441
+Madagascar,Nord-Ouest,Tanikely,Pente externe,-13.48499,48.232
+Madagascar,NA,THB North,,-22.1237222,43.19844444
+Madagascar,NA,THB South,,-22.123722,43.198444
+Madagascar,NA,Unknown,,-22.0796976,43.18170553
+Madagascar,NA,Valleys,,-21.9322041,43.23813016
+Madagascar,CORDIO,Vohem,,-13.33069167,50.01421667
+Madagascar,NA,Vorea,,-21.932204,43.23813
+Mauritius,NA,Albion,fore reef,-20.203833,57.401722
+Mauritius,,Albion,back reef,-20.203833,57.401722
+Mauritius,NA,Albion ALB Lag,back reef,-20.213817,57.402883
+Mauritius,NA,Albion ALB Off,fore reef,-20.210722,57.398611
+Mauritius,NA,Anse la Raie,back reef,-19.99396,57.637924
+Mauritius,,Anse la Raie,shore reef,-19.99396,57.637924
+Mauritius,NA,Baie du Tombeau ,back reef,-20.125996,57.494697
+Mauritius,NA,Bambous Virieux,back reef,-20.350575,57.766727
+Mauritius,,Bambous Virieux,shore reef,-20.350575,57.766727
+Mauritius,NA,Bel Ombre,shore reef,-20.506354,57.39642
+Mauritius,,Bel Ombre,shore reef,-20.506354,57.39642
+Mauritius,NA,Bel Ombre BO Lag1,back reef,-20.502639,57.38925
+Mauritius,NA,Bel Ombre BO Lag2,back reef,-20.509111,57.407
+Mauritius,NA,Belle Mare BM Lag,back reef,-20.189833,57.781056
+Mauritius,NA,Belle Mare l,back reef,-20.18963,57.780272
+Mauritius,NA,Belle Mare ll,back reef,-20.18963,57.780272
+Mauritius,NA,Eau Bleu,back reef,-20.3465,57.794944
+Mauritius,NA,Flic en Flac FEF Lag2,back reef,-20.276972,57.365028
+Mauritius,NA,Flic en FlacFEF Lag1,back reef,-20.299472,57.360361
+Mauritius,NA,GRSE,back reef,-20.340722,57.793972
+Mauritius,NA,Ile aux Aigrettes,back reef,-20.4213,57.728516
+Mauritius,NA,Ile aux Benitiers ,back reef,-20.409706,57.324875
+Mauritius,,Ile aux Benitiers ,fore reef,-20.406813,57.335755
+Mauritius,,Ile aux Benitiers ,shore reef,-20.406813,57.335755
+Mauritius,,Ile aux Benitiers IAB Lag,back reef,-20.409706,57.324875
+Mauritius,NA,La Prairie,back reef,-20.486944,57.350028
+Mauritius,NA,Le Goulet ,fore reef,-20.105514,57.515563
+Mauritius,NA,Le Morne Lag1,back reef,-20.460222,57.307472
+Mauritius,NA,Le Morne Lag2,back reef,-20.458571,57.306901
+Mauritius,NA,Mahebourg,back reef,-20.427833,57.735889
+Mauritius,NA,Pointe aux sables,back reef,-20.169672,57.442476
+Mauritius,,Pointe aux sables,fore reef,-20.169672,57.442476
+Mauritius,NA,Poudre d'Or I,back reef,-20.062674,57.707022
+Mauritius,NA,Poudre d'Or Il,back reef,-20.062674,57.707022
+Mauritius,NA,Trou aux Biches,fore reef,-20.035119,57.54265
+Mauritius,,Trou aux Biches,back reef,-20.035119,57.54265
+Mauritius,NA,Trou aux Biches TAB Lag,back reef,-20.023528,57.543917
+Mauritius,NA,Trou d'Eau Douce,back reef,-20.238551,57.801656
+Mauritius,,Trou d'Eau Douce,shore reef,-20.238551,57.801656
+Mozambique,Inhambane,Anchor's_Bay,,-23.77694444,35.51055556
+Mozambique,Inhaca_Island,Baixo_Danae,,-25.90431667,33.05226667
+Mozambique,CORDIO,Baixo_Pinguim_NE,,-11.10721667,40.68205
+Mozambique,Ponta_do_Ouro_Partial_Marine_Reserve,Baixo_Sao_Joao,,-25.90431667,33.05226667
+Mozambique,Inhaca_Island,Barreira_Vermelha,,-26.01965,32.90298333
+Mozambique,Inhambane,Bazaruto_26,,-21.80775,35.50539
+Mozambique,Inhambane,Bazaruto_27,,-21.72648,35.50181
+Mozambique,Inhambane,Bazaruto_28,,-21.638131,35.50063
+Mozambique,Inhambane,Bazaruto_29,,-21.35818,35.500616
+Mozambique,Inhambane,Bazaruto_30,,-21.3772,35.50225
+Mozambique,Inhambane,Bazaruto_31,,-21.51352,35.48972
+Mozambique,Inhambane,Bazaruto_32,,-21.601817,35.5001
+Mozambique,Inhambane,Bazaruto_33,,-21.52737,35.49739
+Mozambique,Caldeira Island,CD1,,-16.65718,39.72448
+Mozambique,Caldeira Island,CD1_base,,-16.65718,39.72448
+Mozambique,Caldeira Island,CD1_top,,-16.65718,39.72448
+Mozambique,Caldeira Island,CD2,,-16.63905,39.73057
+Mozambique,Caldeira Island,CD2_deep,,-16.63905,39.73057
+Mozambique,Caldeira Island,CD2_shallow,,-16.63905,39.73057
+Mozambique,Caldeira Island,CD3,,-16.634964,39.739903
+Mozambique,Caldeira Island,CD4,,-16.655428,39.71529404
+Mozambique,Caldeira Island,CD5,,-16.658765,39.73195801
+Mozambique,Caldeira Island,CD6,,-16.64733997,39.74325598
+Mozambique,Caldeira Island,CD7,,-16.64993903,39.740743
+Mozambique,Caldeira Island,CD7_top,,-16.64993903,39.740743
+Mozambique,Caldeira Island,CD8,,-16.64215903,39.71798899
+Mozambique,Chongoene_Reef,Chongoene_central-II-transects,,-25.12681667,33.82851667
+Mozambique,Bazaruto_Archipelago,Coral_Garden,,-21.518083,35.487625
+Mozambique,Ponta_do_Ouro_Partial_Marine_Reserve,Creche,,-26.80618333,32.8937
+Mozambique,Primeiras_e_Segundas_Archipelagos,Epidendron,,-17.098476,39.124807
+Mozambique,CORDIO,FernauVloso,,-11.22779167,40.24654167
+Mozambique,Primeiras_e_Segundas_Archipelagos,Fogo,,-17.243967,38.880774
+Mozambique,Mozambique_Island,Goa_Island,,-15.04811667,40.78356667
+Mozambique,Baixo_Inhampura,Inhampura_central_II-transects,,-25.18185,33.6444
+Mozambique,Ponta_do_Ouro_Partial_Marine_Reserve,Kev's_Lodge,,-26.6295,32.90463333
+Mozambique,CORDIO,Kiwe,,-11.11665,40.62633333
+Mozambique,Bazaruto_Archipelago,Lighthouse_Reef,,-21.52033333,35.49066667
+Mozambique,Primeiras_e_Segundas_Archipelagos,Mafamede,,-16.358914,40.039693
+Mozambique,Inhambane,Magaruque_24,,-22.0451,35.528
+Mozambique,Inhambane,Mahangate_21,,-22.52118,35.56439
+Mozambique,CORDIO,MakungN,,-11.09869167,40.72753333
+Mozambique,CORDIO,Malinde-Kiwe,,-11.30974604,40.52603798
+Mozambique,Inhambane,Masinga_13,,-23.37879,35.60508
+Mozambique,Inhambane,Masinga_14,,-23.39329,35.60396
+Mozambique,CORDIO,Metundflat,,-11.12815833,40.686
+Mozambique,CORDIO,Metundo_NW_,,-11.12012357,40.67395834
+Mozambique,CORDIO,MetundoE_,,-11.15118097,40.70303704
+Mozambique,CORDIO,MetundoNE_,,-11.13314998,40.70244997
+Mozambique,Inhambane,Mike's_Cub_Board,,-23.81222222,35.54166667
+Mozambique,CORDIO,Mutiva,,-14.428625,40.721225
+Mozambique,CORDIO,Nangata,,-14.19954167,40.73881667
+Mozambique,CORDIO,Napala,,-14.44946667,40.6774
+Mozambique,Njovo Island,ND1,,-16.57990403,39.81869001
+Mozambique,Njovo Island,ND1_top,,-16.57990403,39.81869001
+Mozambique,Njovo Island,ND2,,-16.58542796,39.81232597
+Mozambique,Njovo Island,ND2_slope,,-16.58542796,39.81232597
+Mozambique,Njovo Island,ND3,,-16.57117998,39.798368
+Mozambique,Njovo Island,ND4,,-16.58067701,39.79987096
+Mozambique,Njovo Island,ND5,,-16.56599401,39.82281198
+Mozambique,Njovo Island,ND6,,-16.56061199,39.81346901
+Mozambique,Primeiras_e_Segundas_Archipelagos,Njovo,,-16.571057,39.810983
+Mozambique,Inhambane,Paindane_11,,-24.09789,35.50832
+Mozambique,Primeiras_e_Segundas_Archipelagos,Ndjovo,,-16.571057,39.810983
+Mozambique,CORDIO,Palma_Islands_,,-10.81467949,40.65298249
+Mozambique,CORDIO,Paradise,,-4.91282,39.67093
+Mozambique,Inhambane,Pomene_15,,-23.20505,35.617633
+Mozambique,Inhambane,Pomene_16,,-23.191667,35.5342
+Mozambique,Inhambane,Pomene_17,,-23.944817,35.608
+Mozambique,Inhambane,Pomene_18,,-22.792483,35.5792
+Mozambique,Inhambane,Pomene_19,,-22.77511,35.60679
+Mozambique,Inhambane,Pomene_20,,-22.79209,35.58014
+Mozambique,Pemba,Ponta_Maunhane,,-12.95896667,40.55993333
+Mozambique,Inhaca_Island,Ponta_Torres,,-26.07360176,32.9527
+Mozambique,Primeiras_e_Segundas_Archipelagos,Puga-Puga,,-16.451428,39.951183
+Mozambique,CORDIO,Quirindi_,,-10.63482702,40.59916547
+Mozambique,CORDIO,Quiwia_,,-10.69706667,40.65378333
+Mozambique,Inhambane,SAN SEBASTIAN_22,,-22.29431,35.56642
+Mozambique,Inhambane,SAN SEBASTIAN_23,,-22.256981,35.53758
+Mozambique,Quirimbas_Archipelago,Sencar_Channel,,-12.48905,40.6211
+Mozambique,Mozambique_Island,Sete_Paus_Island,,-14.9762,40.78981667
+Mozambique,Ponta_do_Ouro_Partial_Marine_Reserve,Techobanine_1,,-26.63011667,32.91455
+Mozambique,CORDIO,TekamajiN_,,-10.75588002,40.6436
+Mozambique,Ponta_do_Ouro_Partial_Marine_Reserve,Texas,,-26.77125,32.90175
+Mozambique,Inhambane,Tofo_1,,-23.91319,35.53523
+Mozambique,Inhambane,Tofo_2,,-23.81191,35.54203
+Mozambique,Inhambane,Tofo_4,,-23.71263,35.56705
+Mozambique,Bazaruto_Archipelago,Two-mile_Reef,,-21.80351667,35.5026
+Mozambique,Vamizi_Island,V1.2,,-10.995436,40.67925
+Mozambique,Vamizi_Island,V2.1,,-11.021202,40.646498
+Mozambique,Vamizi_Island,V2.2,,-11.022073,40.645168
+Mozambique,Vamizi_Island,V3.1,,-10.993602,40.711932
+Mozambique,Vamizi_Island,V3.2,,-10.992872,40.711139
+Mozambique,Vamizi_Island,V6.1,,-11.004657,40.614763
+Mozambique,Vamizi_Island,V6.2,,-11.00537,40.61551
+Mozambique,Vamizi_Island,V6.3,,-11.005564,40.617699
+Mozambique,Vamizi_Island,V7.1,,-11.022782,40.636684
+Mozambique,Vamizi_Island,V7.2,,-11.021424,40.634863
+Mozambique,Vamizi_Island,V7.3,,-11.020284,40.632418
+Mozambique,Vamizi_Island,V8.1,,-11.014756,40.656079
+Mozambique,Vamizi_Island,V8.2,,-11.012346,40.656992
+Mozambique,CORDIO,VamiziNE_,,-10.994217,40.71341702
+Mozambique,CORDIO,VamiziNR_,,-10.99069501,40.68838497
+Mozambique,CORDIO,VamiziNU,,-11.01475833,40.63363333
+Mozambique,Xai-xai,Xai-xai_Lagoon,,-25.119688,33.730237
+Mozambique,Inhambane,Zavora_10,,-24.45078,35.26761
+Mozambique,Inhambane,Zavora_7,,-24.56215,35.28957
+Mozambique,Inhambane,Zavora_8,,-24.47512,35.24511
+Mozambique,Inhambane,Zavora_9,,-24.4777,35.35451
+Mozambique,NGO,Caldeira,,-16.64686667,39.71206667
+Mozambique,NGO,Casuarina 2,,-17.12355,39.0577
+Mozambique,NGO,Casuarina Channel,,-17.13405,39.07383333
+Mozambique,NGO,Epidendrom 1,,-17.10245,39.12316667
+Mozambique,NGO,Epidendron 2,,-17.0853,39.12878333
+Mozambique,NGO,Fogo 1,,-17.2304,38.88783333
+Mozambique,NGO,Fogo 2,,-17.23423333,38.86868333
+Mozambique,NGO,Ndjovo,,-16.585,39.80306667
+Mozambique,NGO,Santo Antonio,,-16.20993333,40.13136667
+Mozambique,NGO,Silva,,-17.2898,38.79128333
+Rodrigues,NA,Grand Bassin,,-19.66038889,63.35079167
+Rodrigues,NA,Ile aux Fous,,-19.65188333,63.387575
+Rodrigues,NA,N. Ile aux Sables,,-19.68038333,63.30525
+Rodrigues,NA,Passe Armand,,-19.6706,63.41663333
+Rodrigues,NA,Passe Cabri,,-19.6656,63.43541667
+Rodrigues,NA,Passe Demie,,-19.706111,63.292778
+Rodrigues,NA,Passe L'Ancre,,-19.8137,63.42725
+Rodrigues,NA,Riviere Banane,,-19.66908889,63.47241944
+Rodrigues,NA,Trou Blanc,,-19.75666667,63.47391667
+Seychelles,Alphonse ,A7,,-6.59482,52.43027
+Seychelles,African Banks,African Bank E Reef,,-4.88208,53.39165
+Seychelles,African Banks,African Bank N Reef,,-4.88208,53.31193
+Seychelles,Aldabra,All deep sites ,,-9.37888,46.21971
+Seychelles,Aldabra,All shallow sites ,,-9.395321,46.250909
+Seychelles,Mahe,Anse Major Point,,-4.62415,55.38304
+Seychelles,Mahe,Anse Major Reef,,-4.62443,55.38543
+Seychelles,Praslin,Anse Papaie,,-4.28455,55.73665
+Seychelles,Praslin,Anse Petit Cours,,-4.30614,55.72864
+Seychelles,Denis,Aquarium,,-3.79329,55.64822
+Seychelles,Desroches,Aquarium,,-3.79329,55.64822
+Seychelles,Aride,Aride Site 1,,-4.04963,55.66993
+Seychelles,Aride,Aride Site 10,,-4.20965,55.66312
+Seychelles,Aride,Aride Site 2,,-4.21603,55.66595
+Seychelles,Aride,Aride Site 3,,-4.21528,55.66277
+Seychelles,Aride,Aride Site 4,,-4.21138,55.6728
+Seychelles,Aride,Aride Site 5,,-4.21448,55.67465
+Seychelles,Aride,Aride Site 6,,-4.2097,55.66052
+Seychelles,Aride,Aride Site 7,,-4.21012,55.66837
+Seychelles,Aride,Aride Site 8,,-4.21298,55.65882
+Seychelles,Aride,Aride Site 9,,-4.2086,55.65958
+Seychelles,Cosmoledo,Ast-NW,,-9.69335,47.5461
+Seychelles,Mahe,Auberge Reef,,-4.61508,55.40345
+Seychelles,Praslin,Badamier,,-4.27736,55.72127
+Seychelles,Mahe,Baie Ternay Centre,,-4.63868,55.37507
+Seychelles,Mahe,Baie Ternay Lighthouse,,-4.639,55.36594
+Seychelles,Mahe,Baie Ternay North East,,-4.6339,55.37431
+Seychelles,Mahe,Baie Ternay North West ,,-4.63896,55.36897
+Seychelles,Denis,Batfish,,-3.80808,55.64782
+Seychelles,Praslin,Booby Island,,-4.25975,55.67441
+Seychelles,Boudeuse,Boudeuse N Reef,,-6.07148,52.8375552
+Seychelles,Boudeuse,Boudeuse NE Reef,,-6.0861,52.83672
+Seychelles,Boudeuse,Boudeuse W Reef,,-6.0897,52.8308
+Seychelles,North,Boulders,,-4.39263,55.25367
+Seychelles,Praslin,Burt Banks,,-4.30458,55.71807
+Seychelles,Praslin,Caiman Point,,-4.27989,55.71085
+Seychelles,Cosmoledo,Cha-C,,-9.74947,47.62425
+Seychelles,Cosmoledo,Cha-E,,-9.75728,47.62298
+Seychelles,Mahe,Conception Central East Face,,-4.66485,55.37097
+Seychelles,Mahe,Conception North Point ,,-4.65972,55.3609
+Seychelles,Praslin,Coral Garden,,-4.2876,55.74374
+Seychelles,North,Coral Gardens North,,-4.39161,55.23583
+Seychelles,North,Coral Gardens South,,-4.39843,55.23679
+Seychelles,Mahe,Corsaire Reef,,-4.61557,55.40752
+Seychelles,Praslin,Cousin,,-4.33075,55.66743
+Seychelles,Praslin,Cousin Carbonate,,-4.33031,55.65916
+Seychelles,Praslin,Cousin Granitic ,,-4.32466,55.66655
+Seychelles,Praslin,Cousin Patch,,-4.3362,55.66563
+Seychelles,Praslin,Curieuse North Central Rock,,-4.27658,55.72873
+Seychelles,Praslin,Curieuse North West Rock,,-4.2771,55.71418
+Seychelles,Praslin,Curieuse West Rock,,-4.25768,55.67458
+Seychelles,Farquhar,Deposee,,-10.147955,51.06427
+Seychelles,Desroches,DES1,,-5.70357,59.61168
+Seychelles,Desroches,DES2,,-5.70112,59.61001
+Seychelles,Desroches,DES3,,-5.69877,59.67777
+Seychelles,Desroches,DES4,,-5.71156,59.65224
+Seychelles,Desroches,DES5,,-5.61576,59.60551
+Seychelles,Desroches,DES6,,-5.70789,59.61625
+Seychelles,Etoile,Etoile E Reef,,-5.88695,53.03347
+Seychelles,Etoile,Etoile W Reef ,,-5.88718,53.02528
+Seychelles,Farquhar,F14,,-10.17592,51.02714
+Seychelles,Farquhar,F16,,-10.18947,51.02097
+Seychelles,Farquhar,F23,,-10.23378,51.12674
+Seychelles,Farquhar,F26,,-10.22502,51.10732
+Seychelles,Farquhar,F30,,-10.12421,51.14429
+Seychelles,Farquhar,F32,,-10.12572,51.16096
+Seychelles,Farquhar,F33,,-10.16995,51.19429
+Seychelles,Farquhar,F4,,-10.1375,51.10883
+Seychelles,Farquhar,F6,,-10.13097,51.16214
+Seychelles,Farquhar,F7,,-10.1212,51.19173
+Seychelles,Farquhar,F8,,-10.13663,51.13663
+Seychelles,Farquhar,F9,,-10.10439,51.1798
+Seychelles,Cosmoledo,Gol-NE,,-9.69511,47.64815
+Seychelles,Cosmoledo,Grd-E,,-9.71539,47.6644
+Seychelles,Cosmoledo,Grd-SE,,-9.76872,47.64187
+Seychelles,Denis,House Reef,,-4.39022,55.25232
+Seychelles,North,House Reef,,-4.39022,55.25232
+Seychelles,Silhouette,House reef ,,-4.48311,55.25345
+Seychelles,Cosmoledo,Lag-1,,-9.72853,47.60752
+Seychelles,Cosmoledo,Lag-2,,-9.72917,47.5792
+Seychelles,Cosmoledo,Lag-3,,-9.73712,47.6132
+Seychelles,Cosmoledo,Lag-4,,-9.74167,47.60563
+Seychelles,Mahe,Lilot North Face,,-4.55867,55.4322
+Seychelles,Desroches,Lobster,,-5.68421,59.65729
+Seychelles,Mahe,Mahe E,,-4.70706,55.52903
+Seychelles,Mahe,Mahe E Carbonate,,-4.71165,55.52823
+Seychelles,Mahe,Mahe E Granitic ,,-4.73848,55.52844
+Seychelles,Mahe,Mahe East Patch ,,-4.70341,55.52743
+Seychelles,Mahe,Mahe NW,,-4.61319,55.40871
+Seychelles,Mahe,Mahe NW Carbonate,,-4.63981,55.37486
+Seychelles,Mahe,Mahe NW Granitic,,-4.56181,55.44158
+Seychelles,Mahe,Mahe NW Patch ,,-4.61336,55.41717
+Seychelles,Mahe,Mahe W,,-4.66704,55.39629
+Seychelles,Mahe,Mahe W granitic ,,-4.65938,55.36209
+Seychelles,Mahe,Mahe West carbonate,,-4.6693,55.40127
+Seychelles,Mahe,Mahe West Patch ,,-4.67916,55.43603
+Seychelles,Cosmoledo,Men-N,,-9.69355,42.5461
+Seychelles,Cosmoledo,Men-W,,-9.71535,47.50255
+Seychelles,Cosmoledo,Nor-N,,-9.65775,47.56885
+Seychelles,North,North East Point,,-4.38276,55.24372
+Seychelles,Desroches,Oxy,,-5.68278,59.66269
+Seychelles,Praslin,Point Rouge,,-4.2791,55.74546
+Seychelles,Mahe,Port Launay South Reef,,-4.65263,55.39492
+Seychelles,Mahe,Port Launay West Rock,,-4.65542,55.39232
+Seychelles,Praslin,Praslin NE,,-4.30045,55.75565
+Seychelles,Praslin,Praslin NE Carbonate,,-4.31266,55.75265
+Seychelles,Praslin,Praslin NE Granitic ,,-4.28952,55.7056
+Seychelles,Praslin,Praslin NE Patch ,,-4.30243,55.74859
+Seychelles,Praslin,Praslin North East Point,,-4.2879,55.69963
+Seychelles,Praslin,Praslin North East Rocks,,-4.28935,55.7071
+Seychelles,Praslin,Praslin SW,,-4.33423,55.69158
+Seychelles,Praslin,Praslin SW Carbonate,,-4.34909,55.70308
+Seychelles,Praslin,Praslin SW Granitic ,,-4.31391,55.67922
+Seychelles,Praslin,Praslin SW Patch ,,-4.33345,55.69134
+Seychelles,Mahe,Ray's Point,,-4.62165,55.38532
+Seychelles,Remire,Remire E Reef,,-5.12007,53.31928
+Seychelles,Remire,Remire S Reef,,-5.12515,53.31193
+Seychelles,Mahe,Secret Beach Reef ,,-4.6348,55.3758
+Seychelles,Silhouette,SI02A ,,-4.49576,55.25214
+Seychelles,Silhouette,SI03,,-4.47868,55.24826
+Seychelles,Silhouette,SI04,,-4.47208,55.24333
+Seychelles,Silhouette,SI05,,-4.46693,55.22013
+Seychelles,Silhouette,SI06,,-4.46823,55.21351
+Seychelles,Silhouette,SI07,,-4.46999,55.20988
+Seychelles,Silhouette,SI08,,-4.47481,55.20576
+Seychelles,Silhouette,SI09,,-4.46709,55.21723
+Seychelles,Denis,Site 3,,-3.82336,55.65417
+Seychelles,Denis,Site 4,,-3.79744,55.64791
+Seychelles,Denis,Site 5,,-3.77427,55.68063
+Seychelles,Denis,Site 6,,-3.79574,55.67265
+Seychelles,Mahe,Site X,,-4.61609,55.40028
+Seychelles,Mahe,Site Y,,-4.62882,55.37719
+Seychelles,Cosmoledo,Sou-SW,,-9.7659,47.55557
+Seychelles,North,Sprat City,,-4.38957,55.23732
+Seychelles,Praslin,St. Pierre East Rock,,-4.30248,55.75078
+Seychelles,Praslin,St. Pierre NE,,-4.3012,55.74887
+Seychelles,Praslin,St. Pierre SE,,-4.30342,55.75022
+Seychelles,Mahe,Ste. Anne,,-4.62267,55.50381
+Seychelles,Mahe,Ste. Anne Carbonate ,,-4.59895,55.50124
+Seychelles,Mahe,Ste. Anne Granitic ,,-4.60688,55.51203
+Seychelles,Mahe,Ste. Anne Patch ,,-4.61791,55.50677
+Seychelles,Cosmoledo,Sud-S,,-9.77827,47.58622
+Seychelles,Mahe,Therese North East,,-4.669,55.4015
+Seychelles,Mahe,Therese North End,,-4.6665,55.3961
+Seychelles,Mahe,Therese South,,-4.6794,55.40517
+Seychelles,Silhouette,Turtle rock,,-4.46619,55.23286
+Seychelles,Mahe,Whale Rock,,-4.61973,55.3904
+Seychelles,Mahe,White Villa,,-4.61338,55.41338
+Seychelles,Mahe,Willie's Bay Point,,-4.62648,55.3796
+Seychelles,Mahe,Willies Bay Reef,,-4.62614,55.38147
+Seychelles,Alphonse ,A1,,-7.021566667,52.71678333
+Seychelles,Alphonse ,A10,,-7.013966667,52.73213333
+Seychelles,Alphonse ,A11,,-7.032472222,52.73905556
+Seychelles,Alphonse ,A12,,-7.029888889,52.74233333
+Seychelles,Alphonse ,A13,,-7.021611111,52.74736111
+Seychelles,Alphonse ,A14,,-7.0135,52.74488889
+Seychelles,Alphonse ,A15,,-7.013361111,52.74194444
+Seychelles,Alphonse ,A16,,-7.009638889,52.73161111
+Seychelles,Alphonse ,A17,,-7.012055556,52.72911111
+Seychelles,Alphonse ,A18,,-7.015777778,52.73091667
+Seychelles,Alphonse ,A19,,-7.015777778,52.73091667
+Seychelles,Alphonse ,A2,,-7.012833333,52.73230556
+Seychelles,Alphonse ,A20,,-7.012833333,52.73230556
+Seychelles,Alphonse ,A3,,-7.012833333,52.73230556
+Seychelles,Alphonse ,A4,,-6.998016667,52.7351
+Seychelles,Alphonse ,A5,,-7.010533333,52.76151667
+Seychelles,Alphonse ,A6,,-7.04155,52.75145
+Seychelles,Alphonse ,A8,,-7.040333333,52.7283
+Seychelles,Alphonse ,A9,,-7.014616667,52.7343
+Seychelles,Cerf,Cer-W,,-9.523722222,50.96464722
+Seychelles,Providence,PrB-1,,-9.402258333,50.99711667
+Seychelles,Providence,PrB-2,,-9.327788889,51.00321944
+Seychelles,Providence,Pro-SW,,-9.249263889,51.01918611
+Seychelles,Alphonse ,S1,,-7.063555556,52.72380556
+Seychelles,Alphonse ,S10,,-7.077555556,52.73811111
+Seychelles,Alphonse ,S2,,-7.061555556,52.73888889
+Seychelles,Alphonse ,S3,,-7.076805556,52.75647222
+Seychelles,Alphonse ,S4,,-7.089111111,52.77697222
+Seychelles,Alphonse ,S5,,-7.124861111,52.78086111
+Seychelles,Alphonse ,S6,,-7.141416667,52.78122222
+Seychelles,Alphonse ,S7,,-7.174361111,52.74661111
+Seychelles,Alphonse ,S8,,-7.146861111,52.72561111
+Seychelles,Alphonse ,S9,,-7.118388889,52.72561111
+Seychelles,St. Pierre,StP-NE,,-9.324597222,52.73149722
+Seychelles,St. Pierre,StP-SW,,-9.338336111,52.72117778
+South Africa,Sodwana Bay,Nine-mile Reef,,-27.414917,32.726611
+Tanzania,Songosongo,Amana_East,,-8.70278,39.4728
+Tanzania,Songosongo,Amana_S,,-8.72222,39.4608
+Tanzania,Zanzibar,Bawe,MPA,-6.08326,39.08051
+Tanzania,Dar_es_Salaam,Bongoyo_1,,-6.41454,39.15424
+Tanzania,Dar_es_Salaam,Bongoyo_2,,-6.42103,39.16054
+Tanzania,Dar_es_Salaam,Bongoyo_North,,-6.41454,39.15424
+Tanzania,Dar_es_Salaam,Bongoyo_West,,-6.42103,39.16054
+Tanzania,Tanga,Bunju,,-4.7482026,39.29277
+Tanzania,Mtwara,Bwahari,,-10.15135,40.085233
+Tanzania,Zanzibar,Changuu,,-6.06522,39.10053
+Tanzania,Tanga,Chanjale,MPA,-5.18308,39.03529
+Tanzania,Zanzibar,Chapwani,,-6.11905,39.18939
+Tanzania,CORDIO,Chumb,,-6.2796,39.17405833
+Tanzania,Zanzibar,Chumbe,,-6.27682,39.1733
+Tanzania,Tanga,Chundo,,-4.89668,39.28797
+Tanzania,Tanga,Dambwe,open,-5.625723471,39.00082111
+Tanzania,Mafia,Dindini,,-7.91917,39.8344
+Tanzania,CORDIO,Dindini,,-7.919841667,39.82615833
+Tanzania,Mtwara,Eeh,,-10.2753,40.117733
+Tanzania,Rufiji,Fisi,,-8.39333,39.34705
+Tanzania,Rufiji,Fisi_N,,-8.38972,39.3469
+Tanzania,Rufiji,Fisi_S,,-8.39694,39.3472
+Tanzania,Tanga,Fungu_Boma,open,-4.9,39.2
+Tanzania,Tanga,Fungu_Nyama,open,-5.016667,39.216667
+Tanzania,Tanga,Fungu_Zinga,open,-5.538249629,39.03566837
+Tanzania,Tanga,Gomani,open,-4.783442586,39.21252251
+Tanzania,Misali,Home_reef,MPA,-5.2391667,39.59544444
+Tanzania,Tanga,Jambe,,-5.09664,39.16769
+Tanzania,Songosongo,Jewe,,-8.66583,39.4414
+Tanzania,Mafia,Juani,MPA,-7.58518,39.48518
+Tanzania,Songosongo,Kampera,open,-8.436375537,39.45173264
+Tanzania,Mtwara,Kati,,-10.18537,40.2208
+Tanzania,Tanga,Kichwa_Mtu,open,-4.75696,39.255311
+Tanzania,Mafia,Kifinge,,-8.10139,40.0725
+Tanzania,CORDIO,Kifinge,,-7.846716667,39.864875
+Tanzania,Misali,Kijiwe_Bendera,MPA,-5.239383899,39.61264372
+Tanzania,Misali,Kijiwe_Muhogo,MPA,-5.2448889,39.59127778
+Tanzania,Songosongo,Kimbore,,-8.3855,39.54945
+Tanzania,Tanga,Kipwani,,-5.16155675,39.143729
+Tanzania,Tanga,Kisiki_Mtu,open,-5.755372346,38.87859821
+Tanzania,Mafia,Kisiwa_Kikubwa,,-7.965,39.8069
+Tanzania,Tanga,Kitanga,,-5.3,39.1
+Tanzania,Mtwara,Kitelele,,-10.17325,40.23187
+Tanzania,Tanga,Kitungamwe,open,-4.773520833,39.39113617
+Tanzania,Mafia,Kitutia,,-8.15694,39.6508
+Tanzania,CORDIO,Kitutia,,-8.125258333,39.647975
+Tanzania,Mafia,Kitutia_S,,-8.15694,39.6508
+Tanzania,Tanga,Kobweni,Reserve,-4.775145957,39.20896053
+Tanzania,Zanzibar,Kwale,,-6.36358,39.28455
+Tanzania,Tanga,Kwale_Island,Reserve,-4.953864497,39.17169929
+Tanzania,Kwale,Kwale_sandbank,MPA,-6.363538997,39.28382635
+Tanzania,Kwale,Kwale_west,MPA,-6.37757096,39.27962065
+Tanzania,Mtwara,Lanzi,open,-10.155717,40.111583
+Tanzania,Songosongo,Machangi,,-8.41444,39.4428
+Tanzania,Mtwara,Majovu,,-10.1906,40.143767
+Tanzania,Tanga,Makangaja,open,-5.7833333,38.86666667
+Tanzania,Tanga,Makome,,-5.24446947,39.10504103
+Tanzania,Tanga,Makome_(Kigombe),MPA,-5.24446947,39.10504103
+Tanzania,Mafia,Mange,,-8.27139,39.6072
+Tanzania,CORDIO,Mange,,-8.067766667,39.60111667
+Tanzania,Mtwara,Matenga,,-10.316217,40.368917
+Tanzania,Tanga,Maziwe,Reserve,-5.498362,39.068184
+Tanzania,Dar_es_Salaam,Mbudya_1,,-6.39019,39.14367
+Tanzania,Dar_es_Salaam,Mbudya_2,,-6.39321,39.14555
+Tanzania,Dar_es_Salaam,Mbudya_North,,-6.39019,39.14367
+Tanzania,Dar_es_Salaam,Mbudya_West,,-6.39321,39.14555
+Tanzania,Tanga,Mijimile_Ndogo,open,-5.657497831,39.01824474
+Tanzania,Mafia,Milimani,MPA,-7.9461677,39.7845893
+Tanzania,Tanga,Minyaani,open,-4.713067,39.238788
+Tanzania,Zanzibar,Misali_1,,-5.2361389,39.60142
+Tanzania,Zanzibar,Misali_Island,,-5.2352,39.61045
+Tanzania,CORDIO,MnazA,,-10.292025,40.4128
+Tanzania,CORDIO,MnazB,,-10.26223333,40.37986667
+Tanzania,CORDIO,MnazD,,-10.33425833,40.36010833
+Tanzania,CORDIO,MnazE,,-10.31638333,40.36954167
+Tanzania,CORDIO,MnazF,,-10.2391,40.34694167
+Tanzania,CORDIO,Mnem,,-5.840358333,39.395325
+Tanzania,Zanzibar,Mnemba,,-5.83376,39.39143
+Tanzania,Mafia,Msumbiji,,-7.97028,39.8025
+Tanzania,Mafia,Mwamba_Mkubwa,,-8.02306,39.7042
+Tanzania,Mafia,Mwamba_Mkuu,,-8.02306,39.7042
+Tanzania,Rufiji,Mwamba_Mkuu_Ruf,,-8.32194,39.6183
+Tanzania,Songosongo,Mwamba_wa_Kati_,,-8.6425,39.5281
+Tanzania,Tanga,Mwani,open,-4.752479398,39.24286366
+Tanzania,Tanga,Mwezi,open,-4.749571182,39.23445225
+Tanzania,Songosongo,Mziwaji,,-8.43083,39.4822
+Tanzania,Mtwara,Naumbu,,-10.234133,40.136833
+Tanzania,Mafia,Nyamalile,,-8.0285,39.510783
+Tanzania,CORDIO,Nyamalile,,-8.044316667,39.5197
+Tanzania,Mafia,Nyamalile_mid,,-8.0285,39.510783
+Tanzania,Mafia,Nyamalile_N,,-8.21389,39.7353
+Tanzania,Mafia,Nyamalile_S,,-8.17806,39.5147
+Tanzania,Songosongo,Nyamambi,,-8.468167,39.517117
+Tanzania,Tanga,Nyuli,MPA,-5.0971944,39.1674722
+Tanzania,Mtwara,Pemba,,-10.262367,40.122383
+Tanzania,Zanzibar,Pongwe_A,,-5.250837,39.586573
+Tanzania,Zanzibar,Pongwe_B,,-6.030799,39.420319
+Tanzania,Songosongo,Pwayasi,,-8.50194,39.4164
+Tanzania,Songosongo,Pwela,open,-8.632567,39.571717
+Tanzania,Tanga,Shenguwe,,-5.22797327,39.10948277
+Tanzania,Rufiji,Simaya,,-8.46556,39.5189
+Tanzania,Songosongo,Songo_N,,-8.61806,39.5481
+Tanzania,Songosongo,Songosongo,open,-8.61806,39.5481
+Tanzania,Zanzibar,Sponge_Trail,,-6.03592,39.425125
+Tanzania,Tanga,Taa,MPA,-5.17357,39.05461
+Tanzania,Kwale,Ukombe,,-6.3408,39.24705
+Tanzania,Songosongo,Ukuza,,-8.47556,39.6831
+Tanzania,Tanga,Ulenge,Reserve,-5.0333306,39.16667222
+Tanzania,Tanga,Upangu,MPA,-5.1857,39.04444
+Tanzania,Misali,Utalimani,,-5.22919,39.59519
+Tanzania,Mafia,Utumbi,,-7.9575,39.79
+Tanzania,CORDIO,Utumbi,,-7.933591667,39.80789167
+Tanzania,Tanga,Wamba,open,-4.92344359,39.26569462
+Tanzania,Mafia,Yuyuni,,-7.99278,39.8231
+Tanzania,CORDIO,Yuyuni,,-7.964683333,39.80038333
+Mozambique,NGO,Mafamede,,-16.22612,40. 01560
