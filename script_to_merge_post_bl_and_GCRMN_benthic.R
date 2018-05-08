@@ -486,7 +486,9 @@ write.csv(WIO_benthic,"2017_WIO_GCRMN_benthic_dataset.csv",row.names = F)
 
 #still to do
 # 1. consitency between site and station names from post-bleaching and gcrmn dataset
+# 1a. could allocate site names from post.bl based on matched stations in both - only issue is stations in same country with same name e.g. coral gardens, aquarium, home reef
 # 2. chumbe mpa and chumbe gcrmn data - what is duplicate and what is not?
-# 3. Organization field for GCRMN data to be filled
+# 3. Organization field for GCRMN data to be filled. 
+# 3a. again could use the post-bl data to fill the gcrmn based on matched site/station. this would not work for sites where more than one person has suveryed over time
 
 
