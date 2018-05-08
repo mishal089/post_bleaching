@@ -207,7 +207,7 @@ for (i in 1:nrow(PostB)){
 
 PostB<- PostB[,-14]
 
-write.csv(PostB, "Post_bleaching-with-Coordinates.csv")
+write.csv(PostB, "Post_bleaching-with-Coordinates.csv", row.names = F)
 
 
 # Creating source files from raw country files ---------------------------
@@ -348,10 +348,10 @@ write.csv(Source_Tz, "Source_Tz.csv")
 
 # Merging GCRMN with Source and Post bleaching with Source ----------------
 library(dplyr)
-gcs<- read.csv("GCRMN_coords_for_merge.csv",header = T,stringsAsFactors = F)
+gcs<- read.csv("GCRMN_with_coords_for_merge.csv",header = T,stringsAsFactors = F)
 
 
-pbs<-read.csv("post_bleaching_coords_for_merge.csv",header = T,stringsAsFactors = F)
+pbs<-read.csv("Post_bleaching-with-Coordinates.csv",header = T,stringsAsFactors = F)
 
 #filter out only 'New' sites from the post bleaching source file - pbs
 pbs1<-pbs[which(pbs$Source=='New'),]
@@ -366,45 +366,127 @@ unique(gcs$Country)
 # unique(gcs$Country[which(f==0)])
 
 #unique sites
-f<-match(gcs$Site,pbs1$Site,nomatch = 0)
-which(f==0)
-unique(gcs$Site[which(f==0)])
-
-#correct all possible names to match, some sites are only in the pre-bleaching period, hence wont match.
-gcs$Site[which(gcs$Site=="Alphonse ")]<-"Alphonse"
-gcs$Site[which(gcs$Site=="Mahe")]<-"Mahe NW"
-gcs$Site[which(gcs$Site=="Denis")]<-"Alphonse"
-gcs$Site[which(gcs$Site=="Southcoast")]<-"Kisite"
-gcs$Site[which(gcs$Site=="Diani_Chale")]<-"Diani-Chale"
-gcs$Site[which(gcs$Site=="Cerf")]<-"Cerf Island"
-gcs$Site[which(gcs$Site=="Chongoene_Reef")]<-"Alphonse"
-gcs$Site[which(gcs$Site=="Misali")]<-"Pemba"
-gcs$Site[which(gcs$Site=="Kwale")]<-"Zanzibar"
-gcs$Site[which(gcs$Site=="Alphonse ")]<-"Alphonse"
-gcs$Site[which(gcs$Site=="Alphonse ")]<-"Alphonse"
-gcs$Site[which(gcs$Site=="Alphonse ")]<-"Alphonse"
-
-
-#unique benthic categories
-f<-match(gcs$benthic_category,pbs1$benthic_category,nomatch = 0)
-which(f==0)
-unique(gcs$benthic_category[which(f==0)])
+# f<-match(gcs$Site,pbs1$Site,nomatch = 0)
+# which(f==0)
+# unique(gcs$Site[which(f==0)])
+# 
+# #correct all possible names to match, some sites are only in the pre-bleaching period, hence wont match.
+# gcs$Site[which(gcs$Site=="Alphonse ")]<-"Alphonse"
+# gcs$Site[which(gcs$Site=="Mahe")]<-"Mahe NW"
+# # gcs$Site[which(gcs$Site=="Denis")]<-"Alphonse"
+# gcs$Site[which(gcs$Site=="Southcoast")]<-"Kisite"
+# gcs$Site[which(gcs$Site=="Diani_Chale")]<-"Diani-Chale"
+# gcs$Site[which(gcs$Site=="Cerf")]<-"Cerf Island"
+# gcs$Site[which(gcs$Site=="Chongoene_Reef")]<-"Alphonse"
+# gcs$Site[which(gcs$Site=="Misali")]<-"Pemba"
+# gcs$Site[which(gcs$Site=="Kwale")]<-"Zanzibar"
+# # gcs$Site[which(gcs$Site=="Alphonse ")]<-"Alphonse"
+# # gcs$Site[which(gcs$Site=="Alphonse ")]<-"Alphonse"
+# # gcs$Site[which(gcs$Site=="Alphonse ")]<-"Alphonse"
+# 
 
 #correct the codes to match; the other 3 benthic categories are not present in the post bleaching file. 
 gcs$benthic_category[which(gcs$benthic_category=="Lob")]<-"lob"
 
 #YOU did not do the most important step - which is merge the two datasets based on a unique identifier
-pbs1$ID<-paste(pbs1$Country,pbs1$Year,pbs1$Site,pbs1$Station)
-gcs$ID<-paste(gcs$Country,gcs$Year,gcs$Site,gcs$Station)
 
-f1<-match(pbs1$ID,gcs$ID,nomatch = 0)
+#gcrmn dataset station names do not have _ like the postbleaching dataset
+gcs$Station<-gsub(" $","",gcs$Station,perl=T) #removes _ at the end of character
+# gcs$station3<-gcs$Station
+gcs$Station<-gsub(" ","_",gcs$Station)
+
+gcs$Station[which(gcs$Station=="Willies_Bay_Reef")]<-"Willie's_Bay_Reef"
+gcs$Station[which(gcs$Station=="White_Villa")]<-"White_Villa_Reef"
+gcs$Station[which(gcs$Station=="Port_Launay_West_Rock")]<-"Port_Launay_West_Rocks"
+gcs$Station[which(gcs$Station=="Baie_Ternay_North_East")]<-"Bay_Ternay_North_East"
+gcs$Station[which(gcs$Station=="Baie_Ternay_Centre")]<-"Bay_Ternay_Centre"
+gcs$Station[which(gcs$Station=="Baie_Ternay_North_West")]<-"Bay_Ternay_North_West"
+gcs$Station[which(gcs$Station=="NS_Coco_Beach")]<-"Ns_Coco_Beach"
+
+#start with country and station to see what stations are common in both
+pbs1$ID<-paste(pbs1$Country,pbs1$Station)
+  gcs$ID<-paste(gcs$Country,gcs$Station)
+
+fst<-match(pbs1$ID,gcs$ID,nomatch = 0)
+yst<-which(fst==0)
+g1<-unique(pbs1$ID[which(fst!=0)])  #IDs that matched
+g2<-unique(pbs1$ID[yst])    #IDs which are not in both
+# g2a<-unique(pbs1$Period[yst])
+
+g<-unique(pbs1[c("Country","Station")])  #there are 172 unique stations in post-bleaching data
+
+#88 stations that are common between gcrmn and post-bleaching datasets
+#there could be more but because of spelling they did not come up
+#need to list the stations that did not match - 84 stations (g2)
+#after this - check those against the gcrmn to make sure they are really not in gcrmn
+
+g3<-unique(gcs[c("Country","Station")])
+
+#could also look at in the post-bleaching data, for these 93 stations, how much of the data was 'pre'
+#any 'post' data would definitely not be in the gcrmn dataset
+#but still good practice to go over the two datasets to correct inconsistencies in site and station names
+
+pbsub<-pbs1[yst,]   #subset of post-bl data with stations that may not be in gcrmn
+unique(pbsub$Station[which(pbsub$Period=='Pre')])    #list of stations with 'pre' data to check if really not in gcrmn
+
+#this is a list of 54 stations in pb dataset which have pre-bleaching data
+
+#now look through these sites to see which could be in GCRMN dataset - none of them are except chumbe mpa and misali possibly
+
+#the rest are new sites not in the gcrmn
+
+#and then add year to see if for those stations, are you adding new data
+#excluding site because there is so much discrepancy in how site was written between the two
+pbs1$ID2<-paste(pbs1$Country,pbs1$Year,pbs1$Station)
+gcs$ID2<-paste(gcs$Country,gcs$Year,gcs$Station)
+
+
+f1<-match(pbs1$ID2,gcs$ID2,nomatch = 0)
 y<-which(f1==0)
-unique(pbs1$ID[which(f1!=0)])
-#merge the 2 files into 1; gcs which is GCRMN and pbs1 which is post bleaching with 'New' filtered out.
+unique(pbs1$ID2[which(f1!=0)])   #list of stations that could have overlapping data/years
 
-WIO_benthic <- rbind.fill(gcs, pbs1)
+#this shows that all the pre-bleacing data from GVI in the post-ble data for example was from different years to the gcrmn dataset
 
-write.csv(WIO_benthic, "WIO_benthic-combined.csv")
+#BLUE VENTURES 3 SITES HAVE DATA IN BOTH - LOST, NS COCO BEACH AND RECRUITMENT NORTH
+#possible issues with Chumbe MPA and Chumbe (GCRMN)
 
+#Add in Chumbe MPA data as is for now into GCRMN
+#Delete the BV Mad data that is in the GCRMN and replace with post-bleaching data
+
+fr<-match(gcs$ID2,pbs1$ID2,nomatch = 0)
+yr<-which(fr==0)
+unique(gcs$ID2[which(fr!=0)])
+
+gcs1<-gcs[-which(fr!=0),]
+
+#and then add all pbs1 data to gcrmn
+
+#some cleaning before merging
+#post-ble - rename 'benthic name 2' - 'benthic name'. delete columns 16,17
+#gcrmn - rename zone-reef zone, sd cover - sd. delete columns 20,19,16,15. add organization, source, period columns
+
+colnames(pbs1)[7] <- "benthic_name"
+pbs2<-pbs1[,c(1:15)]
+pbs2$Source<-'post_bl_2016'
+
+colnames(gcs1)[7] <- "benthic_code"
+colnames(gcs1)[9] <- "sd"
+colnames(gcs1)[11] <- "Reef.zone"
+
+gcs2<-gcs1[,c(1:14,17,18)]
+
+gcs2$Organization<-NA
+gcs2$Period<-'Pre'
+gcs2$Source<-'GCRMN 2015'
+
+WIO_benthic <- rbind.fill(gcs2, pbs2)
+
+write.csv(WIO_benthic,"2017_WIO_GCRMN_benthic_dataset.csv",row.names = F)
+
+
+#still to do
+# 1. consitency between site and station names from post-bleaching and gcrmn dataset
+# 2. chumbe mpa and chumbe gcrmn data - what is duplicate and what is not?
+# 3. Organization field for GCRMN data to be filled
 
 
